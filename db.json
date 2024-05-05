@@ -1,3 +1,2267 @@
 {
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 13",
+            "price": "999$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "128GB",
+            "color": "Mavi",
+            "screenSize": "6.1\"",
+            "screenResolution": "2532 x 1170",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "460ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A15 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3.240 mAh",
+            "rating": {
+                "value": 4.8,
+                "count": {
+                    "5": 100,
+                    "4": 11,
+                    "3": 3,
+                    "2": 8,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "Dynamic Island",
+                "Always-On display",
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 125,
+            "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+        },
+        {
+            "id": 2,
+            "name": "iPhone 13 Mini",
+            "price": "799$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Yeşil",
+            "screenSize": "5.4\"",
+            "screenResolution": "2340 x 1080",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "476ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A15 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "2.438 mAh",
+            "rating": {
+                "value": 4.7,
+                "count": {
+                    "5": 80,
+                    "4": 15,
+                    "3": 4,
+                    "2": 6,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "Dynamic Island",
+                "Always-On display",
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 90,
+            "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+        },
+        {
+            "id": 3,
+            "name": "iPhone 13 Pro",
+            "price": "1099$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "256GB",
+            "color": "Altın",
+            "screenSize": "6.1\"",
+            "screenResolution": "2532 x 1170",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "460ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A15 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3.240 mAh",
+            "rating": {
+                "value": 4.9,
+                "count": {
+                    "5": 120,
+                    "4": 10,
+                    "3": 2,
+                    "2": 3,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "ProMotion",
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 135,
+            "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+        },
+        {
+            "id": 4,
+            "name": "iPhone 12",
+            "price": "899$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "128GB",
+            "color": "Siyah",
+            "screenSize": "6.1\"",
+            "screenResolution": "2532 x 1170",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "460ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A14 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "2.815 mAh",
+            "rating": {
+                "value": 4.7,
+                "count": {
+                    "5": 90,
+                    "4": 20,
+                    "3": 5,
+                    "2": 3,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 119,
+            "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+        },
+        {
+            "id": 5,
+            "name": "iPhone 12 Mini",
+            "price": "699$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Beyaz",
+            "screenSize": "5.4\"",
+            "screenResolution": "2340 x 1080",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "476ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A14 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "2.227 mAh",
+            "rating": {
+                "value": 4.6,
+                "count": {
+                    "5": 70,
+                    "4": 15,
+                    "3": 4,
+                    "2": 2,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 92,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 6,
+            "name": "iPhone 12 Pro",
+            "price": "999$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "256GB",
+            "color": "Altın",
+            "screenSize": "6.1\"",
+            "screenResolution": "2532 x 1170",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "460ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A14 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "2.815 mAh",
+            "rating": {
+                "value": 4.8,
+                "count": {
+                    "5": 110,
+                    "4": 15,
+                    "3": 3,
+                    "2": 2,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "ProMotion",
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 130,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 7,
+            "name": "iPhone 11",
+            "price": "699$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Siyah",
+            "screenSize": "6.1\"",
+            "screenResolution": "1792 x 828",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Liquid Retina IPS LCD",
+            "cpu": "A13 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3.110 mAh",
+            "rating": {
+                "value": 4.6,
+                "count": {
+                    "5": 85,
+                    "4": 15,
+                    "3": 5,
+                    "2": 3,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 109,
+            "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+        },
+        {
+            "id": 8,
+            "name": "iPhone SE (2022)",
+            "price": "399$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Beyaz",
+            "screenSize": "4.7\"",
+            "screenResolution": "1334 x 750",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A15 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "1.821 mAh",
+            "rating": {
+                "value": 4.5,
+                "count": {
+                    "5": 60,
+                    "4": 20,
+                    "3": 8,
+                    "2": 5,
+                    "1": 3
+                }
+            },
+            "additionally": [
+                "Touch ID",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 96,
+            "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+        },
+        {
+            "id": 9,
+            "name": "iPhone XR",
+            "price": "499$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Mavi",
+            "screenSize": "6.1\"",
+            "screenResolution": "1792 x 828",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Liquid Retina IPS LCD",
+            "cpu": "A12 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "2.942 mAh",
+            "rating": {
+                "value": 4.4,
+                "count": {
+                    "5": 50,
+                    "4": 15,
+                    "3": 7,
+                    "2": 4,
+                    "1": 2
+                }
+            },
+            "additionally": [
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 78,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 10,
+            "name": "iPhone X",
+            "price": "599$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Gri",
+            "screenSize": "5.8\"",
+            "screenResolution": "2436 x 1125",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "458ppi",
+            "screenType": "Super Retina OLED",
+            "cpu": "A11 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "2.716 mAh",
+            "rating": {
+                "value": 4.3,
+                "count": {
+                    "5": 40,
+                    "4": 10,
+                    "3": 5,
+                    "2": 2,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 58,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 11,
+            "name": "iPhone 8 Plus",
+            "price": "499$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Gümüş",
+            "screenSize": "5.5\"",
+            "screenResolution": "1920 x 1080",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "401ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A11 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "2.691 mAh",
+            "rating": {
+                "value": 4.2,
+                "count": {
+                    "5": 30,
+                    "4": 10,
+                    "3": 5,
+                    "2": 3,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "Touch ID",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 49,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 12,
+            "name": "iPhone SE (2020)",
+            "price": "399$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Siyah",
+            "screenSize": "4.7\"",
+            "screenResolution": "1334 x 750",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A13 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "1.821 mAh",
+            "rating": {
+                "value": 4.1,
+                "count": {
+                    "5": 20,
+                    "4": 5,
+                    "3": 2,
+                    "2": 1,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "Touch ID",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 28,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 13,
+            "name": "iPhone 6s",
+            "price": "299$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "32GB",
+            "color": "Altın",
+            "screenSize": "4.7\"",
+            "screenResolution": "1334 x 750",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A9",
+            "numberOfCores": "2",
+            "mainCamera": "12 MP",
+            "frontCamera": "5 MP",
+            "batteryCapacity": "1.715 mAh",
+            "rating": {
+                "value": 4.0,
+                "count": {
+                    "5": 15,
+                    "4": 5,
+                    "3": 3,
+                    "2": 1,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "Touch ID"
+            ],
+            "reviews": 24,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 14,
+            "name": "iPhone 6",
+            "price": "199$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "16GB",
+            "color": "Gümüş",
+            "screenSize": "4.7\"",
+            "screenResolution": "1334 x 750",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A8",
+            "numberOfCores": "2",
+            "mainCamera": "8 MP",
+            "frontCamera": "1.2 MP",
+            "batteryCapacity": "1.810 mAh",
+            "rating": {
+                "value": 3.9,
+                "count": {
+                    "5": 10,
+                    "4": 5,
+                    "3": 3,
+                    "2": 2,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "Touch ID"
+            ],
+            "reviews": 21,
+            "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+        },
+        {
+            "id": 15,
+            "name": "iPhone 5s",
+            "price": "99$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "16GB",
+            "color": "Altın",
+            "screenSize": "4.0\"",
+            "screenResolution": "1136 x 640",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A7",
+            "numberOfCores": "2",
+            "mainCamera": "8 MP",
+            "frontCamera": "1.2 MP",
+            "batteryCapacity": "1.560 mAh",
+            "rating": {
+                "value": 3.8,
+                "count": {
+                    "5": 5,
+                    "4": 3,
+                    "3": 2,
+                    "2": 1,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "Touch ID"
+            ],
+            "reviews": 11,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 16,
+            "name": "iPhone 5c",
+            "price": "99$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "16GB",
+            "color": "Mavi",
+            "screenSize": "4.0\"",
+            "screenResolution": "1136 x 640",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A6",
+            "numberOfCores": "2",
+            "mainCamera": "8 MP",
+            "frontCamera": "1.2 MP",
+            "batteryCapacity": "1.510 mAh",
+            "rating": {
+                "value": 3.7,
+                "count": {
+                    "5": 5,
+                    "4": 2,
+                    "3": 1,
+                    "2": 1,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "Touch ID"
+            ],
+            "reviews": 9,
+            "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+        },
+        {
+            "id": 17,
+            "name": "iPhone 11 Pro",
+            "price": "999$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "64GB",
+            "color": "Gri",
+            "screenSize": "5.8\"",
+            "screenResolution": "2436 x 1125",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "458ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A13 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3.046 mAh",
+            "rating": {
+                "value": 4.8,
+                "count": {
+                    "5": 120,
+                    "4": 15,
+                    "3": 3,
+                    "2": 2,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 140,
+            "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+        },
+        {
+            "id": 18,
+            "name": "iPhone 11 Pro Max",
+            "price": "1099$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "256GB",
+            "color": "Altın",
+            "screenSize": "6.5\"",
+            "screenResolution": "2688 x 1242",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "458ppi",
+            "screenType": "Super Retina XDR OLED",
+            "cpu": "A13 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3.969 mAh",
+            "rating": {
+                "value": 4.9,
+                "count": {
+                    "5": 150,
+                    "4": 20,
+                    "3": 5,
+                    "2": 1,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 176,
+            "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+        },
+        {
+            "id": 19,
+            "name": "iPhone XS",
+            "price": "899$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "256GB",
+            "color": "Gümüş",
+            "screenSize": "5.8\"",
+            "screenResolution": "2436 x 1125",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "458ppi",
+            "screenType": "Super Retina OLED",
+            "cpu": "A12 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "2.658 mAh",
+            "rating": {
+                "value": 4.7,
+                "count": {
+                    "5": 110,
+                    "4": 15,
+                    "3": 3,
+                    "2": 2,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 130,
+            "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+        },
+        {
+            "id": 20,
+            "name": "iPhone XS Max",
+            "price": "999$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "512GB",
+            "color": "Altın",
+            "screenSize": "6.5\"",
+            "screenResolution": "2688 x 1242",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "458ppi",
+            "screenType": "Super Retina OLED",
+            "cpu": "A12 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "3.174 mAh",
+            "rating": {
+                "value": 4.8,
+                "count": {
+                    "5": 120,
+                    "4": 15,
+                    "3": 3,
+                    "2": 2,
+                    "1": 0
+                }
+            },
+            "additionally": [
+                "HDR display",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 140,
+            "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+        },
+        {
+            "id": 21,
+            "name": "iPhone 8",
+            "price": "599$",
+            "categories": [
+                "Smartphones"
+            ],
+            "brand": "Apple",
+            "storage": "256GB",
+            "color": "Gri",
+            "screenSize": "4.7\"",
+            "screenResolution": "1334 x 750",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "326ppi",
+            "screenType": "Retina HD IPS LCD",
+            "cpu": "A11 Bionic",
+            "numberOfCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "1.821 mAh",
+            "rating": {
+                "value": 4.2,
+                "count": {
+                    "5": 30,
+                    "4": 10,
+                    "3": 5,
+                    "2": 3,
+                    "1": 1
+                }
+            },
+            "additionally": [
+                "Touch ID",
+                "True Tone",
+                "Wide color (P3)"
+            ],
+            "reviews": 49,
+            "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+        },
+        {
+            "id": 22,
+            "name": "Samsung Galaxy S23 Ultra",
+            "price": "1299$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "512GB",
+            "color": "Siyah",
+            "screenSize": "6.8\"",
+            "screenResolution": "3200 x 1440",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "515ppi",
+            "screenType": "Dynamic AMOLED",
+            "cpu": "Exynos 2200",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "40 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.9,
+              "count": {
+                "5": 150,
+                "4": 20,
+                "3": 5,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "S Pen support",
+              "Ultrasonic under-display fingerprint scanner",
+              "IP68 dust/water resistant"
+            ],
+            "reviews": 176,
+            "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+          },
+          {
+            "id": 23,
+            "name": "Samsung Galaxy Z Flip 3",
+            "price": "1099$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "256GB",
+            "color": "Mor",
+            "screenSize": "6.7\"",
+            "screenResolution": "2640 x 1080",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "426ppi",
+            "screenType": "Dynamic AMOLED",
+            "cpu": "Snapdragon 888",
+            "numberOfCores": "8",
+            "mainCamera": "12 MP",
+            "frontCamera": "10 MP",
+            "batteryCapacity": "3.300 mAh",
+            "rating": {
+              "value": 4.8,
+              "count": {
+                "5": 130,
+                "4": 15,
+                "3": 4,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Flex mode UI",
+              "Cover display"
+            ],
+            "reviews": 150,
+            "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+          },
+          {
+            "id": 24,
+            "name": "Samsung Galaxy S21 Ultra",
+            "price": "1199$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "512GB",
+            "color": "Siyah",
+            "screenSize": "6.8\"",
+            "screenResolution": "3200 x 1440",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "515ppi",
+            "screenType": "Dynamic AMOLED",
+            "cpu": "Exynos 2100",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "40 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.9,
+              "count": {
+                "5": 150,
+                "4": 20,
+                "3": 5,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "S Pen support",
+              "Ultrasonic under-display fingerprint scanner",
+              "IP68 dust/water resistant"
+            ],
+            "reviews": 176,
+            "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+          },
+          {
+            "id": 25,
+            "name": "Samsung Galaxy Note 20 Ultra",
+            "price": "1299$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "512GB",
+            "color": "Gri",
+            "screenSize": "6.9\"",
+            "screenResolution": "3088 x 1440",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "496ppi",
+            "screenType": "Dynamic AMOLED",
+            "cpu": "Exynos 990",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "10 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.8,
+              "count": {
+                "5": 140,
+                "4": 20,
+                "3": 5,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "S Pen support",
+              "HDR10+"
+            ],
+            "reviews": 166,
+            "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+          },
+          {
+            "id": 26,
+            "name": "Samsung Galaxy S20 FE",
+            "price": "699$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "128GB",
+            "color": "Beyaz",
+            "screenSize": "6.5\"",
+            "screenResolution": "2400 x 1080",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "407ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Snapdragon 865",
+            "numberOfCores": "8",
+            "mainCamera": "12 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.7,
+              "count": {
+                "5": 120,
+                "4": 15,
+                "3": 4,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "IP68 dust/water resistant"
+            ],
+            "reviews": 140,
+            "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+          },
+          {
+            "id": 27,
+            "name": "Samsung Galaxy A72",
+            "price": "499$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "256GB",
+            "color": "Mavi",
+            "screenSize": "6.7\"",
+            "screenResolution": "2400 x 1080",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "393ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Snapdragon 720G",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.6,
+              "count": {
+                "5": 110,
+                "4": 15,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "IP67 dust/water resistant"
+            ],
+            "reviews": 129,
+            "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+          },
+          {
+            "id": 28,
+            "name": "Samsung Galaxy A52",
+            "price": "399$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "128GB",
+            "color": "Siyah",
+            "screenSize": "6.5\"",
+            "screenResolution": "2400 x 1080",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "405ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Snapdragon 750G",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.5,
+              "count": {
+                "5": 100,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "IP67 dust/water resistant"
+            ],
+            "reviews": 113,
+            "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+          },
+          {
+            "id": 29,
+            "name": "Samsung Galaxy M51",
+            "price": "349$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "128GB",
+            "color": "Beyaz",
+            "screenSize": "6.7\"",
+            "screenResolution": "2400 x 1080",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "393ppi",
+            "screenType": "Super AMOLED Plus",
+            "cpu": "Snapdragon 730G",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "7.000 mAh",
+            "rating": {
+              "value": 4.4,
+              "count": {
+                "5": 90,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 25W"
+            ],
+            "reviews": 103,
+            "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+          },
+          {
+            "id": 30,
+            "name": "Samsung Galaxy A32",
+            "price": "279$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "64GB",
+            "color": "Mor",
+            "screenSize": "6.4\"",
+            "screenResolution": "2400 x 1080",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "411ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Mediatek Helio G80",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "20 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.3,
+              "count": {
+                "5": 80,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 15W"
+            ],
+            "reviews": 93,
+            "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+          },
+          {
+            "id": 31,
+            "name": "Samsung Galaxy M31",
+            "price": "249$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "64GB",
+            "color": "Siyah",
+            "screenSize": "6.4\"",
+            "screenResolution": "2340 x 1080",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "411ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Exynos 9611",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "6.000 mAh",
+            "rating": {
+              "value": 4.2,
+              "count": {
+                "5": 70,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 15W"
+            ],
+            "reviews": 83,
+            "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+          },
+          {
+            "id": 32,
+            "name": "Samsung Galaxy A12",
+            "price": "199$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "32GB",
+            "color": "Beyaz",
+            "screenSize": "6.5\"",
+            "screenResolution": "720 x 1600",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "270ppi",
+            "screenType": "PLS IPS",
+            "cpu": "Mediatek Helio P35",
+            "numberOfCores": "8",
+            "mainCamera": "48 MP",
+            "frontCamera": "8 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.0,
+              "count": {
+                "5": 50,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 15W"
+            ],
+            "reviews": 63,
+            "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+          },
+          {
+            "id": 33,
+            "name": "Samsung Galaxy A02",
+            "price": "149$",
+            "categories": ["Smartphones"],
+            "brand": "Samsung",
+            "storage": "32GB",
+            "color": "Siyah",
+            "screenSize": "6.5\"",
+            "screenResolution": "720 x 1600",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "270ppi",
+            "screenType": "PLS IPS",
+            "cpu": "Mediatek MT6739W",
+            "numberOfCores": "4",
+            "mainCamera": "13 MP",
+            "frontCamera": "5 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 3.8,
+              "count": {
+                "5": 40,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 7.75W"
+            ],
+            "reviews": 53,
+            "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+          },
+          {
+            "id": 34,
+            "name": "Xiaomi Redmi Note 12 Pro Plus",
+            "price": "349$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "128GB",
+            "color": "Mavi",
+            "screenSize": "6.8\"",
+            "screenResolution": "2400 x 1080",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 750G",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.5,
+              "count": {
+                "5": 120,
+                "4": 15,
+                "3": 4,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 30W"
+            ],
+            "reviews": 140,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 35,
+            "name": "Xiaomi Mi 11 Lite",
+            "price": "299$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "128GB",
+            "color": "Beyaz",
+            "screenSize": "6.55\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "402ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 732G",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "4.250 mAh",
+            "rating": {
+              "value": 4.4,
+              "count": {
+                "5": 110,
+                "4": 10,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 33W"
+            ],
+            "reviews": 124,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 36,
+            "name": "Xiaomi Poco X4 Pro",
+            "price": "279$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "128GB",
+            "color": "Siyah",
+            "screenSize": "6.67\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 860",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.6,
+              "count": {
+                "5": 130,
+                "4": 12,
+                "3": 4,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 67W"
+            ],
+            "reviews": 147,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 37,
+            "name": "Xiaomi Redmi K40",
+            "price": "249$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "128GB",
+            "color": "Gri",
+            "screenSize": "6.67\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 870",
+            "numberOfCores": "8",
+            "mainCamera": "48 MP",
+            "frontCamera": "20 MP",
+            "batteryCapacity": "4.520 mAh",
+            "rating": {
+              "value": 4.4,
+              "count": {
+                "5": 120,
+                "4": 10,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 33W"
+            ],
+            "reviews": 134,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 38,
+            "name": "Xiaomi Redmi Note 11",
+            "price": "199$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "64GB",
+            "color": "Mavi",
+            "screenSize": "6.43\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "409ppi",
+            "screenType": "AMOLED",
+            "cpu": "Mediatek Helio G96",
+            "numberOfCores": "8",
+            "mainCamera": "50 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.3,
+              "count": {
+                "5": 100,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 33W"
+            ],
+            "reviews": 113,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 39,
+            "name": "Xiaomi Mi 10T Lite",
+            "price": "179$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "128GB",
+            "color": "Siyah",
+            "screenSize": "6.67\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "IPS LCD",
+            "cpu": "Snapdragon 750G",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "4.820 mAh",
+            "rating": {
+              "value": 4.2,
+              "count": {
+                "5": 90,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 33W"
+            ],
+            "reviews": 103,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 40,
+            "name": "Xiaomi Redmi Note 10S",
+            "price": "149$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "64GB",
+            "color": "Beyaz",
+            "screenSize": "6.43\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "409ppi",
+            "screenType": "AMOLED",
+            "cpu": "Mediatek Helio G95",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "13 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.1,
+              "count": {
+                "5": 80,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 33W"
+            ],
+            "reviews": 93,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 41,
+            "name": "Xiaomi Poco M4 Pro",
+            "price": "129$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "64GB",
+            "color": "Siyah",
+            "screenSize": "6.6\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "399ppi",
+            "screenType": "IPS LCD",
+            "cpu": "Mediatek Helio G88",
+            "numberOfCores": "8",
+            "mainCamera": "50 MP",
+            "frontCamera": "8 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.0,
+              "count": {
+                "5": 70,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 18W"
+            ],
+            "reviews": 83,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 42,
+            "name": "Xiaomi Redmi 10",
+            "price": "99$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "32GB",
+            "color": "Gri",
+            "screenSize": "6.5\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "405ppi",
+            "screenType": "IPS LCD",
+            "cpu": "Mediatek Helio G88",
+            "numberOfCores": "8",
+            "mainCamera": "50 MP",
+            "frontCamera": "8 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 3.9,
+              "count": {
+                "5": 60,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 18W"
+            ],
+            "reviews": 73,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 43,
+            "name": "Xiaomi Redmi 9C",
+            "price": "89$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "32GB",
+            "color": "Mavi",
+            "screenSize": "6.53\"",
+            "screenResolution": "720 x 1600",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "269ppi",
+            "screenType": "IPS LCD",
+            "cpu": "Mediatek Helio G35",
+            "numberOfCores": "8",
+            "mainCamera": "13 MP",
+            "frontCamera": "5 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 3.8,
+              "count": {
+                "5": 50,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 10W"
+            ],
+            "reviews": 63,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 44,
+            "name": "Xiaomi Redmi 9A",
+            "price": "79$",
+            "categories": ["Smartphones"],
+            "brand": "Xiaomi",
+            "storage": "32GB",
+            "color": "Beyaz",
+            "screenSize": "6.53\"",
+            "screenResolution": "720 x 1600",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "269ppi",
+            "screenType": "IPS LCD",
+            "cpu": "Mediatek Helio G25",
+            "numberOfCores": "8",
+            "mainCamera": "13 MP",
+            "frontCamera": "5 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 3.7,
+              "count": {
+                "5": 40,
+                "4": 10,
+                "3": 2,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 10W"
+            ],
+            "reviews": 53,
+            "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+          },
+          {
+            "id": 45,
+            "name": "Poco X6 Pro 5G",
+            "price": "399$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "256GB",
+            "color": "Beyaz",
+            "screenSize": "6.78\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 865",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.500 mAh",
+            "rating": {
+              "value": 4.6,
+              "count": {
+                "5": 140,
+                "4": 20,
+                "3": 4,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 67W"
+            ],
+            "reviews": 165,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 46,
+            "name": "Poco F4",
+            "price": "349$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "128GB",
+            "color": "Siyah",
+            "screenSize": "6.67\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 870",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.5,
+              "count": {
+                "5": 130,
+                "4": 18,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 67W"
+            ],
+            "reviews": 152,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 47,
+            "name": "Poco X5",
+            "price": "299$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "128GB",
+            "color": "Mavi",
+            "screenSize": "6.55\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "402ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 765G",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.4,
+              "count": {
+                "5": 120,
+                "4": 15,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 33W"
+            ],
+            "reviews": 139,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 48,
+            "name": "Poco M3 Pro",
+            "price": "229$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "128GB",
+            "color": "Siyah",
+            "screenSize": "6.53\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "IPS LCD",
+            "cpu": "MediaTek Dimensity 700",
+            "numberOfCores": "8",
+            "mainCamera": "48 MP",
+            "frontCamera": "8 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.3,
+              "count": {
+                "5": 110,
+                "4": 15,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 18W"
+            ],
+            "reviews": 129,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 49,
+            "name": "Poco C4",
+            "price": "169$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "64GB",
+            "color": "Beyaz",
+            "screenSize": "6.43\"",
+            "screenResolution": "720 x 1600",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "269ppi",
+            "screenType": "IPS LCD",
+            "cpu": "MediaTek Helio G85",
+            "numberOfCores": "8",
+            "mainCamera": "48 MP",
+            "frontCamera": "8 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.2,
+              "count": {
+                "5": 100,
+                "4": 15,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 18W"
+            ],
+            "reviews": 119,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 50,
+            "name": "Poco X4",
+            "price": "299$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "128GB",
+            "color": "Mor",
+            "screenSize": "6.67\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 750G",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.4,
+              "count": {
+                "5": 120,
+                "4": 15,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 33W"
+            ],
+            "reviews": 139,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 51,
+            "name": "Poco F3 GT",
+            "price": "329$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "128GB",
+            "color": "Siyah",
+            "screenSize": "6.67\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "AMOLED",
+            "cpu": "Mediatek Dimensity 1200",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "5.065 mAh",
+            "rating": {
+              "value": 4.5,
+              "count": {
+                "5": 130,
+                "4": 18,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 67W"
+            ],
+            "reviews": 152,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 52,
+            "name": "Poco M3",
+            "price": "179$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "64GB",
+            "color": "Mor",
+            "screenSize": "6.53\"",
+            "screenResolution": "1080 x 2340",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "395ppi",
+            "screenType": "IPS LCD",
+            "cpu": "Snapdragon 662",
+            "numberOfCores": "8",
+            "mainCamera": "48 MP",
+            "frontCamera": "8 MP",
+            "batteryCapacity": "6.000 mAh",
+            "rating": {
+              "value": 4.3,
+              "count": {
+                "5": 110,
+                "4": 15,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 18W"
+            ],
+            "reviews": 129,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 53,
+            "name": "Poco C3",
+            "price": "149$",
+            "categories": ["Smartphones"],
+            "brand": "Poco",
+            "storage": "32GB",
+            "color": "Siyah",
+            "screenSize": "6.53\"",
+            "screenResolution": "720 x 1600",
+            "screenRefreshRate": "60Hz",
+            "pixelDensity": "269ppi",
+            "screenType": "IPS LCD",
+            "cpu": "MediaTek Helio G35",
+            "numberOfCores": "8",
+            "mainCamera": "13 MP",
+            "frontCamera": "5 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.2,
+              "count": {
+                "5": 100,
+                "4": 15,
+                "3": 3,
+                "2": 1,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 10W"
+            ],
+            "reviews": 119,
+            "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+          },
+          {
+            "id": 54,
+            "name": "Realme GT 2 Pro",
+            "price": "499$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "256GB",
+            "color": "Mavi",
+            "screenSize": "6.7\"",
+            "screenResolution": "1440 x 3200",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "525ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 8 Gen 1",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.8,
+              "count": {
+                "5": 180,
+                "4": 20,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 125W",
+              "Wireless charging 50W"
+            ],
+            "reviews": 202,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 55,
+            "name": "Realme 9 Pro",
+            "price": "349$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "128GB",
+            "color": "Gri",
+            "screenSize": "6.6\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "409ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Snapdragon 750G",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.7,
+              "count": {
+                "5": 170,
+                "4": 25,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 65W"
+            ],
+            "reviews": 197,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 56,
+            "name": "Realme 8 Pro",
+            "price": "299$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "128GB",
+            "color": "Beyaz",
+            "screenSize": "6.4\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "411ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Snapdragon 720G",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.6,
+              "count": {
+                "5": 160,
+                "4": 20,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 50W"
+            ],
+            "reviews": 182,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 57,
+            "name": "Realme GT Neo 3",
+            "price": "429$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "256GB",
+            "color": "Siyah",
+            "screenSize": "6.8\"",
+            "screenResolution": "1440 x 3200",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "516ppi",
+            "screenType": "AMOLED",
+            "cpu": "MediaTek Dimensity 9000",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.500 mAh",
+            "rating": {
+              "value": 4.9,
+              "count": {
+                "5": 190,
+                "4": 20,
+                "3": 1,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 120W",
+              "Wireless charging 50W"
+            ],
+            "reviews": 211,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 58,
+            "name": "Realme GT 2",
+            "price": "379$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "128GB",
+            "color": "Sarı",
+            "screenSize": "6.7\"",
+            "screenResolution": "1440 x 3200",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "525ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 8 Gen 1",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.8,
+              "count": {
+                "5": 180,
+                "4": 20,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 125W",
+              "Wireless charging 50W"
+            ],
+            "reviews": 202,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 59,
+            "name": "Realme X9 Pro",
+            "price": "449$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "256GB",
+            "color": "Mor",
+            "screenSize": "6.9\"",
+            "screenResolution": "1440 x 3200",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "525ppi",
+            "screenType": "AMOLED",
+            "cpu": "Snapdragon 8 Gen 1",
+            "numberOfCores": "8",
+            "mainCamera": "108 MP",
+            "frontCamera": "32 MP",
+            "batteryCapacity": "5.500 mAh",
+            "rating": {
+              "value": 4.8,
+              "count": {
+                "5": 180,
+                "4": 20,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 125W",
+              "Wireless charging 50W"
+            ],
+            "reviews": 202,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 60,
+            "name": "Realme 9i",
+            "price": "269$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "128GB",
+            "color": "Beyaz",
+            "screenSize": "6.5\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "405ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Snapdragon 680",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.7,
+              "count": {
+                "5": 170,
+                "4": 25,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 50W"
+            ],
+            "reviews": 197,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 61,
+            "name": "Realme 8 5G",
+            "price": "229$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "128GB",
+            "color": "Gri",
+            "screenSize": "6.5\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "90Hz",
+            "pixelDensity": "405ppi",
+            "screenType": "IPS LCD",
+            "cpu": "Dimensity 700",
+            "numberOfCores": "8",
+            "mainCamera": "48 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.6,
+              "count": {
+                "5": 160,
+                "4": 20,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 30W"
+            ],
+            "reviews": 182,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 62,
+            "name": "Realme Q3 Pro",
+            "price": "279$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "128GB",
+            "color": "Yeşil",
+            "screenSize": "6.4\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "409ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Dimensity 1100",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "4.500 mAh",
+            "rating": {
+              "value": 4.7,
+              "count": {
+                "5": 170,
+                "4": 25,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 65W"
+            ],
+            "reviews": 197,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          },
+          {
+            "id": 63,
+            "name": "Realme GT Neo 2",
+            "price": "389$",
+            "categories": ["Smartphones"],
+            "brand": "Realme",
+            "storage": "256GB",
+            "color": "Beyaz",
+            "screenSize": "6.62\"",
+            "screenResolution": "1080 x 2400",
+            "screenRefreshRate": "120Hz",
+            "pixelDensity": "386ppi",
+            "screenType": "Super AMOLED",
+            "cpu": "Snapdragon 870",
+            "numberOfCores": "8",
+            "mainCamera": "64 MP",
+            "frontCamera": "16 MP",
+            "batteryCapacity": "5.000 mAh",
+            "rating": {
+              "value": 4.6,
+              "count": {
+                "5": 160,
+                "4": 20,
+                "3": 2,
+                "2": 0,
+                "1": 0
+              }
+            },
+            "additionally": [
+              "Fast charging 65W"
+            ],
+            "reviews": 182,
+            "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+          }
+    ],
 
+
+
+
+
+
+    "users": [
+        {
+            "id": "1",
+            "name": "Grace Carey",
+            "comment": "I was a bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier with my purchase!! I have a pre-paid data plan so I was worried that this phone wouldn’t connect with my data plan, since the new phones don’t have the physical Sim tray anymore, but couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro Max in excellent condition and everything is PERFECT. It was super easy to set up and the phone works and looks great. It truly was in excellent condition. Highly recommend!!!🖤",
+            "rate": "4",
+            "history": "22 January,2024",
+            "profileImgUrl": ""
+        },
+        {
+            "id": "2",
+            "name": "Ronald Richards",
+            "comment": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs.",
+            "rate": "5",
+            "history": "22 January,2024",
+            "profileImgUrl": ""
+        },
+        {
+            "id": "3",
+            "name": "Darcy King",
+            "comment": "I might be the only one to say this but the camera is a little funky. Hoping it will change with a software update: otherwise, love this phone! Came in great condition",
+            "rate": "4",
+            "history": "21 January,2024",
+            "profileImgUrl": ""
+        }
+    ]
 }
