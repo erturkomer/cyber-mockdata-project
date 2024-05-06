@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* - HOMEPAGE START - */
 /* - HEADER START - */
 .header-container {
@@ -174,9 +175,7 @@ body {
     width: 184px;
     height: 56px;
     border-radius: 6px;
-    border: 1px solid white;
     background: transparent;
-    color: #FFFFFF;
     cursor: pointer;
     transition: all 90ms linear;
 }
@@ -185,22 +184,160 @@ body {
     transform: scale(1.04);
 }
 
-/* .smaller-banners{
+.smaller-banners {
     width: 100%;
     height: 600px;
+    display: flex;
 }
 
-.smaller-banners .left-banners{
-    width: 720px;
+.smaller-banners .left-banners {
+    width: 50%;
     height: 600px;
 }
 
-.smaller-banners .left-banners .wide-square{
-    width: 720px;
+.smaller-banners .left-banners .wide-square {
+    width: 100%;
     height: 328px;
-    padding: 0 48px;
     background: #FFFFFF;
-} */
+    display: flex;
+    align-items: center;
+}
+
+.smaller-banners .left-banners .wide-square .banner-wide-square-title-text {
+    width: 338px;
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.smaller-banners .left-banners .wide-square .banner-wide-square-title-text h1 {
+    font-weight: 500;
+    font-size: 49px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.smaller-banners .left-banners .wide-square .banner-wide-square-title-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #909090;
+}
+
+.smaller-banners .left-banners .squares-banner {
+    width: 100%;
+    height: 272px;
+    display: flex;
+}
+
+.smaller-banners .left-banners .squares-banner .square-banner {
+    width: 100%;
+    height: 272px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.smaller-banners .left-banners .squares-banner .left-bottom-bn-1 {
+    background: #EDEDED;
+}
+
+.smaller-banners .left-banners .squares-banner .left-bottom-bn-2 {
+    background: #353535;
+}
+
+.smaller-banners .left-banners .squares-banner .square-banner .banner-square-title-text {
+    width: 160px;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.smaller-banners .left-banners .squares-banner .square-banner .banner-square-title-text h1 {
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 40px;
+}
+
+.smaller-banners .left-banners .squares-banner .square-banner .banner-square-title-text h1 span {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 40px;
+}
+
+.smaller-banners .left-banners .squares-banner .square-banner .banner-square-title-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #909090;
+}
+
+.smaller-banners .left-banners .squares-banner .left-bottom-bn-1 .banner-square-title-text h1,
+.smaller-banners .left-banners .squares-banner .left-bottom-bn-1 .banner-square-title-text h1 span {
+    color: #000000;
+}
+
+.smaller-banners .left-banners .squares-banner .left-bottom-bn-2 .banner-square-title-text h1,
+.smaller-banners .left-banners .squares-banner .left-bottom-bn-2 .banner-square-title-text h1 span {
+    color: #FFFFFF;
+}
+
+.smaller-banners .big-banner {
+    width: 50%;
+    height: 600px;
+    background: #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.smaller-banners .big-banner .big-banner-content {
+    width: 360px;
+    height: 192px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.smaller-banners .big-banner .big-banner-title-text {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.smaller-banners .big-banner .big-banner-title-text h1 {
+    font-weight: 200;
+    font-size: 64px;
+    line-height: 56px;
+    color: black;
+}
+
+.smaller-banners .big-banner .big-banner-title-text h1 span {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 56px;
+    color: black;
+}
+
+.smaller-banners .big-banner .big-banner-title-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #909090;
+}
+
+.smaller-banners .big-banner img{
+    margin-right: -95px;
+}
 
 /* - BANNER FINISH - */
 
