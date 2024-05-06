@@ -10,6 +10,24 @@
 
 body {
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@keyframes slideInFromBottoms {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.img-animation{
+    animation: slideInFromBottoms 1.6s ease forwards;
+    opacity: 0;
 }
 
 
