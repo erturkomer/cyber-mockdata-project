@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from "../pages/HomePage/Home.jsx";
 import './App.css'
 
 function App() {
@@ -7,7 +8,11 @@ function App() {
 
   return (
     <>
-     
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
