@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "SF Pro Display", "sans-serif";
 }
 
-body{
+body {
     min-height: 100vh;
 }
 
 /* - HOMEPAGE START - */
 /* - HEADER START - */
-
-.header-container{
+.header-container {
     width: 100%;
     height: 88px;
     border-bottom: 1px solid #B5B5B5;
@@ -24,7 +25,7 @@ body{
     padding: 16px 160px;
 }
 
-.header-container .search-box-container{
+.header-container .search-box-container {
     width: 372px;
     height: 56px;
     border-radius: 8px;
@@ -35,22 +36,24 @@ body{
     padding: 16px;
 }
 
-.header-container .search-box-container input{
+.header-container .search-box-container input {
     background: #F5F5F5;
     outline: 0;
     border: 0;
     width: 335px;
 }
 
-.header-container .pages-link ul{
+.header-container .pages-link ul {
     list-style-type: none;
     display: flex;
     width: 351px;
     height: 19px;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
-.header-container .pages-link ul li{
+.header-container .pages-link ul li {
     font-weight: 500;
     font-size: 16px;
     line-height: 19.09px;
@@ -58,27 +61,27 @@ body{
     color: #000000;
 }
 
-.header-container .pages-link ul *:nth-child(1){
+.header-container .pages-link ul *:nth-child(1) {
     text-decoration: none;
     color: #000000;
 }
 
-.header-container .pages-link ul li.active{
+.header-container .pages-link ul li.active {
     opacity: 100%;
 }
 
-.header-container .header-icons{
+.header-container .header-icons {
     display: flex;
     width: 144px;
     height: 32px;
     justify-content: space-between;
 }
 
-.header-container .header-icons *{
+.header-container .header-icons * {
     cursor: pointer;
 }
 
-.cart-circle{
+.cart-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -96,6 +99,112 @@ body{
 
 /* - HEADER FINISH - */
 
+/* - BANNER START - */
+.main-banner {
+    width: 100%;
+    height: 632px;
+    padding: 0 160px;
+    background: linear-gradient(#211C24, #211C24);
+    display: flex;
+    align-items: center;
+}
+
+.main-banner .main-banner-content {
+    width: 714px;
+    height: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main-banner .main-banner-content .main-banner-title {
+    width: 714px;
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.main-banner .main-banner-content .main-banner-text {
+    width: 714px;
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main-banner .main-banner-content .main-banner-title h4 {
+    opacity: 40%;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    color: #FFFFFF;
+    font-family: "Figtree", sans-serif;
+}
+
+.main-banner .main-banner-content .main-banner-title h1 {
+    font-weight: 200;
+    font-size: 96px;
+    line-height: 72px;
+    letter-spacing: -1%;
+    color: #FFFFFF;
+}
+
+.main-banner .main-banner-content .main-banner-title h1 span {
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 72px;
+    letter-spacing: -1%;
+    color: #FFFFFF;
+}
+
+.main-banner .main-banner-content .main-banner-text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #909090;
+}
+
+.shop-now-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 184px;
+    height: 56px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 90ms linear;
+}
+
+.shop-now-button:hover {
+    transform: scale(1.04);
+}
+
+/* .smaller-banners{
+    width: 100%;
+    height: 600px;
+}
+
+.smaller-banners .left-banners{
+    width: 720px;
+    height: 600px;
+}
+
+.smaller-banners .left-banners .wide-square{
+    width: 720px;
+    height: 328px;
+    padding: 0 48px;
+    background: #FFFFFF;
+} */
+
+/* - BANNER FINISH - */
+
+
 
 
 
@@ -104,4 +213,3 @@ body{
 
 
 /* - HOMEPAGE FINISH - */
-

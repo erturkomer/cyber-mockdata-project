@@ -1,5 +1,5 @@
 import React from "react";
-import SearchIcon from "./allPageComponents/svg/searchIcon.jsx";
+import SearchIcon from "./allPageComponents/jsxSvg/searchIcon.jsx";
 
 const searchBox = () => {
     return (

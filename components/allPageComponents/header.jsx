@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "./svg/logo.jsx";
-import FavoriteIcon from "./svg/favorites";
-import CartIcon from "./svg/cart";
-import UserIcon from "./svg/user";
+import Logo from "./jsxSvg/logo.jsx";
+import FavoriteIcon from "./jsxSvg/favorites";
+import CartIcon from "./jsxSvg/cart";
+import UserIcon from "./jsxSvg/user";
 import SearchBox from "../searchBox.jsx"
 
 import { Link, useLocation } from 'react-router-dom';
