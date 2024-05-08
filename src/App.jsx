@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from "../pages/HomePage/Home.jsx";
 import Header from "../components/allPageComponents/header.jsx";
 import Footer from "../components/allPageComponents/footer/footer.jsx";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 function App() {
@@ -14,6 +13,8 @@ function App() {
       <Header />
         <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/bestseller" element={<HomePage />} />
+            <Route path="/featuredproducts" element={<HomePage />} />
         </Routes>
         <Footer />
     </>

@@ -1,13 +1,13 @@
 import React from "react";
-import FavoriteIcon from "../jsxSvg/favorites.svg";
+import FavoriteIcon from "../jsxSvg/favorite.svg";
 import BuyNowButton from "./buyNowButton";
 
-const product = (props) => {
+const Product = (props) => {
     return (
         <>
             <div className="product-card">
                 <div className="between-icon-favorites">
-                    <FavoriteIcon />
+                    <img src={FavoriteIcon} alt="" />
                 </div>
                 <img src={props.image} alt="image bulunamadi." />
                 <div className="product-text-button">
@@ -22,4 +22,4 @@ const product = (props) => {
     )
 };
 
-export default product;
+export default Product;

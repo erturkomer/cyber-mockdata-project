@@ -12,8 +12,8 @@ const MainBanner = () => {
     useEffect(() => {
         // Sayfa scroll edildiğinde bu fonksiyon çalışacak
         const handleScroll = () => {
-            // Eğer scroll pozisyonu 100 pikselden büyükse resimlerin görünmesini sağlayacak sınıfı ekleyelim
-            if (window.scrollY > 100) {
+            // Eğer scroll pozisyonu 30 piksel aşağı inerse resimlerin görünmesini sağlayacak sınıfı ekleyelim
+            if (window.scrollY > 30) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
