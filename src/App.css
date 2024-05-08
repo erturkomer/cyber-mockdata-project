@@ -30,8 +30,7 @@ body {
     opacity: 0;
 }
 
-
-/* - HOMEPAGE START - */
+/* - ALL PAGE COMPONENTS START - */
 /* - HEADER START - */
 .header-container {
     width: 100%;
@@ -117,6 +116,93 @@ body {
 }
 
 /* - HEADER FINISH - */
+
+/* - PRODUCT START - */
+
+.buyNowButton{
+    width: 183px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.product-card{
+    width: 268px;
+    height: 432px;
+    border-radius: 9px;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-card .between-icon-favorites{
+    width: 236px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.product-card img{
+    width: 160px;
+    height: 160px;
+}
+
+.product-card .product-text-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 236px;
+    height: 160px;
+}
+
+.product-card .product-text-button .product-info{
+    width: 236px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.product-card .product-text-button .product-info p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    width: 236px;
+    height: 48px;
+}
+
+.product-card .product-text-button .product-info h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+    width: 236px;
+    height: 24px;
+}
+
+/* - PRODUCT FINISH - */
+
+/* - ALL PAGE COMPONENTS FINISH - */
+
+
+
+
+
+
+
+/* - HOMEPAGE START - */
 
 /* - BANNER START - */
 .main-banner {

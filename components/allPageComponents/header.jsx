@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./jsxSvg/logo.jsx";
-import FavoriteIcon from "./jsxSvg/favorites";
+import FavoriteIcon from "./jsxSvg/favorites.svg";
 import CartIcon from "./jsxSvg/cart";
 import UserIcon from "./jsxSvg/user";
 import SearchBox from "../searchBox.jsx"
@@ -35,7 +35,7 @@ const header = () => {
                     </ul>
                 </div>
                 <div className="header-icons">
-                    <FavoriteIcon />
+                    <img src={FavoriteIcon} alt="icon bulunamadi" />
                     <CartIcon />
                     <UserIcon />
                 </div>
