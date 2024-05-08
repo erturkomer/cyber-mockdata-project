@@ -359,7 +359,78 @@ body {
 
 /* - BANNER FINISH - */
 
+/* - HOME PAGE CATEGORİES START - */
 
+.home-categories-container{
+    width: 100%;
+    height: 352px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+    flex-direction: column;
+}
+
+.home-categories-container .top-categories{
+    width: 1120px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-categories-container .top-categories .arrow-button-container{
+    width: 80px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-categories-container .top-categories .arrow-button-container *{
+    border: 0;
+    outline: none;
+    background: none;
+}
+
+.home-categories-container .top-categories h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    letter-spacing: 1%;
+}
+
+.home-categories-container .home-categories{
+    width: 1120px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.home-category-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #EDEDED;
+    border-radius: 15px;
+    width: 160px;
+    height: 128px;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.home-category-card p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* - HOME PAGE CATEGORİES FINISH - */
 
 
 

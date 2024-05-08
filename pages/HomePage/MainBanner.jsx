@@ -23,7 +23,7 @@ const MainBanner = () => {
         // Sayfa scroll event listenerını ekleyelim
         window.addEventListener("scroll", handleScroll);
 
-        // Tbileşen unmount edildiğinde event listeneri kaldıralım
+        // bileşen unmount edildiğinde event listeneri kaldıralım
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -78,7 +78,7 @@ const MainBanner = () => {
                         </div>
                         <ShopButton border="black" color="black" gap="8px" />
                     </div>
-                    <img src={Mackbook} alt="imag bulunamadi." className={`${scrolled ? "img-animation" : ""}`}/>
+                    <img src={Mackbook} alt="image bulunamadi." className={`${scrolled ? "img-animation" : ""}`}/>
                 </div>
             </div>
         </>
