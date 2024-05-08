@@ -1,14 +1,16 @@
 import React from "react";
-import Banner from "./MainBanner.jsx"
+import MainBanner from "./Banners/MainBanner.jsx"
 import HomeCategories from "./HomeCategories.jsx";
 import HomeProducts from "./HomeProducts.jsx";
+import MiddleBanner from "./Banners/MiddleBanner.jsx";
 
 const Home = () => {
   return (
     <>
-      <Banner />
+      <MainBanner />
       <HomeCategories />
       <HomeProducts />
+      <MiddleBanner />
     </>
   )
 };

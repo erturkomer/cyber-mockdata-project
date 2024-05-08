@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ShopButton from "../../components/shopNowButton.jsx";
-import IphoneImage from "./image/bannerIphone.svg";
-import PlayStation from "./image/bannerPlayStation.svg";
-import Airpods from "./image/bannerAirpods.svg";
-import AppleVision from "./image/bannerAppleVision.svg";
-import Mackbook from "./image/bannerMackbook.svg";
+import ShopButton from "../../../components/shopNowButton.jsx";
+import IphoneImage from "../image/bannerIphone.svg";
+import PlayStation from "../image/bannerPlayStation.svg";
+import Airpods from "../image/bannerAirpods.svg";
+import AppleVision from "../image/bannerAppleVision.svg";
+import Mackbook from "../image/bannerMackbook.svg";
 
 const MainBanner = () => {
     const [scrolled, setScrolled] = useState(false);

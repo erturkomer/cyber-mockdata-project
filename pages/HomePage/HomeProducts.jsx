@@ -36,13 +36,13 @@ const HomeProducts = () => {
             <div className="home-products-tag">
                 <ul style={{ listStyleType: "none" }}>
                     <li onClick={() => { setMenu("/") }}>
-                        <Link to="/" style={{ textDecoration: "none", color: "black", display: "block", height: "100%", borderBottom: menu === "/" ? "2px solid black" : "none" }}>New Arrival</Link>
+                        <Link to="/" style={{ textDecoration: "none", color: menu === "/" ? "black" : "#8B8B8B" , display: "block", height: "100%", borderBottom: menu === "/" ? "2px solid black" : "none" }}>New Arrival</Link>
                     </li>
                     <li onClick={() => { setMenu("/bestseller") }}>
-                        <Link to="/bestseller" style={{ textDecoration: "none", color: "black", display: "block", height: "100%", borderBottom: menu === "/bestseller" ? "2px solid black" : "none" }}>Bestseller</Link>
+                        <Link to="/bestseller" style={{ textDecoration: "none", color: menu === "/bestseller" ? "black" : "#8B8B8B" , display: "block", height: "100%", borderBottom: menu === "/bestseller" ? "2px solid black" : "none" }}>Bestseller</Link>
                     </li>
                     <li onClick={() => { setMenu("/featuredproducts") }}>
-                        <Link to="/featuredproducts" style={{ textDecoration: "none", color: "black", display: "block", height: "100%", borderBottom: menu === "/featuredproducts" ? "2px solid black" : "none" }}>Featured Products</Link>
+                        <Link to="/featuredproducts" style={{ textDecoration: "none", color: menu === "/featuredproducts" ? "black" : "#8B8B8B" , display: "block", height: "100%", borderBottom: menu === "/featuredproducts" ? "2px solid black" : "none" }}>Featured Products</Link>
                     </li>
                 </ul>
             </div>
