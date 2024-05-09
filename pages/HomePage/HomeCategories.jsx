@@ -8,6 +8,7 @@ import Cameras from "./icons/cameras.svg"
 import HeadPhones from "./icons/headPhones.svg"
 import Computers from "./icons/computers.svg"
 import Gaming from "./icons/gaming.svg"
+import { Link, useLocation } from 'react-router-dom';
 
 const HomeCategories = () => {
   return (
@@ -25,7 +26,9 @@ const HomeCategories = () => {
           </div>
         </div>
         <div className="home-categories">
-          <Category name="Phones" icon={Phones} />
+          <Link to="/catalog/smartphones" style={{ textDecoration: "none", color:"black" }}>
+            <Category name="Phones" icon={Phones} />
+          </Link>
           <Category name="Smart Watches" icon={SmartWatches} />
           <Category name="Cameras" icon={Cameras} />
           <Category name="Headphones" icon={HeadPhones} />

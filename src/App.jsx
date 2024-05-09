@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from "../pages/HomePage/Home.jsx";
 import Header from "../components/allPageComponents/header.jsx";
 import Footer from "../components/allPageComponents/footer/footer.jsx";
+import ProductDetailsPage from '../pages/ProductDetailsPage/ProductDetailsPage.jsx';
+import ProductList from '../pages/ProductPage/ProductList.jsx';
 import './App.css'
 
 function App() {
@@ -11,12 +13,14 @@ function App() {
   return (
     <>
       <Header />
-        <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/bestseller" element={<HomePage />} />
-            <Route path="/featuredproducts" element={<HomePage />} />
-        </Routes>
-        <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/bestseller" element={<HomePage />} />
+        <Route path="/featuredproducts" element={<HomePage />} />
+        <Route path="/catalog/smartphones/productdetails/:id" element={<ProductDetailsPage />} />
+        <Route path="/catalog/smartphones" element={<ProductList />} />
+      </Routes>
+      <Footer />
     </>
   )
 }
