@@ -12,7 +12,7 @@ const Product = (props) => {
                 <img src={props.image} alt="image bulunamadi." />
                 <div className="product-text-button">
                     <div className="product-info">
-                        <p>{props.name} {props.storage} {props.color}</p>
+                        <p>{props.name} {props.storage} {props.color}  {props.mainCamera} {props.cpu}</p>
                         <h2>{props.price}</h2>
                     </div>
                     <BuyNowButton />
