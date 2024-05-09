@@ -36,7 +36,15 @@ const ProductDetailsPage = () => {
     <>
       <Breadcrumbs categories={breadcrumbsHierarchy} />
       <div className="main-info">
-        {/* Ürün detayları */}
+        <div className="product-image-container">
+          <div className="image-4">
+            <img src={product.productImage} alt="" />
+            <img src={product.productImage} alt="" />
+            <img src={product.productImage} alt="" />
+            <img src={product.productImage} alt="" />
+          </div>
+          <img className='product-image' src={product.productImage} alt="" />
+        </div>
       </div>
     </>
   );
