@@ -1339,6 +1339,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .reviews-container .reviews-comment-container .reviews-comment {
@@ -1391,6 +1392,37 @@ h3 {
     line-height: 16px;
     text-align: right;
     opacity: 20%;
+}
+
+.related-container{
+    width: 100%;
+    height: 656px;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.related-container .related-text{
+    width: 1120px;
+    align-items: center;
+    justify-content: left;
+}
+
+.related-container .related-text h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.related-container .related-products-container{
+    width: 1120px;
+    height: 432px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* - PRODUCT DETAILS FINISH - */

@@ -20,6 +20,7 @@ import Line from "./Line.jsx"
 import { FaStar } from "react-icons/fa";
 import Rating from "react-rating-stars-component";
 import UserComment from "./UserComment.jsx";
+import DiscountProducts from "./DiscountProducts.jsx";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -260,10 +261,16 @@ const ProductDetailsPage = () => {
             {users.map((user, index) => (
               <UserComment key={index} title={user.name} history={user.history} rating={user.rate} comment={user.comment} profileImgUrl={user.profileImgUrl} />
             ))}
-
+            <button className="button-reviews" style={{ gap: "8px", cursor: "pointer", background: "white", width: "208px", height: "48px", borderRadius: "8px", border: "1px solid #545454", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              View More
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 9L12 15L6 9" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
           </div>
         </div>
       }
+      <DiscountProducts />
     </>
   );
 };
