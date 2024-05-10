@@ -1205,5 +1205,63 @@ h3 {
     justify-content: space-between;
 }
 
+.reviews-container {
+    width: 100%;
+    height: 1336px;
+    border-radius: 24px;
+    padding: 88px 160px;
+    background: #FFFFFF;
+}
+
+.reviews-container .reviews-top {
+    width: 1120px;
+    height: 384px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.reviews-container .reviews-top .reviews-title {
+    width: 1120px;
+    height: 32px;
+}
+
+.reviews-container .reviews-top .reviews-overall-rating .overall-rating h1 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 56px;
+}
+
+.reviews-container .reviews-top .reviews-overall-rating .overall-rating span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #afafaf;
+}
+
+.reviews-container .reviews-top .reviews-title h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.reviews-container .reviews-top .reviews-overall-rating {
+    width: 1120px;
+    height: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews-container .reviews-top .reviews-overall-rating .overall-rating {
+    width: 184px;
+    height: 192px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: #FAFAFA;
+}
 
 /* - PRODUCT DETAILS FINISH - */

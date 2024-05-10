@@ -17,11 +17,18 @@ import CargoIcon2 from "./icon/cargoIcon2.svg"
 import CargoIcon3 from "./icon/cargoIcon3.svg"
 import Cargo from "./cargo";
 import Line from "./Line.jsx"
+import { FaStar } from "react-icons/fa";
+import Rating from "react-rating-stars-component";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [users, setUsers] = useState(null);
   const [brand, setBrand] = useState(null);
+
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+  };
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_API_URL}products/${id}`)
@@ -32,9 +39,20 @@ const ProductDetailsPage = () => {
       .catch(error => {
         console.error('Error fetching product details:', error);
       });
+    axios.get(`${import.meta.env.VITE_API_URL}users`)
+      .then(response => {
+        setUsers(response.data);
+      })
+      .catch(error => {
+        console.error('Error users:', error);
+      });
   }, [id]);
 
   if (!product) {
+    return <div>Loading...</div>;
+  }
+
+  if (!users) {
     return <div>Loading...</div>;
   }
 
@@ -157,6 +175,31 @@ const ProductDetailsPage = () => {
           </div>
         </div>
       </div>
+
+      {
+        <div className="reviews-container">
+          <div className="reviews-top">
+            <div className="reviews-title">
+              <h1>Reviews</h1>
+            </div>
+            <div className="reviews-overall-rating">
+              <div className="overall-rating">
+                <h1>{product.rating.value}</h1>
+                <span>of {product.reviews} reviews</span>
+                <Rating
+                  count={5}
+                  size={24}
+                  value={product.rating.value}
+                  edit={false}
+                  emptyIcon={<FaStar color="#ccc" />}
+                  filledIcon={<FaStar color="#ffc107" />}
+                  isHalf={false}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      }
     </>
   );
 };
