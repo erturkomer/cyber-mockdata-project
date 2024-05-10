@@ -16,7 +16,7 @@ import CargoIcon1 from "./icon/cargoIcon1.svg"
 import CargoIcon2 from "./icon/cargoIcon2.svg"
 import CargoIcon3 from "./icon/cargoIcon3.svg"
 import Cargo from "./cargo";
-
+import Line from "./Line.jsx"
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -103,12 +103,59 @@ const ProductDetailsPage = () => {
             <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" />
           </div>
           <div className="cargo-icon-container">
-            <Cargo icon={CargoIcon1} title="Free Delivery" details="1-2 day"/>
-            <Cargo icon={CargoIcon2} title="In Stock" details="Today"/>
-            <Cargo icon={CargoIcon3} title="Guaranteed" details="1 year"/>
+            <Cargo icon={CargoIcon1} title="Free Delivery" details="1-2 day" />
+            <Cargo icon={CargoIcon2} title="In Stock" details="Today" />
+            <Cargo icon={CargoIcon3} title="Guaranteed" details="1 year" />
           </div>
         </div>
+      </div>
 
+
+
+      <div className="product-details-detail-container">
+        <div className="product-details-detail">
+          <h2 className="header-text">
+            Details
+          </h2>
+          <p>Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.</p>
+          <div className="product-detail-content">
+            <div className="p-d-info-1">
+              <h2 style={{ display: "inline" }}>Screen</h2>
+              <div className="p-d-info-1-content">
+                <Line name="Screen diagonal" title={product.screenSize} />
+                <div style={{ width: "100%", height: "0.5px", background: "#CDCDCD" }}></div>
+                <Line name="The screen resolution" title={product.screenResolution} />
+                <div style={{ width: "100%", height: "0.5px", background: "#CDCDCD" }}></div>
+                <Line name="The screen refresh rate" title={product.screenRefreshRate} />
+                <div style={{ width: "100%", height: "0.5px", background: "#CDCDCD" }}></div>
+                <Line name="The pixel density" title={product.pixelDensity} />
+                <div style={{ width: "100%", height: "0.5px", background: "#CDCDCD" }}></div>
+                <Line name="Screen type" title={product.screenType} />
+                <div style={{ width: "100%", height: "0.5px", background: "#CDCDCD" }}></div>
+                <div className="line-add">
+                  <p style={{ color: "black" }}>Additionally</p>
+                  <p style={{ color: "black" }}>{product.additionally[1]} <br /> {product.additionally[2]} <br /> {product.additionally[3]} <br /> {product.additionally[4]} <br /> {product.additionally[5]}
+                  </p>
+                </div>
+                <div style={{ width: "100%", height: "0.5px", background: "#CDCDCD" }}></div>
+              </div>
+            </div>
+            <div className="p-d-info-2">
+              <h2 style={{ color: "black", display: "inline" }}>CPU</h2>
+              <div className="p-d-info-2-content">
+                <div className="line-2-1" style={{ marginBottom: "24px" }}>
+                  <p style={{ color: "black" }}>CPU</p>
+                  <p style={{ color: "black" }}>{product.cpu}</p>
+                </div>
+                <div style={{ width: "100%", height: "0.5px", background: "#CDCDCD" }}></div>
+                <div className="line-2-1">
+                  <p style={{ color: "black" }}>Number of cores</p>
+                  <p style={{ color: "black" }}>{product.numberOfCores}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
