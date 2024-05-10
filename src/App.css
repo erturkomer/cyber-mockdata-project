@@ -847,7 +847,8 @@ h3 {
     height: 896px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: -150px;
 }
 
 .main-info .product-image-container {
@@ -868,13 +869,59 @@ h3 {
 .main-info .product-image-container .image-4 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-info .product-image-container .image-4 img {
     width: 100px;
-    height: 93px;
+    height: 100px;
     margin: 4px;
     opacity: 60%;
 }
+
+.main-info .product-image-container .image-4 img:nth-child(1) {
+    opacity: 100%;
+    width: 120px;
+    height: 120px;
+}
+
+.main-info .main-info-content {
+    width: 536px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-info .main-info-content .main-info-title {
+    width: 536px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-info .main-info-content .main-info-title h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.main-info .main-info-content .main-info-title .main-info-price {
+    width: 536px;
+    height: 48px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.main-info .main-info-content .main-info-title .main-info-price span {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 3%;
+}
+
+
 
 /* - PRODUCT DETAILS FINISH - */
