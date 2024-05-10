@@ -251,6 +251,9 @@ const ProductDetailsPage = () => {
                 </div>
               </div>
             </div>
+            <div className="leave-comment-input">
+              <input type="text" placeholder="Leave Comment"/>
+            </div>
           </div>
         </div>
       }

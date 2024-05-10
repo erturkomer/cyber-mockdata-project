@@ -1305,4 +1305,29 @@ h3 {
     margin: 5px;
 }
 
+.reviews-container .reviews-top .leave-comment-input {
+    width: 1120px;
+    height: 64px;
+    border-radius: 7px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #CECECE;
+}
+
+.reviews-container .reviews-top .leave-comment-input input{
+    width: 1080px;
+    height: 60px;
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5%;
+    color: #979797;
+}
+
 /* - PRODUCT DETAILS FINISH - */
