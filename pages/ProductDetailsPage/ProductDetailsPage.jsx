@@ -19,6 +19,7 @@ import Cargo from "./cargo";
 import Line from "./Line.jsx"
 import { FaStar } from "react-icons/fa";
 import Rating from "react-rating-stars-component";
+import UserComment from "./UserComment.jsx";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -252,8 +253,14 @@ const ProductDetailsPage = () => {
               </div>
             </div>
             <div className="leave-comment-input">
-              <input type="text" placeholder="Leave Comment"/>
+              <input type="text" placeholder="Leave Comment" />
             </div>
+          </div>
+          <div className="reviews-comment-container">
+            {users.map((user, index) => (
+              <UserComment key={index} title={user.name} history={user.history} rating={user.rate} comment={user.comment} profileImgUrl={user.profileImgUrl} />
+            ))}
+
           </div>
         </div>
       }

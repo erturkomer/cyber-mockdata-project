@@ -1211,6 +1211,9 @@ h3 {
     border-radius: 24px;
     padding: 88px 160px;
     background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .reviews-container .reviews-top {
@@ -1316,7 +1319,7 @@ h3 {
     border: 0.5px solid #CECECE;
 }
 
-.reviews-container .reviews-top .leave-comment-input input{
+.reviews-container .reviews-top .leave-comment-input input {
     width: 1080px;
     height: 60px;
     border-radius: 7px;
@@ -1328,6 +1331,66 @@ h3 {
     line-height: 16px;
     letter-spacing: 0.5%;
     color: #979797;
+}
+
+.reviews-container .reviews-comment-container {
+    width: 1120px;
+    height: 744px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews-container .reviews-comment-container .reviews-comment {
+    width: 1120px;
+    background: #FAFAFA;
+    border-radius: 10px;
+    display: flex;
+    padding: 24px 28px;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.reviews-container .reviews-comment-container .reviews-comment .reviews-content p {
+    color: #7E7E7E;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.reviews-container .reviews-comment-container .reviews-content {
+    width: 1001px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-container .reviews-comment-container .reviews-comment .reviews-content .reviews-title-stars .reviews-title-data {
+    display: flex;
+    justify-content: space-between;
+    width: 1001px;
+    height: 24px;
+}
+
+.reviews-container .reviews-comment-container .reviews-comment .reviews-content .reviews-title-stars {
+    width: 1001px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews-container .reviews-comment-container .reviews-comment .reviews-content .reviews-title-stars .reviews-title-data h1 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.reviews-container .reviews-comment-container .reviews-comment .reviews-content .reviews-title-stars .reviews-title-data span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    opacity: 20%;
 }
 
 /* - PRODUCT DETAILS FINISH - */
