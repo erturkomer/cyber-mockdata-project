@@ -55,6 +55,12 @@ const ProductDetailsPage = () => {
   if (!users) {
     return <div>Loading...</div>;
   }
+  const totalVotes = Object.values(product.rating.count).reduce((acc, curr) => acc + curr, 0);
+  const yellowWidth5 = (product.rating.count["5"] / totalVotes) * 664;
+  const yellowWidth4 = (product.rating.count["4"] / totalVotes) * 664;
+  const yellowWidth3 = (product.rating.count["3"] / totalVotes) * 664;
+  const yellowWidth2 = (product.rating.count["2"] / totalVotes) * 664;
+  const yellowWidth1 = (product.rating.count["1"] / totalVotes) * 664;
 
   // Breadcrumbs için hiyerarşi oluştur
   const breadcrumbsHierarchy = [
@@ -195,6 +201,54 @@ const ProductDetailsPage = () => {
                   filledIcon={<FaStar color="#ffc107" />}
                   isHalf={false}
                 />
+              </div>
+
+              <div className="schedule">
+                <div className="level-excellent level">
+                  <p>Excellent</p>
+                  <div className="bar-count-container">
+                    <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
+                      <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth5 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
+                    </div>
+                    <span>{product.rating.count["5"]}</span>
+                  </div>
+                </div>
+                <div className="level-good level">
+                  <p>Good</p>
+                  <div className="bar-count-container">
+                    <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
+                      <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth4 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
+                    </div>
+                    <span>{product.rating.count["4"]}</span>
+                  </div>
+                </div>
+                <div className="level-average level">
+                  <p>Average</p>
+                  <div className="bar-count-container">
+                    <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
+                      <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth3 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
+                    </div>
+                    <span>{product.rating.count["3"]}</span>
+                  </div>
+                </div>
+                <div className="level-below-average level">
+                  <p>Below Average</p>
+                  <div className="bar-count-container">
+                    <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
+                      <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth2 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
+                    </div>
+                    <span>{product.rating.count["2"]}</span>
+                  </div>
+                </div>
+                <div className="level-poor level">
+                  <p>Poor</p>
+                  <div className="bar-count-container">
+                    <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
+                      <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth1 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
+                    </div>
+                    <span>{product.rating.count["1"]}</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

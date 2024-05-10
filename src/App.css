@@ -1264,4 +1264,45 @@ h3 {
     background: #FAFAFA;
 }
 
+.reviews-container .reviews-top .schedule {
+    width: 876px;
+    height: 176px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.reviews-container .reviews-top .schedule .level {
+    width: 100%;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews-container .reviews-top .schedule .level p {
+    width: 150px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.reviews-container .reviews-top .schedule .level .bar-count-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews-container .reviews-top .schedule .level .bar-count-container span {
+    width: 30px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    opacity: 40%;
+    margin: 5px;
+}
+
 /* - PRODUCT DETAILS FINISH - */
