@@ -3,7 +3,7 @@ import React from "react";
 const buyNowButton = () => {
   return (
     <>
-    <div className="buyNowButton">
+    <div className="buyNowButton" style={{textDecoration:"none"}}>
         Buy Now
     </div>
     </>

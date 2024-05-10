@@ -41,9 +41,9 @@ const ProductDetailsPage = () => {
   // Breadcrumbs için hiyerarşi oluştur
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },
-    { name: "Catalog", link: "/catalog" },
+    { name: "Catalog", link: "/catalog/smartphones" },
     { name: "Smartphones", link: "/catalog/smartphones" },
-    { name: brand, link: `/catalog/smartphones/${brand}` },
+    { name: brand, link: `/catalog/smartphones` },
     { name: product.name, link: `/catalog/smartphones/${brand}/${id}` }
   ];
 

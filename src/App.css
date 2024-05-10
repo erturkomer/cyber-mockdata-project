@@ -303,7 +303,6 @@ h3 {
 .product-card img {
     width: 160px;
     height: 160px;
-    cursor: pointer;
 }
 
 .product-card .product-text-button {
@@ -861,8 +860,10 @@ h3 {
     height: 516px;
 }
 
-.main-info .product-image-container .image-4 img:hover {
-    border: 1px solid rgb(196, 196, 196);
+.main-info .product-image-container .image-4 img:nth-child(2):hover,
+.main-info .product-image-container .image-4 img:nth-child(3):hover,
+.main-info .product-image-container .image-4 img:nth-child(4):hover {
+    border: 1px solid rgba(0, 0, 0, 0.455);
     border-radius: 8px;
 }
 
@@ -877,6 +878,13 @@ h3 {
     height: 100px;
     margin: 4px;
     opacity: 60%;
+}
+
+.main-info .product-image-container .image-4 img:active {
+    opacity: 100%;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .main-info .product-image-container .image-4 img:nth-child(1) {
@@ -1061,6 +1069,11 @@ h3 {
     font-weight: 500;
     cursor: pointer;
     line-height: 24px;
+    transition: all 60ms linear;
+}
+
+.add-to-card:hover {
+    transform: scale(1.02);
 }
 
 .main-info .main-info-content .add-to-card-container {
@@ -1191,5 +1204,6 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+
 
 /* - PRODUCT DETAILS FINISH - */
