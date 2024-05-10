@@ -2,6 +2,21 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Breadcrumbs from "../../components/allPageComponents/breadCrumbs";
+import Color from "./Color";
+import TabsMemory from "./TabsMemory";
+import DetailCard from "./DetailCard";
+import DetailCardIcon1 from "./icon/detailCardIcon1.svg";
+import DetailCardIcon2 from "./icon/detailCardIcon2.svg";
+import DetailCardIcon3 from "./icon/detailCardIcon3.svg";
+import DetailCardIcon4 from "./icon/detailCardIcon4.svg";
+import DetailCardIcon5 from "./icon/detailCardIcon5.svg";
+import DetailCardIcon6 from "./icon/detailCardIcon6.svg";
+import AddToCard from "../../components/allPageComponents/AddToCard";
+import CargoIcon1 from "./icon/cargoIcon1.svg"
+import CargoIcon2 from "./icon/cargoIcon2.svg"
+import CargoIcon3 from "./icon/cargoIcon3.svg"
+import Cargo from "./cargo";
+
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -56,7 +71,44 @@ const ProductDetailsPage = () => {
               </svg>
             </div>
           </div>
+          <div className="main-content-info">
+            <div className="select-color-container">
+              <span>Select color: </span>
+              <div className="selects-color">
+                <Color color="#000000" />
+                <Color color="#781DBC" />
+                <Color color="#E10000" />
+                <Color color="#E1B000" />
+                <Color color="#E8E8E8" />
+              </div>
+            </div>
+            <div className="tabs-memory-container">
+              <TabsMemory title="128GB" />
+              <TabsMemory title="256GB" />
+              <TabsMemory title="512GB" />
+              <TabsMemory title="1TB" />
+            </div>
+            <div className="detail-card-container">
+              <DetailCard icon={DetailCardIcon1} title="Screen size" detail={product.screenSize} />
+              <DetailCard icon={DetailCardIcon2} title="CPU" detail={product.cpu} />
+              <DetailCard icon={DetailCardIcon3} title="Number of Cores" detail={product.numberOfCores} />
+              <DetailCard icon={DetailCardIcon4} title="Main camera" detail={product.mainCamera} />
+              <DetailCard icon={DetailCardIcon5} title="Front camera" detail={product.frontCamera} />
+              <DetailCard icon={DetailCardIcon6} title="Battery capacity" detail={product.batteryCapacity} />
+            </div>
+            <p>Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras <span>more...</span></p>
+          </div>
+          <div className="add-to-card-container">
+            <AddToCard color="#000000" background="#FFFFFF" title="Add to Wishlist" />
+            <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" />
+          </div>
+          <div className="cargo-icon-container">
+            <Cargo icon={CargoIcon1} title="Free Delivery" details="1-2 day"/>
+            <Cargo icon={CargoIcon2} title="In Stock" details="Today"/>
+            <Cargo icon={CargoIcon3} title="Guaranteed" details="1 year"/>
+          </div>
         </div>
+
       </div>
     </>
   );
