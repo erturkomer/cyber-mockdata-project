@@ -27,10 +27,8 @@ const ProductDetailsPage = () => {
   const [product, setProduct] = useState(null);
   const [users, setUsers] = useState(null);
   const [brand, setBrand] = useState(null);
+  const [showAll, setShowAll] = useState(false);
 
-  const ratingChanged = (newRating) => {
-    console.log(newRating);
-  };
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_API_URL}products/${id}`)
@@ -257,17 +255,28 @@ const ProductDetailsPage = () => {
               <input type="text" placeholder="Leave Comment" />
             </div>
           </div>
-          <div className="reviews-comment-container">
-            {users.map((user, index) => (
+          <div className="reviews-comment-container" style={{ height: "300px", overflowX: "hidden", overflowY: "auto" }}>
+            {users.slice(0, showAll ? users.length : 3).map((user, index) => (
               <UserComment key={index} title={user.name} history={user.history} rating={user.rate} comment={user.comment} profileImgUrl={user.profileImgUrl} />
             ))}
-            <button className="button-reviews" style={{ gap: "8px", cursor: "pointer", background: "white", width: "208px", height: "48px", borderRadius: "8px", border: "1px solid #545454", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              View More
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 9L12 15L6 9" stroke="black" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-            </button>
+            {!showAll ? (
+              <button className="scroll-down" style={{ gap: "8px", fontWeight: "500", fontSize: "14px", lineHeight: "24px", width: "208px", height: "48px", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", margin: "10px auto", cursor: "pointer", outline: "none", border: "1px solid black", background: "white" }} onClick={() => setShowAll(true)}>
+                View More
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 9L12 15L6 9" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+              </button>
+            ) : (
+              <button className="show-less" style={{ gap: "8px", fontWeight: "500", fontSize: "14px", lineHeight: "24px", width: "208px", height: "48px", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", margin: "10px auto", cursor: "pointer", outline: "none", border: "1px solid black", background: "white" }} onClick={() => setShowAll(false)}>
+                View More
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 15L12 9L6 15" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+              </button>
+            )}
           </div>
+
+
         </div>
       }
       <DiscountProducts />
