@@ -307,6 +307,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: right;
+    margin-bottom: 8px;
+    margin-top: -30px;
 }
 
 .product-card .between-icon-favorites img {

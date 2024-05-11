@@ -58,10 +58,10 @@ const HomeCategories = () => {
       <div className="top-categories">
         <h3>Browse By Category</h3>
         <div className="arrow-button-container">
-          <button className="left-Arrow" onClick={handleScrollLeft}>
+          <button className="left-Arrow" onClick={handleScrollLeft} style={{cursor:"pointer"}}>
             <img src={LeftArrowIcon} alt="Left Arrow" />
           </button>
-          <button className="right-Arrow" onClick={handleScrollRight}>
+          <button className="right-Arrow" style={{cursor:"pointer"}} onClick={handleScrollRight}>
             <img src={RightArrowIcon} alt="Right Arrow" />
           </button>
         </div>
