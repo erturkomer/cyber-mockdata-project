@@ -36,7 +36,7 @@ const Product = (props) => {
     if (!isFavorite) {
       toast.success("Added to favorites", {
         position: "top-right",
-        autoClose: 1750, // 1 saniye sonra otomatik olarak kapanacak
+        autoClose: 1800, // 1 saniye sonra otomatik olarak kapanacak
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: false,
@@ -46,7 +46,7 @@ const Product = (props) => {
     } else {
       toast.error("Removed from favorites!", {
         position: "top-right",
-        autoClose: 1500, // 1 saniye sonra otomatik olarak kapanacak
+        autoClose: 1800, // 1 saniye sonra otomatik olarak kapanacak
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: false,
