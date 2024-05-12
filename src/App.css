@@ -1447,3 +1447,87 @@ h3 {
 }
 
 /* - PRODUCT DETAILS FINISH - */
+
+/* - PRODUCT LİST START - */
+
+.product-list-inclusionary{
+    width: 100%;
+    height: 1560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-list-container{
+    width: 1119px;
+    height: 1480px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-list-filters-container{
+    margin-right: 32px;
+}
+
+.product-list-products-container{
+    width: 831px;
+    height: 1480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-list-list{
+    width: 831px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 1408px;
+}
+
+.left-side-products h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 3%;
+    color: #6C6C6C;
+}
+.left-side-products h3 span{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 3%;
+    color: black;
+}
+
+.product-list-top-part{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    border-bottom: 0.5px solid #B5B5B5;
+}
+
+.accordion-top * {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3%;
+    font-family: 'SF Pro Display';
+}
+
+.accordion {
+    margin: 18px;
+}
+
+/* - PRODUCT LİST FINISH - */
