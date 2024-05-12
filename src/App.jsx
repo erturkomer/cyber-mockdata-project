@@ -20,8 +20,6 @@ function App() {
         <Route path="/featuredproducts" element={<HomePage />} />
         <Route path="/catalog/smartphones/productdetails/:id" element={<ProductDetailsPage />} />
         <Route path="/catalog/smartphones" element={<ProductList />} />
-
-        {/* Tanımlanmamış rotalar için */}
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
