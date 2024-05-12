@@ -22,6 +22,7 @@ const Product = (props) => {
     favorites[productId] = isFavorite;
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [isFavorite, productId]);
+  // Favori değiştiğinde yerel depolama güncelle
 
   const scrollToTop = () => {
     window.scrollTo({

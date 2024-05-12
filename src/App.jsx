@@ -5,6 +5,7 @@ import Header from "../components/allPageComponents/header.jsx";
 import Footer from "../components/allPageComponents/footer/footer.jsx";
 import ProductDetailsPage from '../pages/ProductDetailsPage/ProductDetailsPage.jsx';
 import ProductList from '../pages/ProductPage/ProductList.jsx';
+import NotFound from '../pages/404NOTFOUND/NotFound.jsx';
 import './App.css'
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
         <Route path="/featuredproducts" element={<HomePage />} />
         <Route path="/catalog/smartphones/productdetails/:id" element={<ProductDetailsPage />} />
         <Route path="/catalog/smartphones" element={<ProductList />} />
+
+        {/* Tanımlanmamış rotalar için */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

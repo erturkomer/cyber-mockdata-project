@@ -45,7 +45,7 @@ const ProductDetailsPage = () => {
       })
       .catch(error => {
         console.error('Error users:', error);
-      });
+      }); 
   }, [id]);
 
   if (!product) {
@@ -256,7 +256,7 @@ const ProductDetailsPage = () => {
             </div>
           </div>
           <div className="reviews-comment-container" style={{ height: "300px", overflowX: "hidden", overflowY: "auto" }}>
-            {users.slice(0, showAll ? users.length : 3).map((user, index) => (
+            {users.slice(0, showAll ? product.length : 3).map((user, index) => (
               <UserComment key={index} title={user.name} history={user.history} rating={user.rate} comment={user.comment} profileImgUrl={user.profileImgUrl} />
             ))}
             {!showAll ? (
