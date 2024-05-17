@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import HomePage from "../pages/HomePage/Home.jsx";
 import Header from "../components/allPageComponents/header.jsx";
 import Footer from "../components/allPageComponents/footer/footer.jsx";
@@ -9,8 +8,7 @@ import NotFound from '../pages/404NOTFOUND/NotFound.jsx';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const location = useLocation();
   return (
     <>
       <Header />

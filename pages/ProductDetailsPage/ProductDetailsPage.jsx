@@ -62,12 +62,11 @@ const ProductDetailsPage = () => {
   const yellowWidth2 = (product.rating.count["2"] / totalVotes) * 664;
   const yellowWidth1 = (product.rating.count["1"] / totalVotes) * 664;
 
-  // Breadcrumbs için hiyerarşi oluştur
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },
     { name: "Catalog", link: "/catalog" },
     { name: "Smartphones", link: "/catalog/smartphones" },
-    { name: brand, link: `/catalog/smartphones${brand}` },
+    { name: brand, link: `/catalog/smartphones/${brand}` },
     { name: product.name, link: `/catalog/smartphones/${brand}/${id}` }
   ];
 

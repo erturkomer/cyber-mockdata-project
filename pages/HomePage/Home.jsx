@@ -6,6 +6,7 @@ import MiddleBanner from "./Banners/MiddleBanner.jsx";
 import DiscountedProducts from "./DiscountedProducts.jsx";
 import BottomBigBanner from "./Banners/BottomBigBanner.jsx";
 
+
 const Home = () => {
   return (
     <>

@@ -71,7 +71,7 @@ const Product = (props) => {
         <img src={props.image} alt="Image not found" />
         <div className="product-text-button">
           <div className="product-info">
-            <p>{props.name} {props.storage} {props.color} {props.mainCamera} {props.cpu}</p>
+            <p>{props.name} {props.storage} {props.color} {props.cpu}</p>
             <h2>{props.price}</h2>
           </div>
           <Link style={{ textDecoration: "none" }} to={`/catalog/smartphones/productdetails/${props.id}`} onClick={scrollToTop}>

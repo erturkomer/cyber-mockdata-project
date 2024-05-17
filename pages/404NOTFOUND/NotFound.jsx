@@ -13,7 +13,7 @@ const NotFound = () => {
                     <Link to="/">
                         <button style={{ margin: "5px", background: "gray", color: "white", border: "0", outline: "none", padding: "16px 32px", cursor: "pointer", borderRadius: "16px" }}>GO BACK HOME</button>
                     </Link>
-                    <a target="blank" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlHzsDsvPWlNfWqxJMNKZRwPDBSLhqCQKNthBzhHTsMSdGCrFTPFZSclRDkBnqjgdFzNB"><button style={{ margin: "5px", background: "white", color: "black", border: "0", outline: "none", padding: "16px 32px", cursor: "pointer", borderRadius: "16px" }}>BİZİMLE İLETİŞİME GEÇİN</button></a>
+                    <a target="blank" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlHzsDsvPWlNfWqxJMNKZRwPDBSLhqCQKNthBzhHTsMSdGCrFTPFZSclRDkBnqjgdFzNB"><button style={{ margin: "5px", background: "white", color: "black", border: "0", outline: "none", padding: "16px 32px", cursor: "pointer", borderRadius: "16px" }}>CONTACT US</button></a>
                 </div>
             </div>
         </>

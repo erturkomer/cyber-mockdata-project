@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const footer = () => {
     return (
         <>
-            <footer>
+            <footer style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <div className="footer">
                     <div className="footer-info">
                         <div className="footer-logo-text">
@@ -37,11 +37,13 @@ const footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="footer-social-icons">
-                        <img src={TwitterLogo} alt="logo" />
-                        <img src={FacebookLogo} alt="logo" />
-                        <img src={TikTokLogo} alt="logo" />
-                        <img src={InstagramLogo} alt="logo" />
+                    <div className="footer-wrapper" style={{width:"1120px",alignItems:"center",display:"flex",justifyContent:"left"}}>
+                        <div className="footer-social-icons">
+                            <img src={TwitterLogo} alt="logo" />
+                            <img src={FacebookLogo} alt="logo" />
+                            <img src={TikTokLogo} alt="logo" />
+                            <img src={InstagramLogo} alt="logo" />
+                        </div>
                     </div>
                 </div>
             </footer>
