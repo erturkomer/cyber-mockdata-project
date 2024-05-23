@@ -45,7 +45,7 @@ const ProductDetailsPage = () => {
       })
       .catch(error => {
         console.error('Error users:', error);
-      }); 
+      });
   }, [id]);
 
   if (!product) {
@@ -61,6 +61,19 @@ const ProductDetailsPage = () => {
   const yellowWidth3 = (product.rating.count["3"] / totalVotes) * 664;
   const yellowWidth2 = (product.rating.count["2"] / totalVotes) * 664;
   const yellowWidth1 = (product.rating.count["1"] / totalVotes) * 664;
+
+  const handleAddToCart = () => {
+    axios.post(`${import.meta.env.VITE_API_URL}cart`, {
+      title: product.name,
+      price: product.price,
+      productId: id,
+      quantity: 1
+    }).then((response) => {
+      console.log(response);
+    }).catch((error) => {
+      console.log(error);
+    })
+  }
 
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },
@@ -123,7 +136,7 @@ const ProductDetailsPage = () => {
           </div>
           <div className="add-to-card-container">
             <AddToCard color="#000000" background="#FFFFFF" title="Add to Wishlist" />
-            <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" />
+            <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" onClick={handleAddToCart} />
           </div>
           <div className="cargo-icon-container">
             <Cargo icon={CargoIcon1} title="Free Delivery" details="1-2 day" />

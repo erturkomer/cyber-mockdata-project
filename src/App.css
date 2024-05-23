@@ -1577,3 +1577,39 @@ h3 {
 }
 
 /* - PRODUCT LİST FINISH - */
+
+
+/* - SHOPPİNG CART PAGE START - */
+
+.shopping-cart-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 112px 160px;
+}
+
+.shopping-cart-content{
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-cart-left{
+    width: 536px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-cart-summary{
+    width: 536px;
+    height: 656px;
+    border-radius: 10px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* - SHOPPİNG CART PAGE FINISH - */

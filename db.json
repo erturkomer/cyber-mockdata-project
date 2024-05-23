@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "iPhone 13",
       "price": "999$",
       "categories": [
@@ -23,11 +23,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 100,
-          "4": 11,
-          "3": 3,
+          "1": 1,
           "2": 8,
-          "1": 1
+          "3": 3,
+          "4": 11,
+          "5": 100
         }
       },
       "additionally": [
@@ -41,7 +41,7 @@
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "iPhone 13 Mini",
       "price": "799$",
       "categories": [
@@ -63,11 +63,11 @@
       "rating": {
         "value": 4.7,
         "count": {
-          "5": 80,
-          "4": 15,
-          "3": 4,
+          "1": 1,
           "2": 6,
-          "1": 1
+          "3": 4,
+          "4": 15,
+          "5": 80
         }
       },
       "additionally": [
@@ -81,7 +81,7 @@
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "iPhone 13 Pro",
       "price": "1099$",
       "categories": [
@@ -103,11 +103,11 @@
       "rating": {
         "value": 4.9,
         "count": {
-          "5": 120,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 3,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 120
         }
       },
       "additionally": [
@@ -120,7 +120,7 @@
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "iPhone 12",
       "price": "899$",
       "categories": [
@@ -142,11 +142,11 @@
       "rating": {
         "value": 4.7,
         "count": {
-          "5": 90,
-          "4": 20,
-          "3": 5,
+          "1": 1,
           "2": 3,
-          "1": 1
+          "3": 5,
+          "4": 20,
+          "5": 90
         }
       },
       "additionally": [
@@ -158,7 +158,7 @@
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "iPhone 12 Mini",
       "price": "699$",
       "categories": [
@@ -180,11 +180,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 70,
-          "4": 15,
-          "3": 4,
+          "1": 1,
           "2": 2,
-          "1": 1
+          "3": 4,
+          "4": 15,
+          "5": 70
         }
       },
       "additionally": [
@@ -196,7 +196,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "iPhone 12 Pro",
       "price": "999$",
       "categories": [
@@ -218,11 +218,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 110,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 2,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 110
         }
       },
       "additionally": [
@@ -235,7 +235,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "iPhone 11",
       "price": "699$",
       "categories": [
@@ -257,11 +257,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 85,
-          "4": 15,
-          "3": 5,
+          "1": 1,
           "2": 3,
-          "1": 1
+          "3": 5,
+          "4": 15,
+          "5": 85
         }
       },
       "additionally": [
@@ -272,7 +272,7 @@
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "iPhone SE (2022)",
       "price": "399$",
       "categories": [
@@ -294,11 +294,11 @@
       "rating": {
         "value": 4.5,
         "count": {
-          "5": 60,
-          "4": 20,
-          "3": 8,
+          "1": 3,
           "2": 5,
-          "1": 3
+          "3": 8,
+          "4": 20,
+          "5": 60
         }
       },
       "additionally": [
@@ -310,7 +310,7 @@
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "iPhone XR",
       "price": "499$",
       "categories": [
@@ -332,11 +332,11 @@
       "rating": {
         "value": 4.4,
         "count": {
-          "5": 50,
-          "4": 15,
-          "3": 7,
+          "1": 2,
           "2": 4,
-          "1": 2
+          "3": 7,
+          "4": 15,
+          "5": 50
         }
       },
       "additionally": [
@@ -347,7 +347,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "iPhone X",
       "price": "599$",
       "categories": [
@@ -369,11 +369,11 @@
       "rating": {
         "value": 4.3,
         "count": {
-          "5": 40,
-          "4": 10,
-          "3": 5,
+          "1": 1,
           "2": 2,
-          "1": 1
+          "3": 5,
+          "4": 10,
+          "5": 40
         }
       },
       "additionally": [
@@ -384,7 +384,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "iPhone 8 Plus",
       "price": "499$",
       "categories": [
@@ -406,11 +406,11 @@
       "rating": {
         "value": 4.2,
         "count": {
-          "5": 30,
-          "4": 10,
-          "3": 5,
+          "1": 1,
           "2": 3,
-          "1": 1
+          "3": 5,
+          "4": 10,
+          "5": 30
         }
       },
       "additionally": [
@@ -422,7 +422,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "iPhone SE (2020)",
       "price": "399$",
       "categories": [
@@ -444,11 +444,11 @@
       "rating": {
         "value": 4.1,
         "count": {
-          "5": 20,
-          "4": 5,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 5,
+          "5": 20
         }
       },
       "additionally": [
@@ -460,7 +460,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "iPhone 6s",
       "price": "299$",
       "categories": [
@@ -480,13 +480,13 @@
       "frontCamera": "5 MP",
       "batteryCapacity": "1.715 mAh",
       "rating": {
-        "value": 4.0,
+        "value": 4,
         "count": {
-          "5": 15,
-          "4": 5,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 5,
+          "5": 15
         }
       },
       "additionally": [
@@ -496,7 +496,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "iPhone 6",
       "price": "199$",
       "categories": [
@@ -518,11 +518,11 @@
       "rating": {
         "value": 3.9,
         "count": {
-          "5": 10,
-          "4": 5,
-          "3": 3,
+          "1": 1,
           "2": 2,
-          "1": 1
+          "3": 3,
+          "4": 5,
+          "5": 10
         }
       },
       "additionally": [
@@ -532,7 +532,7 @@
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "iPhone 5s",
       "price": "99$",
       "categories": [
@@ -554,11 +554,11 @@
       "rating": {
         "value": 3.8,
         "count": {
-          "5": 5,
-          "4": 3,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 3,
+          "5": 5
         }
       },
       "additionally": [
@@ -568,7 +568,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "iPhone 5c",
       "price": "99$",
       "categories": [
@@ -590,11 +590,11 @@
       "rating": {
         "value": 3.7,
         "count": {
-          "5": 5,
-          "4": 2,
-          "3": 1,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 1,
+          "4": 2,
+          "5": 5
         }
       },
       "additionally": [
@@ -604,7 +604,7 @@
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "iPhone 11 Pro",
       "price": "999$",
       "categories": [
@@ -626,11 +626,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 120,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 2,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 120
         }
       },
       "additionally": [
@@ -642,7 +642,7 @@
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "iPhone 11 Pro Max",
       "price": "1099$",
       "categories": [
@@ -664,11 +664,11 @@
       "rating": {
         "value": 4.9,
         "count": {
-          "5": 150,
-          "4": 20,
-          "3": 5,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 5,
+          "4": 20,
+          "5": 150
         }
       },
       "additionally": [
@@ -680,7 +680,7 @@
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "iPhone XS",
       "price": "899$",
       "categories": [
@@ -702,11 +702,11 @@
       "rating": {
         "value": 4.7,
         "count": {
-          "5": 110,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 2,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 110
         }
       },
       "additionally": [
@@ -718,7 +718,7 @@
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "iPhone XS Max",
       "price": "999$",
       "categories": [
@@ -740,11 +740,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 120,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 2,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 120
         }
       },
       "additionally": [
@@ -756,7 +756,7 @@
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "iPhone 8",
       "price": "599$",
       "categories": [
@@ -778,11 +778,11 @@
       "rating": {
         "value": 4.2,
         "count": {
-          "5": 30,
-          "4": 10,
-          "3": 5,
+          "1": 1,
           "2": 3,
-          "1": 1
+          "3": 5,
+          "4": 10,
+          "5": 30
         }
       },
       "additionally": [
@@ -794,7 +794,7 @@
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Samsung Galaxy S23 Ultra",
       "price": "1299$",
       "categories": [
@@ -816,11 +816,11 @@
       "rating": {
         "value": 4.9,
         "count": {
-          "5": 150,
-          "4": 20,
-          "3": 5,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 5,
+          "4": 20,
+          "5": 150
         }
       },
       "additionally": [
@@ -832,7 +832,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Samsung Galaxy Z Flip 3",
       "price": "1099$",
       "categories": [
@@ -854,11 +854,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 130,
-          "4": 15,
-          "3": 4,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 4,
+          "4": 15,
+          "5": 130
         }
       },
       "additionally": [
@@ -869,7 +869,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Samsung Galaxy S21 Ultra",
       "price": "1199$",
       "categories": [
@@ -891,11 +891,11 @@
       "rating": {
         "value": 4.9,
         "count": {
-          "5": 150,
-          "4": 20,
-          "3": 5,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 5,
+          "4": 20,
+          "5": 150
         }
       },
       "additionally": [
@@ -907,7 +907,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Samsung Galaxy Note 20 Ultra",
       "price": "1299$",
       "categories": [
@@ -929,11 +929,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 140,
-          "4": 20,
-          "3": 5,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 5,
+          "4": 20,
+          "5": 140
         }
       },
       "additionally": [
@@ -944,7 +944,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Samsung Galaxy S20 FE",
       "price": "699$",
       "categories": [
@@ -966,11 +966,11 @@
       "rating": {
         "value": 4.7,
         "count": {
-          "5": 120,
-          "4": 15,
-          "3": 4,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 4,
+          "4": 15,
+          "5": 120
         }
       },
       "additionally": [
@@ -980,7 +980,7 @@
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Samsung Galaxy A72",
       "price": "499$",
       "categories": [
@@ -1002,11 +1002,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 110,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 110
         }
       },
       "additionally": [
@@ -1016,7 +1016,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Samsung Galaxy A52",
       "price": "399$",
       "categories": [
@@ -1038,11 +1038,11 @@
       "rating": {
         "value": 4.5,
         "count": {
-          "5": 100,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 100
         }
       },
       "additionally": [
@@ -1052,7 +1052,7 @@
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Samsung Galaxy M51",
       "price": "349$",
       "categories": [
@@ -1074,11 +1074,11 @@
       "rating": {
         "value": 4.4,
         "count": {
-          "5": 90,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 90
         }
       },
       "additionally": [
@@ -1088,7 +1088,7 @@
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Samsung Galaxy A32",
       "price": "279$",
       "categories": [
@@ -1110,11 +1110,11 @@
       "rating": {
         "value": 4.3,
         "count": {
-          "5": 80,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 80
         }
       },
       "additionally": [
@@ -1124,7 +1124,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "Samsung Galaxy M31",
       "price": "249$",
       "categories": [
@@ -1146,11 +1146,11 @@
       "rating": {
         "value": 4.2,
         "count": {
-          "5": 70,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 70
         }
       },
       "additionally": [
@@ -1160,7 +1160,7 @@
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "Samsung Galaxy A12",
       "price": "199$",
       "categories": [
@@ -1180,13 +1180,13 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.0,
+        "value": 4,
         "count": {
-          "5": 50,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 50
         }
       },
       "additionally": [
@@ -1196,7 +1196,7 @@
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
-      "id": 33,
+      "id": "33",
       "name": "Samsung Galaxy A02",
       "price": "149$",
       "categories": [
@@ -1218,11 +1218,11 @@
       "rating": {
         "value": 3.8,
         "count": {
-          "5": 40,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 40
         }
       },
       "additionally": [
@@ -1232,7 +1232,7 @@
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
-      "id": 34,
+      "id": "34",
       "name": "Xiaomi Redmi Note 12 Pro Plus",
       "price": "349$",
       "categories": [
@@ -1254,11 +1254,11 @@
       "rating": {
         "value": 4.5,
         "count": {
-          "5": 120,
-          "4": 15,
-          "3": 4,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 4,
+          "4": 15,
+          "5": 120
         }
       },
       "additionally": [
@@ -1268,7 +1268,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 35,
+      "id": "35",
       "name": "Xiaomi Mi 11 Lite",
       "price": "299$",
       "categories": [
@@ -1290,11 +1290,11 @@
       "rating": {
         "value": 4.4,
         "count": {
-          "5": 110,
-          "4": 10,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 10,
+          "5": 110
         }
       },
       "additionally": [
@@ -1304,7 +1304,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 36,
+      "id": "36",
       "name": "Xiaomi Poco X4 Pro",
       "price": "279$",
       "categories": [
@@ -1326,11 +1326,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 130,
-          "4": 12,
-          "3": 4,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 4,
+          "4": 12,
+          "5": 130
         }
       },
       "additionally": [
@@ -1340,7 +1340,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 37,
+      "id": "37",
       "name": "Xiaomi Redmi K40",
       "price": "249$",
       "categories": [
@@ -1362,11 +1362,11 @@
       "rating": {
         "value": 4.4,
         "count": {
-          "5": 120,
-          "4": 10,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 10,
+          "5": 120
         }
       },
       "additionally": [
@@ -1376,7 +1376,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 38,
+      "id": "38",
       "name": "Xiaomi Redmi Note 11",
       "price": "199$",
       "categories": [
@@ -1398,11 +1398,11 @@
       "rating": {
         "value": 4.3,
         "count": {
-          "5": 100,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 100
         }
       },
       "additionally": [
@@ -1412,7 +1412,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 39,
+      "id": "39",
       "name": "Xiaomi Mi 10T Lite",
       "price": "179$",
       "categories": [
@@ -1434,11 +1434,11 @@
       "rating": {
         "value": 4.2,
         "count": {
-          "5": 90,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 90
         }
       },
       "additionally": [
@@ -1448,7 +1448,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 40,
+      "id": "40",
       "name": "Xiaomi Redmi Note 10S",
       "price": "149$",
       "categories": [
@@ -1470,11 +1470,11 @@
       "rating": {
         "value": 4.1,
         "count": {
-          "5": 80,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 80
         }
       },
       "additionally": [
@@ -1484,7 +1484,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 41,
+      "id": "41",
       "name": "Xiaomi Poco M4 Pro",
       "price": "129$",
       "categories": [
@@ -1504,13 +1504,13 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.0,
+        "value": 4,
         "count": {
-          "5": 70,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 70
         }
       },
       "additionally": [
@@ -1520,7 +1520,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 42,
+      "id": "42",
       "name": "Xiaomi Redmi 10",
       "price": "99$",
       "categories": [
@@ -1542,11 +1542,11 @@
       "rating": {
         "value": 3.9,
         "count": {
-          "5": 60,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 60
         }
       },
       "additionally": [
@@ -1556,7 +1556,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 43,
+      "id": "43",
       "name": "Xiaomi Redmi 9C",
       "price": "89$",
       "categories": [
@@ -1578,11 +1578,11 @@
       "rating": {
         "value": 3.8,
         "count": {
-          "5": 50,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 50
         }
       },
       "additionally": [
@@ -1592,7 +1592,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 44,
+      "id": "44",
       "name": "Xiaomi Redmi 9A",
       "price": "79$",
       "categories": [
@@ -1614,11 +1614,11 @@
       "rating": {
         "value": 3.7,
         "count": {
-          "5": 40,
-          "4": 10,
-          "3": 2,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 2,
+          "4": 10,
+          "5": 40
         }
       },
       "additionally": [
@@ -1628,7 +1628,7 @@
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
-      "id": 45,
+      "id": "45",
       "name": "Poco X6 Pro 5G",
       "price": "399$",
       "categories": [
@@ -1650,11 +1650,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 140,
-          "4": 20,
-          "3": 4,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 4,
+          "4": 20,
+          "5": 140
         }
       },
       "additionally": [
@@ -1664,7 +1664,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 46,
+      "id": "46",
       "name": "Poco F4",
       "price": "349$",
       "categories": [
@@ -1686,11 +1686,11 @@
       "rating": {
         "value": 4.5,
         "count": {
-          "5": 130,
-          "4": 18,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 18,
+          "5": 130
         }
       },
       "additionally": [
@@ -1700,7 +1700,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 47,
+      "id": "47",
       "name": "Poco X5",
       "price": "299$",
       "categories": [
@@ -1722,11 +1722,11 @@
       "rating": {
         "value": 4.4,
         "count": {
-          "5": 120,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 120
         }
       },
       "additionally": [
@@ -1736,7 +1736,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 48,
+      "id": "48",
       "name": "Poco M3 Pro",
       "price": "229$",
       "categories": [
@@ -1758,11 +1758,11 @@
       "rating": {
         "value": 4.3,
         "count": {
-          "5": 110,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 110
         }
       },
       "additionally": [
@@ -1772,7 +1772,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 49,
+      "id": "49",
       "name": "Poco C4",
       "price": "169$",
       "categories": [
@@ -1794,11 +1794,11 @@
       "rating": {
         "value": 4.2,
         "count": {
-          "5": 100,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 100
         }
       },
       "additionally": [
@@ -1808,7 +1808,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 50,
+      "id": "50",
       "name": "Poco X4",
       "price": "299$",
       "categories": [
@@ -1830,11 +1830,11 @@
       "rating": {
         "value": 4.4,
         "count": {
-          "5": 120,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 120
         }
       },
       "additionally": [
@@ -1844,7 +1844,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 51,
+      "id": "51",
       "name": "Poco F3 GT",
       "price": "329$",
       "categories": [
@@ -1866,11 +1866,11 @@
       "rating": {
         "value": 4.5,
         "count": {
-          "5": 130,
-          "4": 18,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 18,
+          "5": 130
         }
       },
       "additionally": [
@@ -1880,7 +1880,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 52,
+      "id": "52",
       "name": "Poco M3",
       "price": "179$",
       "categories": [
@@ -1902,11 +1902,11 @@
       "rating": {
         "value": 4.3,
         "count": {
-          "5": 110,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 110
         }
       },
       "additionally": [
@@ -1916,7 +1916,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 53,
+      "id": "53",
       "name": "Poco C3",
       "price": "149$",
       "categories": [
@@ -1938,11 +1938,11 @@
       "rating": {
         "value": 4.2,
         "count": {
-          "5": 100,
-          "4": 15,
-          "3": 3,
+          "1": 0,
           "2": 1,
-          "1": 0
+          "3": 3,
+          "4": 15,
+          "5": 100
         }
       },
       "additionally": [
@@ -1952,7 +1952,7 @@
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
-      "id": 54,
+      "id": "54",
       "name": "Realme GT 2 Pro",
       "price": "499$",
       "categories": [
@@ -1974,11 +1974,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 180,
-          "4": 20,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 20,
+          "5": 180
         }
       },
       "additionally": [
@@ -1989,7 +1989,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 55,
+      "id": "55",
       "name": "Realme 9 Pro",
       "price": "349$",
       "categories": [
@@ -2011,11 +2011,11 @@
       "rating": {
         "value": 4.7,
         "count": {
-          "5": 170,
-          "4": 25,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 25,
+          "5": 170
         }
       },
       "additionally": [
@@ -2025,7 +2025,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 56,
+      "id": "56",
       "name": "Realme 8 Pro",
       "price": "299$",
       "categories": [
@@ -2047,11 +2047,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 160,
-          "4": 20,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 20,
+          "5": 160
         }
       },
       "additionally": [
@@ -2061,7 +2061,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 57,
+      "id": "57",
       "name": "Realme GT Neo 3",
       "price": "429$",
       "categories": [
@@ -2083,11 +2083,11 @@
       "rating": {
         "value": 4.9,
         "count": {
-          "5": 190,
-          "4": 20,
-          "3": 1,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 1,
+          "4": 20,
+          "5": 190
         }
       },
       "additionally": [
@@ -2098,7 +2098,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 58,
+      "id": "58",
       "name": "Realme GT 2",
       "price": "379$",
       "categories": [
@@ -2120,11 +2120,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 180,
-          "4": 20,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 20,
+          "5": 180
         }
       },
       "additionally": [
@@ -2135,7 +2135,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 59,
+      "id": "59",
       "name": "Realme X9 Pro",
       "price": "449$",
       "categories": [
@@ -2157,11 +2157,11 @@
       "rating": {
         "value": 4.8,
         "count": {
-          "5": 180,
-          "4": 20,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 20,
+          "5": 180
         }
       },
       "additionally": [
@@ -2172,7 +2172,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 60,
+      "id": "60",
       "name": "Realme 9i",
       "price": "269$",
       "categories": [
@@ -2194,11 +2194,11 @@
       "rating": {
         "value": 4.7,
         "count": {
-          "5": 170,
-          "4": 25,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 25,
+          "5": 170
         }
       },
       "additionally": [
@@ -2208,7 +2208,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 61,
+      "id": "61",
       "name": "Realme 8 5G",
       "price": "229$",
       "categories": [
@@ -2230,11 +2230,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 160,
-          "4": 20,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 20,
+          "5": 160
         }
       },
       "additionally": [
@@ -2244,7 +2244,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 62,
+      "id": "62",
       "name": "Realme Q3 Pro",
       "price": "279$",
       "categories": [
@@ -2266,11 +2266,11 @@
       "rating": {
         "value": 4.7,
         "count": {
-          "5": 170,
-          "4": 25,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 25,
+          "5": 170
         }
       },
       "additionally": [
@@ -2280,7 +2280,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
-      "id": 63,
+      "id": "63",
       "name": "Realme GT Neo 2",
       "price": "389$",
       "categories": [
@@ -2302,11 +2302,11 @@
       "rating": {
         "value": 4.6,
         "count": {
-          "5": 160,
-          "4": 20,
-          "3": 2,
+          "1": 0,
           "2": 0,
-          "1": 0
+          "3": 2,
+          "4": 20,
+          "5": 160
         }
       },
       "additionally": [
@@ -2316,6 +2316,7 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     }
   ],
+  "cart": [],
   "users": [
     {
       "id": "1",
