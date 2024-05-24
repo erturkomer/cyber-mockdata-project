@@ -2316,7 +2316,104 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "7d09",
+      "title": "iPhone 13",
+      "brand": "Apple",
+      "storage": "128GB",
+      "color": "Mavi",
+      "screenSize": "6.1\"",
+      "price": "999$",
+      "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productId": "1",
+      "quantity": 3
+    },
+    {
+      "id": "bb62",
+      "title": "iPhone 13 Pro",
+      "brand": "Apple",
+      "storage": "256GB",
+      "color": "Altın",
+      "screenSize": "6.1\"",
+      "price": "1099$",
+      "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productId": "3",
+      "quantity": 1
+    },
+    {
+      "id": "7683",
+      "title": "iPhone 12",
+      "brand": "Apple",
+      "storage": "128GB",
+      "color": "Siyah",
+      "screenSize": "6.1\"",
+      "price": "899$",
+      "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productId": "4",
+      "quantity": 1
+    },
+    {
+      "id": "5e5d",
+      "title": "iPhone 12 Mini",
+      "brand": "Apple",
+      "storage": "64GB",
+      "color": "Beyaz",
+      "screenSize": "5.4\"",
+      "price": "699$",
+      "productImg": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productId": "5",
+      "quantity": 1
+    },
+    {
+      "id": "4214",
+      "title": "iPhone 12 Pro",
+      "brand": "Apple",
+      "storage": "256GB",
+      "color": "Altın",
+      "screenSize": "6.1\"",
+      "price": "999$",
+      "productImg": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productId": "6",
+      "quantity": 1
+    },
+    {
+      "id": "0902",
+      "title": "Realme 9 Pro",
+      "brand": "Realme",
+      "storage": "128GB",
+      "color": "Gri",
+      "screenSize": "6.6\"",
+      "price": "349$",
+      "productImg": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productId": "55",
+      "quantity": 1
+    },
+    {
+      "id": "1b49",
+      "title": "Poco X5",
+      "brand": "Poco",
+      "storage": "128GB",
+      "color": "Mavi",
+      "screenSize": "6.55\"",
+      "price": "299$",
+      "productImg": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productId": "47",
+      "quantity": 3
+    },
+    {
+      "id": "804f",
+      "title": "Xiaomi Poco M4 Pro",
+      "brand": "Xiaomi",
+      "storage": "64GB",
+      "color": "Siyah",
+      "screenSize": "6.6\"",
+      "price": "129$",
+      "productImg": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productId": "41",
+      "quantity": 2
+    }
+  ],
   "users": [
     {
       "id": "1",

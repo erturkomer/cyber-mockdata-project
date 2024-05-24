@@ -9,20 +9,17 @@ import { Link } from "react-router-dom";
 const Product = (props) => {
   const productId = props.id; 
 
-  // Favorilere eklendi durumu için yerel depolama
   const [isFavorite, setIsFavorite] = useState(() => {
     const storedFavorites = localStorage.getItem("favorites");
     return storedFavorites ? JSON.parse(storedFavorites)[productId] || false : false;
   });
 
-  // Favori değiştiğinde yerel depolama güncelle
   useEffect(() => {
     const storedFavorites = localStorage.getItem("favorites");
     const favorites = storedFavorites ? JSON.parse(storedFavorites) : {};
     favorites[productId] = isFavorite;
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [isFavorite, productId]);
-  // Favori değiştiğinde yerel depolama güncelle
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -32,12 +29,12 @@ const Product = (props) => {
   };
 
   const handleFavoriteClick = () => {
-    setIsFavorite(!isFavorite); // Favorilere eklendi durumunu tersine çevir
+    setIsFavorite(!isFavorite);
 
     if (!isFavorite) {
       toast.success("Added to favorites", {
         position: "top-right",
-        autoClose: 1800, // 1 saniye sonra otomatik olarak kapanacak
+        autoClose: 1800,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: false,
@@ -47,7 +44,7 @@ const Product = (props) => {
     } else {
       toast.error("Removed from favorites!", {
         position: "top-right",
-        autoClose: 1800, // 1 saniye sonra otomatik olarak kapanacak
+        autoClose: 1800,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: false,
@@ -61,7 +58,6 @@ const Product = (props) => {
     <>
       <div className="product-card">
         <div className="between-icon-favorites">
-          {/* Favorilere ekleme işlevselliği */}
           {isFavorite ? (
             <img src={FavoriteIconFilled} alt="Favorite" onClick={handleFavoriteClick} />
           ) : (
@@ -71,7 +67,7 @@ const Product = (props) => {
         <img src={props.image} alt="Image not found" />
         <div className="product-text-button">
           <div className="product-info">
-            <p>{props.name} {props.storage} {props.color} {props.cpu}</p>
+            <p>{props.brand} {props.name} {props.storage} {props.color}</p>
             <h2>{props.price}</h2>
           </div>
           <Link style={{ textDecoration: "none" }} to={`/catalog/smartphones/productdetails/${props.id}`} onClick={scrollToTop}>

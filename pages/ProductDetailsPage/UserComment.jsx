@@ -3,6 +3,8 @@ import { FaStar } from "react-icons/fa";
 import Rating from "react-rating-stars-component";
 
 const UserComment = (props) => {
+    const numericRating = parseFloat(props.rating);
+
     return (
         <>
             <div className="reviews-comment">
@@ -16,7 +18,7 @@ const UserComment = (props) => {
                         <Rating
                             count={5}
                             size={24}
-                            value={props.rating}
+                            value={numericRating} // rating prop'unu sayı olarak iletiyoruz
                             edit={false}
                             emptyIcon={<FaStar color="#ccc" />}
                             filledIcon={<FaStar color="#ffc107" />}

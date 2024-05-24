@@ -21,6 +21,8 @@ import { FaStar } from "react-icons/fa";
 import Rating from "react-rating-stars-component";
 import UserComment from "./UserComment.jsx";
 import DiscountProducts from "./DiscountProducts.jsx";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -63,17 +65,56 @@ const ProductDetailsPage = () => {
   const yellowWidth1 = (product.rating.count["1"] / totalVotes) * 664;
 
   const handleAddToCart = () => {
-    axios.post(`${import.meta.env.VITE_API_URL}cart`, {
-      title: product.name,
-      price: product.price,
-      productId: id,
-      quantity: 1
-    }).then((response) => {
-      console.log(response);
-    }).catch((error) => {
-      console.log(error);
-    })
+    axios.get(`${import.meta.env.VITE_API_URL}cart`)
+      .then((response) => {
+        console.log(response);
+
+        if (Array.isArray(response.data)) {
+          const cartItem = response.data.find((cartItem) => {
+            return cartItem.productId === id;
+          });
+
+          console.log(cartItem);
+
+          if (cartItem) {
+            axios.patch(`${import.meta.env.VITE_API_URL}cart/${cartItem.id}`, {
+              quantity: cartItem.quantity + 1
+            }).then(() => {
+              // Ürün güncellendiğinde başarı tost mesajı göster
+              toast.success(`${product.name} added to cart.`, {
+                position: "bottom-left",
+                autoClose: 1500,
+              });
+            }).catch(() => {
+              toast.error("An error occurred while updating the cart.");
+            });
+          } else {
+            axios.post(`${import.meta.env.VITE_API_URL}cart`, {
+              title: product.name,
+              brand: product.brand,
+              storage: product.storage,
+              color: product.color,
+              screenSize: product.screenSize,
+              price: product.price,
+              productImg: product.productImage,
+              productId: id,
+              quantity: 1
+            }).then(() => {
+              // Ürün eklendiğinde başarı tost mesajı göster
+              toast.success(`${product.name} added to cart`, {
+                position: "bottom-left",
+                autoClose: 1500,
+              });
+            }).catch(() => {
+              toast.error("An error occurred while adding the product to cart.");
+            });
+          }
+        }
+      }).catch(() => {
+        toast.error("An error occurred while adding the product to cart.");
+      });
   }
+
 
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },

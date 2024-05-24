@@ -20,6 +20,7 @@ function App() {
         <Route path="/catalog/smartphones/productdetails/:id" element={<ProductDetailsPage />} />
         <Route path="/catalog/smartphones" element={<ProductList />} />
         <Route path="/shoppingcart" element={<ShoppingCartPage />} />
+        <Route path="/payments/step-1" element={<ShoppingCartPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
