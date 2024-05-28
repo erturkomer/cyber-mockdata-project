@@ -6,6 +6,7 @@ import Product from '../../components/allPageComponents/products/product';
 import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const ProductList = () => {
   const [originalProducts, setOriginalProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);

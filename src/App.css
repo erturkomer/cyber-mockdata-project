@@ -1733,7 +1733,7 @@ h3 {
     letter-spacing: 0.5%;
 }
 
-.summary-field button {
+.summary-field-label-2 button {
     width: 76.45px;
     height: 32px;
     border-radius: 6px;
@@ -1746,6 +1746,21 @@ h3 {
     position: absolute;
     right: 85px;
     top: 261.1px;
+}
+
+.summary-field-label-1 button {
+    width: 76.45px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 26px;
+    color: #000;
+    background: #FFFFFF;
+    position: absolute;
+    right: 85px;
+    top: 147px;
 }
 
 .summary-prices {
@@ -1767,7 +1782,7 @@ h3 {
     color: #000;
 }
 
-.checkout-btn{
+.checkout-btn {
     width: 408px;
     height: 56px;
     border-radius: 6px;
@@ -1780,3 +1795,45 @@ h3 {
 }
 
 /* - SHOPPİNG CART PAGE FINISH - */
+
+
+
+/* - PAYMENT PAGES START - */
+
+.payments-steps {
+    width: 100%;
+    padding: 72px 160px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.steps{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-text{
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+}
+
+.step-text span:nth-child(1) {
+    color: #B2B2B2;
+    letter-spacing: 3%;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.step-text span:nth-child(2) {
+    letter-spacing: 3%;
+    line-height: 24px;
+    font-size: 19px;
+}
+
+/* - PAYMENT PAGES FINISH - */
