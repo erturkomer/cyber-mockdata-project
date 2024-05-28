@@ -13,7 +13,7 @@ import PaymentSteps from '../components/allPageComponents/PaymentSteps.jsx';
 import './App.css'
 
 function App() {
-  const isHomePage = location.pathname === "/";
+  const location = useLocation();
   return (
     <>
       <Header />

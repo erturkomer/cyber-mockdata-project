@@ -1806,7 +1806,7 @@ h3 {
     background: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .steps{
@@ -1835,5 +1835,107 @@ h3 {
     line-height: 24px;
     font-size: 19px;
 }
+
+.step-address-content{
+    width: 100%;
+    padding: 48px 160px;
+}
+
+.address-card {
+    width: 100%;
+    padding: 24px;
+    border-radius: 7px;
+    background: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-card-content {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address-card-content-top {
+    display: flex;
+    gap: 16px;
+}
+
+.address-radio {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.address-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.address-radio .custom-radio {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.address-radio input[type="radio"]:checked + .custom-radio {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.address-radio .custom-radio::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.address-radio input[type="radio"]:checked + .custom-radio::after {
+    display: block;
+}
+
+.address-tag {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #000;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.address-card-info {
+    padding: 0 0 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-card-actions {
+    width: 72px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address-card-actions img {
+    cursor: pointer;
+}
+
 
 /* - PAYMENT PAGES FINISH - */
