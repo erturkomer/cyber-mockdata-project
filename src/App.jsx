@@ -12,6 +12,9 @@ import PaymentStep1Page from '../pages/Payments/PaymentStep1Page/PaymentStep1.js
 import PaymentStep2Page from '../pages/Payments/PaymentStep2Page/PaymentStep2.jsx';
 import PaymentStep3Page from '../pages/Payments/PaymentStep3Page/PaymentStep3.jsx';
 import PaymentSteps from '../components/allPageComponents/PaymentSteps.jsx';
+import Register from '../register-login/Register.jsx';
+import Login from '../register-login/Login.jsx';
+import UserDetail from '../pages/UserDetail/UserDetail.jsx';
 import './App.css';
 
 const ScrollToTop = () => {
@@ -31,7 +34,13 @@ function App() {
 
   return (
     <>
-      <Header />
+      {
+        (location.pathname != "/signup" &&
+          location.pathname != "/login" ?
+          <Header />
+          : ""
+        )
+      }
       {
         (location.pathname === "/payments/step-1" ||
           location.pathname === "/payments/step-2" ||
@@ -50,10 +59,18 @@ function App() {
         <Route path="/payments/step-1" element={<PaymentStep1Page />} />
         <Route path="/payments/step-2" element={<PaymentStep2Page />} />
         <Route path="/payments/step-3" element={<PaymentStep3Page />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Register />} />
+        <Route path="/userDetail" element={<UserDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
-    </>
+      {
+        (location.pathname != "/signup" &&
+          location.pathname != "/login" ?
+          <Footer />
+          : ""
+        )
+      }    </>
   )
 }
 

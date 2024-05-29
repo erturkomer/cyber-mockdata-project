@@ -3,12 +3,13 @@ import Logo from "./jsxSvg/logo.jsx";
 import FavoriteIcon from "./jsxSvg/favorites.svg";
 import CartIcon from "./jsxSvg/cart";
 import UserIcon from "./jsxSvg/user";
-import SearchBox from "../searchBox.jsx"
+import SearchBox from "../searchBox.jsx";
+import { Link, useLocation } from "react-router-dom";
 
-import { Link, useLocation } from 'react-router-dom';
-
-const header = () => {
+const Header = () => {
     const location = useLocation();
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
     return (
         <header>
             <div className="header-container">
@@ -20,14 +21,14 @@ const header = () => {
                 <SearchBox />
                 <div className="pages-link">
                     <ul>
-                    <li className={location.pathname === "/" ? "active" : ""}>
-                            <Link to="/">Home</Link>
+                        <li className={location.pathname === "/" ? "active" : ""}>
+                            <Link to="/">Home</Link>{" "}
                         </li>
                         <li className={location.pathname === "/about" ? "active" : ""}>
                             <Link to="/about">About</Link>
                         </li>
                         <li className={location.pathname === "/contact" ? "active" : ""}>
-                            <Link to="/contact">Contact Us</Link>
+                            <Link to="/contact">Contact Us</Link>{" "}
                         </li>
                         <li className={location.pathname === "/blog" ? "active" : ""}>
                             <Link to="/blog">Blog</Link>
@@ -35,13 +36,14 @@ const header = () => {
                     </ul>
                 </div>
                 <div className="header-icons">
-                    <img src={FavoriteIcon} alt="icon bulunamadi" />
-                    <CartIcon />
-                    <UserIcon />
+                    <img src={FavoriteIcon} alt="icon bulunamadi" /> <CartIcon />{" "}
+                    <Link to={isLoggedIn ? "/userDetail" : "/login"}>
+                        <UserIcon />
+                    </Link>{" "}
                 </div>
             </div>
         </header>
-    )
+    );
 };
 
-export default header;
+export default Header;
