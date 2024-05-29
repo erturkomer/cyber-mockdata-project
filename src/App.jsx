@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import HomePage from "../pages/HomePage/Home.jsx";
 import Header from "../components/allPageComponents/header.jsx";
 import Footer from "../components/allPageComponents/footer/footer.jsx";
@@ -10,10 +12,23 @@ import PaymentStep1Page from '../pages/Payments/PaymentStep1Page/PaymentStep1.js
 import PaymentStep2Page from '../pages/Payments/PaymentStep2Page/PaymentStep2.jsx';
 import PaymentStep3Page from '../pages/Payments/PaymentStep3Page/PaymentStep3.jsx';
 import PaymentSteps from '../components/allPageComponents/PaymentSteps.jsx';
-import './App.css'
+import './App.css';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0, behavior: "instant"
+    });
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
   const location = useLocation();
+
   return (
     <>
       <Header />
@@ -24,6 +39,7 @@ function App() {
           <PaymentSteps /> :
           ""
       }
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/bestseller" element={<HomePage />} />
@@ -41,4 +57,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

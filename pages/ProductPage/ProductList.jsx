@@ -15,7 +15,6 @@ const ProductList = () => {
 
   useEffect(() => {
     fetchData();
-    window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
 
   const fetchData = async () => {

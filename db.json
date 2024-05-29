@@ -2399,7 +2399,7 @@
       "price": "999$",
       "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
       "productId": "1",
-      "quantity": 6
+      "quantity": 7
     },
     {
       "id": "b27a",
@@ -2450,20 +2450,35 @@
       "quantity": 1
     },
     {
-      "id": "fc79",
-      "title": "iPhone 12 Mini",
-      "brand": "Apple",
-      "storage": "64GB",
-      "color": "Beyaz",
-      "screenSize": "5.4\"",
-      "price": "699$",
-      "productImg": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
-      "productId": "5",
-      "quantity": 1
+      "id": "8db8",
+      "title": "Realme 9 Pro",
+      "brand": "Realme",
+      "storage": "128GB",
+      "color": "Gri",
+      "screenSize": "6.6\"",
+      "price": "349$",
+      "productImg": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productId": "55",
+      "quantity": 4
     }
   ],
-  "address":[
-    
+  "address": [
+    {
+      "id": "994b",
+      "address": "2118 Thornridge",
+      "tag": "HOME",
+      "addressLine1": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
+      "addressLine2": "",
+      "phoneNumber": "(209) 555-0104"
+    },
+    {
+      "id": "1a4f",
+      "address": "Headoffice",
+      "tag": "OFFICE",
+      "addressLine1": "2715 Ash Dr. San Jose, South Dakota 83475",
+      "addressLine2": "",
+      "phoneNumber": "(704) 555-0127"
+    }
   ],
   "users": [
     {

@@ -80,7 +80,6 @@ const ProductDetailsPage = () => {
             axios.patch(`${import.meta.env.VITE_API_URL}cart/${cartItem.id}`, {
               quantity: cartItem.quantity + 1
             }).then(() => {
-              // Ürün güncellendiğinde başarı tost mesajı göster
               toast.success(`${product.name} added to cart.`, {
                 position: "bottom-left",
                 autoClose: 1500,

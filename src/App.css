@@ -1879,7 +1879,7 @@ h3 {
 .address-radio .custom-radio {
     width: 24px;
     height: 24px;
-    background-color: #fff;
+    background-color: #f6f6f6;
     border: 2px solid #000;
     border-radius: 50%;
     display: inline-block;
@@ -1889,7 +1889,7 @@ h3 {
 
 
 .address-radio input[type="radio"]:checked + .custom-radio {
-    background-color: #fff;
+    background-color: #f6f6f6;
     border-color: #000;
 }
 
@@ -1937,5 +1937,12 @@ h3 {
     cursor: pointer;
 }
 
+.modal-form input{
+    height: 30px;
+    border-radius: 6px;
+    padding: 20px;
+    padding-left: 20px;
+    border-color: #000;
+}
 
 /* - PAYMENT PAGES FINISH - */
