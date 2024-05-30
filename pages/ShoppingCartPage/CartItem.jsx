@@ -4,10 +4,10 @@ import Edit from "./icon/edit.svg";
 import NoEdit from "./icon/no-edit.svg";
 
 const CartItem = ({ cartItem, onRemove }) => {
-    const { id, title, brand, storage, price, quantity, color, screenSize, productImg } = cartItem;
+    const { productId, title, brand, storage, price, quantity, color, screenSize, productImg } = cartItem;
 
     const handleRemoveClick = () => {
-        onRemove(id);
+        onRemove(productId);
     };
 
     return (
@@ -19,7 +19,7 @@ const CartItem = ({ cartItem, onRemove }) => {
                 <div className="cart-item-content">
                     <div className="cart-item-info">
                         <h5 style={{ fontWeight: "500", fontSize: "16px", lineHeight: "24px", color: "#000" }}>{brand} {title} {storage} {color} {screenSize}</h5>
-                        <span style={{ fontWeight: "400", fontSize: "14px", lineHeight: "24px", color: "#000" }}>#{id}</span>
+                        <span style={{ fontWeight: "400", fontSize: "14px", lineHeight: "24px", color: "#000" }}>#{productId}515122</span>
                     </div>
                     <div className="cart-item-right-side">
                         <div className="cart-counter">

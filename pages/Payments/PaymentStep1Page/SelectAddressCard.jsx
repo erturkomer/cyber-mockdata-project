@@ -3,6 +3,10 @@ import EditIcon from "./icons/edit.svg";
 import DeleteIcon from "./icons/delete.svg";
 
 const SelectAddressCard = ({ id, addressData, deleteAddress, editAddress, handleAddressSelect, selectedAddressId }) => {
+    const handleEditClick = () => {
+        editAddress(id);
+    };
+
     return (
         <>
             <div className="address-card">
@@ -28,7 +32,7 @@ const SelectAddressCard = ({ id, addressData, deleteAddress, editAddress, handle
                     </div>
                 </div>
                 <div className="address-card-actions">
-                    <img src={EditIcon} alt="Edit" onClick={() => editAddress(id)} style={{ cursor: "pointer" }} />
+                    <img src={EditIcon} alt="Edit" onClick={handleEditClick} style={{ cursor: "pointer" }} /> {/* EditIcon'a onClick olayını ekledik */}
                     <img src={DeleteIcon} alt="Delete" onClick={() => deleteAddress(id)} style={{ cursor: "pointer" }} />
                 </div>
             </div>

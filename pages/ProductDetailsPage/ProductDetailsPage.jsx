@@ -30,6 +30,7 @@ const ProductDetailsPage = () => {
   const [users, setUsers] = useState(null);
   const [brand, setBrand] = useState(null);
   const [showAll, setShowAll] = useState(false);
+  const userDetails = JSON.parse(localStorage.getItem('userDetails'));
 
 
   useEffect(() => {
@@ -65,54 +66,50 @@ const ProductDetailsPage = () => {
   const yellowWidth1 = (product.rating.count["1"] / totalVotes) * 664;
 
   const handleAddToCart = () => {
-    axios.get(`${import.meta.env.VITE_API_URL}cart`)
+    const userId = userDetails.id;
+  
+    axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`)
       .then((response) => {
-        console.log(response);
-
-        if (Array.isArray(response.data)) {
-          const cartItem = response.data.find((cartItem) => {
-            return cartItem.productId === id;
-          });
-
-          console.log(cartItem);
-
-          if (cartItem) {
-            axios.patch(`${import.meta.env.VITE_API_URL}cart/${cartItem.id}`, {
-              quantity: cartItem.quantity + 1
-            }).then(() => {
-              toast.success(`${product.name} added to cart.`, {
-                position: "bottom-left",
-                autoClose: 1500,
-              });
-            }).catch(() => {
-              toast.error("An error occurred while updating the cart.");
-            });
-          } else {
-            axios.post(`${import.meta.env.VITE_API_URL}cart`, {
-              title: product.name,
-              brand: product.brand,
-              storage: product.storage,
-              color: product.color,
-              screenSize: product.screenSize,
-              price: product.price,
-              productImg: product.productImage,
-              productId: id,
-              quantity: 1
-            }).then(() => {
-              // Ürün eklendiğinde başarı tost mesajı göster
-              toast.success(`${product.name} added to cart`, {
-                position: "bottom-left",
-                autoClose: 1500,
-              });
-            }).catch(() => {
-              toast.error("An error occurred while adding the product to cart.");
-            });
-          }
+        const user = response.data;
+  
+        if (!user.cart) {
+          user.cart = [];
         }
-      }).catch(() => {
-        toast.error("An error occurred while adding the product to cart.");
+  
+        const cartItem = user.cart.find((item) => item.productId === id);
+  
+        if (cartItem) {
+          cartItem.quantity += 1;
+        } else {
+          user.cart.push({
+            title: product.name,
+            brand: product.brand,
+            storage: product.storage,
+            color: product.color,
+            screenSize: product.screenSize,
+            price: product.price,
+            productImg: product.productImage,
+            productId: id,
+            quantity: 1,
+          });
+        }
+  
+        axios.patch(`${import.meta.env.VITE_API_URL}users/${userId}`, { cart: user.cart })
+          .then(() => {
+            toast.success(`${product.name} added to cart.`, {
+              position: "bottom-left",
+              autoClose: 1500,
+            });
+          })
+          .catch(() => {
+            toast.error("An error occurred while updating the cart.");
+          });
+      })
+      .catch(() => {
+        toast.error("An error occurred while fetching user data.");
       });
-  }
+  };
+
 
 
   const breadcrumbsHierarchy = [

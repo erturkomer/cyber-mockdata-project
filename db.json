@@ -2316,20 +2316,6 @@
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     }
   ],
-  "cart": [
-    {
-      "id": "b2d5",
-      "title": "iPhone 13",
-      "brand": "Apple",
-      "storage": "128GB",
-      "color": "Mavi",
-      "screenSize": "6.1\"",
-      "price": "999$",
-      "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
-      "productId": "1",
-      "quantity": 10
-    }
-  ],
   "address": [
     {
       "id": "994b",
@@ -2350,21 +2336,14 @@
   ],
   "users": [
     {
-      "id": "2388",
+      "id": "a860",
       "email": "erturkomer256@gmail.com",
       "fullName": "Ömer Ertürk",
       "userName": "erturkomerw",
       "password": "123",
-      "address": [],
-      "avatarUrl": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg"
-    },
-    {
-      "id": "650f",
-      "email": "erturkomer257@gmail.com",
-      "fullName": "Ömer Ersoy",
-      "userName": "erturkomer",
-      "password": "123",
-      "avatarUrl": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg"
+      "avatarUrl": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+      "registeredAddresses": [],
+      "cart": []
     }
   ]
 }

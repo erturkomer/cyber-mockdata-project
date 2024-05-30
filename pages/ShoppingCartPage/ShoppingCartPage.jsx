@@ -9,20 +9,31 @@ const ShoppingCartPage = () => {
     const [cart, setCart] = useState([]);
     const [cardNumber, setCardNumber] = useState("");
     const [couponCode, setCouponCode] = useState("");
-    const [appliedCouponCode, setAppliedCouponCode] = useState(""); // New state for applied coupon code
-    const [isCouponApplied, setIsCouponApplied] = useState(false); // State to disable coupon input
+    const [appliedCouponCode, setAppliedCouponCode] = useState("");
+    const [isCouponApplied, setIsCouponApplied] = useState(false);
     const navigate = useNavigate();
+    const userDetails = JSON.parse(localStorage.getItem('userDetails'));
 
     useEffect(() => {
-        axios.get(`${import.meta.env.VITE_API_URL}cart`)
-            .then(response => setCart(response.data))
+        axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
+            .then((response) => {
+                const cartRes = response.data.cart || []
+                setCart(cartRes)})
             .catch(error => console.error('Error fetching cart:', error));
     }, []);
 
-    const handleRemoveFromCart = (id) => {
-        axios.delete(`${import.meta.env.VITE_API_URL}cart/${id}`)
-            .then(() => setCart(cart.filter(item => item.id !== id)))
-            .catch(error => console.error('Error deleting item from cart:', error));
+    const handleRemoveFromCart = (productId) => {
+        axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
+            .then((res) => {
+                const userCart = res.data.cart || [];
+                const updatedCart = userCart.filter(item => item.productId !== productId);
+                axios.put(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`, { ...res.data,cart: updatedCart })
+                    .then(() => {
+                        setCart(updatedCart);
+                    })
+                    .catch(error => console.error('Error updating cart:', error));
+            })
+            .catch(error => console.error('Error fetching cart:', error));
     };
 
     const calculateTotal = () => {
@@ -78,7 +89,8 @@ const ShoppingCartPage = () => {
                         <h2 style={{ fontWeight: "600", fontSize: "24px", lineHeight: "24px", color: "#000" }}>Shopping Cart</h2>
                         {cart.length === 0 ? <p style={{ height: "80px", display: "flex", alignItems: "center" }}>Your cart is empty</p>
                             :
-                            cart.map(item => <CartItem key={item.id} cartItem={item} onRemove={handleRemoveFromCart} />)}
+                            cart.map(item => <CartItem key={item.productId
+                                } cartItem={item} onRemove={handleRemoveFromCart} />)}
                     </div>
                     <div className="shopping-cart-summary" style={{ position: "sticky", top: "100px" }}>
                         <h3 style={{ marginBottom: "40px", fontWeight: "700", fontSize: "20px", lineHeight: "16px", color: "#111111" }}>Order Summary</h3>
