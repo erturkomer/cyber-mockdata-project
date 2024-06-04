@@ -1,12 +1,12 @@
 import React from "react";
 import Logo from "./jsxSvg/logo.jsx";
 import FavoriteIcon from "./jsxSvg/favorites.svg";
-import CartIcon from "./jsxSvg/cart";
+import Cart from "./jsxSvg/cart";
 import UserIcon from "./jsxSvg/user";
 import SearchBox from "../searchBox.jsx";
 import { Link, useLocation } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ cartCount }) => {
     const location = useLocation();
     const isLoggedIn = localStorage.getItem("isLoggedIn");
 
@@ -36,10 +36,11 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="header-icons">
-                    <img src={FavoriteIcon} alt="icon bulunamadi" /> <CartIcon />{" "}
+                    <img src={FavoriteIcon} alt="Favorite Icon" />
+                    <Cart cartCount={cartCount} />
                     <Link to={isLoggedIn ? "/userDetail" : "/login"}>
                         <UserIcon />
-                    </Link>{" "}
+                    </Link>
                 </div>
             </div>
         </header>

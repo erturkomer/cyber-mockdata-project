@@ -8,6 +8,8 @@ import AdressLine2Icon from "./icons/addadressline-2.svg";
 import StepNextButton from "../StepNextButton";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const PaymentStep1 = () => {
   const [pop, setPop] = useState(false);
@@ -31,7 +33,7 @@ const PaymentStep1 = () => {
         setAddressData(registeredAddresses)
       })
       .catch(error => console.error('Error fetching user data:', error));
-  }, [userDetails.id]);
+  }, [userDetails.id, userDetails.registeredAddresses])
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -80,16 +82,46 @@ const PaymentStep1 = () => {
       })
       .catch(error => {
         console.error('Error fetching user data:', error);
-        toast.error("Error fetching user data. Please try again later.", { autoClose: 2000 });
+        toast.error("Error fetching address. Please try again later.", { autoClose: 2000 });
       });
   };
+  const editAddresse=(id)=> {
+    axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
+      .then((res) => {
+    // Update user data with the modified formData
+    axios.put(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`, {
+      ...res.data,
+      registeredAddresses: res.data.registeredAddresses.map(address => 
+        address.id === id ? {...address,...formData} : address // Update only the address being edited
+      )
+    })
+    .then(() => {
+      console.log("Address updated successfully!");
+      // Reset form after successful update
+      resetForm();
+
+    })
+    .catch(error => {
+      console.error('Error updating user data:', error);
+      toast.error("Error updating address. Please try again later.", { autoClose: 2000 });
+    });
+
+      })
+      .catch(error => {
+        console.error('Error fetching user data:', error);
+        toast.error("Error fetching address. Please try again later.", { autoClose: 2000 });
+      });
+
+
+  }
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newAddress = { ...formData };
+    const newAddress = { id: uuidv4(), ...formData };
 
     if (isEditMode && currentEditId !== null) {
-      editAddress(currentEditId);
+      editAddresse(currentEditId);
     } else {
       axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
         .then((res) => {

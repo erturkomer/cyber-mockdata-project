@@ -13,10 +13,12 @@ const DiscountProducts = () => {
         try {
             const response = await axios.get(import.meta.env.VITE_API_URL + "products");
             const allProducts = response.data;
-
-            let productsOne = allProducts.slice(2, 6);
-
-            setProducts(productsOne);
+    
+            const shuffledProducts = allProducts.sort(() => Math.random() - 0.5);
+    
+            const selectedProducts = shuffledProducts.slice(0, 4);
+    
+            setProducts(selectedProducts);
         } catch (error) {
             console.error('Ürünleri çekerken bir hata oluştu:', error);
         }

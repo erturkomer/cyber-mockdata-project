@@ -7,7 +7,7 @@ const AddToCard = (props) => {
                 {props.title}
             </div>
         </>
-    )
+    );
 };
 
 export default AddToCard;

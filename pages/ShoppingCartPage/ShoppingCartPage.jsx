@@ -5,36 +5,29 @@ import { useNavigate, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ShoppingCartPage = () => {
-    const [cart, setCart] = useState([]);
+const ShoppingCartPage = ({ handleRemoveFromCart, cart, setCart, Increment, Decrement }) => {
     const [cardNumber, setCardNumber] = useState("");
     const [couponCode, setCouponCode] = useState("");
     const [appliedCouponCode, setAppliedCouponCode] = useState("");
     const [isCouponApplied, setIsCouponApplied] = useState(false);
     const navigate = useNavigate();
-    const userDetails = JSON.parse(localStorage.getItem('userDetails'));
+    const userDetails = JSON.parse(localStorage.getItem("userDetails"));
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
     useEffect(() => {
-        axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
-            .then((response) => {
-                const cartRes = response.data.cart || []
-                setCart(cartRes)})
-            .catch(error => console.error('Error fetching cart:', error));
-    }, []);
-
-    const handleRemoveFromCart = (productId) => {
-        axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
-            .then((res) => {
-                const userCart = res.data.cart || [];
-                const updatedCart = userCart.filter(item => item.productId !== productId);
-                axios.put(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`, { ...res.data,cart: updatedCart })
-                    .then(() => {
-                        setCart(updatedCart);
-                    })
-                    .catch(error => console.error('Error updating cart:', error));
-            })
-            .catch(error => console.error('Error fetching cart:', error));
-    };
+        if (isLoggedIn && userDetails && userDetails.id) {
+            axios
+                .get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
+                .then((response) => {
+                    const cartRes = response.data.cart || [];
+                    setCart(cartRes);
+                })
+                .catch((error) => {
+                    console.error("Error fetching cart:", error);
+                    showToast("Error fetching cart data.", "error");
+                });
+        }
+    }, [isLoggedIn, userDetails?.id]);
 
     const calculateTotal = () => {
         let total = cart.reduce((total, item) => total + parseFloat(item.price) * parseFloat(item.quantity), 0);
@@ -43,7 +36,7 @@ const ShoppingCartPage = () => {
         } else if (appliedCouponCode === "NEW50") {
             total -= 50;
         } else if (appliedCouponCode === "START20%") {
-            total -= (total * 0.2);
+            total -= total * 0.2;
         }
         return total.toFixed(2);
     };
@@ -57,7 +50,7 @@ const ShoppingCartPage = () => {
     };
 
     const handleApplyCouponCode = () => {
-        if (couponCode === "NEW100" || couponCode === "NEW50" || couponCode === "START20%") {
+        if (["NEW100", "NEW50", "START20%"].includes(couponCode)) {
             setAppliedCouponCode(couponCode);
             setIsCouponApplied(true);
             showToast("Coupon code applied successfully!", "success");
@@ -68,7 +61,7 @@ const ShoppingCartPage = () => {
 
     const showToast = (message, type) => {
         toast[type](message, {
-            autoClose: 1500
+            autoClose: 1500,
         });
     };
 
@@ -82,43 +75,39 @@ const ShoppingCartPage = () => {
 
     return (
         <>
-            <div className="shopping-cart-container">
-                <ToastContainer />
-                <div className="shopping-cart-content">
-                    <div className="shopping-cart-left">
-                        <h2 style={{ fontWeight: "600", fontSize: "24px", lineHeight: "24px", color: "#000" }}>Shopping Cart</h2>
-                        {cart.length === 0 ? <p style={{ height: "80px", display: "flex", alignItems: "center" }}>Your cart is empty</p>
-                            :
-                            cart.map(item => <CartItem key={item.productId
-                                } cartItem={item} onRemove={handleRemoveFromCart} />)}
-                    </div>
-                    <div className="shopping-cart-summary" style={{ position: "sticky", top: "100px" }}>
-                        <h3 style={{ marginBottom: "40px", fontWeight: "700", fontSize: "20px", lineHeight: "16px", color: "#111111" }}>Order Summary</h3>
-                        <div className="summary-content">
-                            <div className="summary-block">
-                                <div className="summary-fields">
-                                    <div className="summary-field summary-field-label-1">
-                                        <span>Discount code / Promo code</span>
-                                        <input
-                                            type="text"
-                                            placeholder="Code"
-                                            value={couponCode}
-                                            onChange={(e) => setCouponCode(e.target.value)}
-                                            disabled={isCouponApplied} // Disable coupon code input if a valid code is applied
-                                        />
-                                        <button onClick={handleApplyCouponCode} disabled={isCouponApplied}>Apply</button>
-                                    </div>
-                                    <div className="summary-field summary-field-label-2">
-                                        <span>Your bonus card number</span>
-                                        <input
-                                            type="text"
-                                            placeholder="Enter Card Number"
-                                            value={cardNumber}
-                                            onChange={(e) => setCardNumber(e.target.value)}
-                                        />
-                                        <button onClick={handleApplyCardNumber}>Approve</button>
-                                    </div>
-                                </div>
+            {!isLoggedIn && (
+                <div className="not-logged-in" style={{ height: "50vh" , display:"flex", alignItems:"center", justifyContent:"center"}}>
+                    <span>
+                        You are not logged in. Please <Link to="/login" style={{textDecoration:"none"}}>log in</Link> and see your shopping cart.
+                    </span>
+                </div>
+            )}
+            {isLoggedIn && (
+                <div className="shopping-cart-container">
+                    <ToastContainer />
+                    <div className="shopping-cart-content">
+                        <div className="shopping-cart-left">
+                            <h2 className="cart-title" style={{ fontWeight: "600", fontSize: "24px", lineHeight: "24px", color: "#000" }}>Shopping Cart</h2>
+                            {cart.length === 0 ? (
+                                <p style={{ height: "80px", display: "flex", alignItems: "center" }} className="empty-cart-message">Your cart is empty</p>
+                            ) : (
+                                cart.map((item) => (
+                                    <CartItem key={item.productId} cartItem={item} onRemove={handleRemoveFromCart} Increment={Increment} Decrement={Decrement} />
+                                ))
+                            )}
+                        </div>
+                        <div className="shopping-cart-summary" style={{ position: "sticky", top: "100px" }}>
+                            <h3 className="summary-title" style={{ marginBottom: "40px", fontWeight: "700", fontSize: "20px", lineHeight: "16px", color: "#111111" }}>Order Summary</h3>
+                            <div className="summary-content">
+                                <CouponAndCardInput
+                                    couponCode={couponCode}
+                                    setCouponCode={setCouponCode}
+                                    handleApplyCouponCode={handleApplyCouponCode}
+                                    isCouponApplied={isCouponApplied}
+                                    cardNumber={cardNumber}
+                                    setCardNumber={setCardNumber}
+                                    handleApplyCardNumber={handleApplyCardNumber}
+                                />
                                 <div className="summary-prices">
                                     <div className="total-price">
                                         <span>Total</span>
@@ -126,12 +115,40 @@ const ShoppingCartPage = () => {
                                     </div>
                                 </div>
                             </div>
+                            <button className="checkout-btn" onClick={handleCheckout}>Checkout</button>
                         </div>
-                        <button className="checkout-btn" onClick={handleCheckout}>Checkout</button>
                     </div>
                 </div>
-            </div>
+            )}
         </>
+    );
+};
+
+const CouponAndCardInput = ({ couponCode, setCouponCode, handleApplyCouponCode, isCouponApplied, cardNumber, setCardNumber, handleApplyCardNumber }) => {
+    return (
+        <div className="summary-fields">
+            <div className="summary-field summary-field-label-1">
+                <span>Discount code / Promo code</span>
+                <input
+                    type="text"
+                    placeholder="Code"
+                    value={couponCode}
+                    onChange={(e) => setCouponCode(e.target.value)}
+                    disabled={isCouponApplied}
+                />
+                <button onClick={handleApplyCouponCode} disabled={isCouponApplied}>Apply</button>
+            </div>
+            <div className="summary-field summary-field-label-2">
+                <span>Your bonus card number</span>
+                <input
+                    type="text"
+                    placeholder="Enter Card Number"
+                    value={cardNumber}
+                    onChange={(e) => setCardNumber(e.target.value)}
+                />
+                <button onClick={handleApplyCardNumber}>Approve</button>
+            </div>
+        </div>
     );
 };
 

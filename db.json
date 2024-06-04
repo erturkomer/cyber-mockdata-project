@@ -21,13 +21,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "3.240 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 8,
-          "3": 3,
-          "4": 11,
-          "5": 100
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -37,7 +37,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 125,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
@@ -61,13 +62,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "2.438 mAh",
       "rating": {
-        "value": 4.7,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 6,
-          "3": 4,
-          "4": 15,
-          "5": 80
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -77,7 +78,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 90,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
@@ -101,13 +103,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "3.240 mAh",
       "rating": {
-        "value": 4.9,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 3,
-          "3": 2,
-          "4": 10,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -116,7 +118,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 135,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
@@ -140,13 +143,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "2.815 mAh",
       "rating": {
-        "value": 4.7,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 3,
-          "3": 5,
-          "4": 20,
-          "5": 90
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -154,7 +157,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 119,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
@@ -178,13 +182,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "2.227 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 2,
-          "3": 4,
-          "4": 15,
-          "5": 70
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -192,7 +196,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 92,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -216,13 +221,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "2.815 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 2,
-          "3": 3,
-          "4": 15,
-          "5": 110
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -231,7 +236,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 130,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -255,20 +261,21 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "3.110 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 3,
-          "3": 5,
-          "4": 15,
-          "5": 85
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 109,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
@@ -292,13 +299,13 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "1.821 mAh",
       "rating": {
-        "value": 4.5,
+        "value": 0,
         "count": {
-          "1": 3,
-          "2": 5,
-          "3": 8,
-          "4": 20,
-          "5": 60
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -306,7 +313,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 96,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
@@ -330,20 +338,21 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "2.942 mAh",
       "rating": {
-        "value": 4.4,
+        "value": 0,
         "count": {
-          "1": 2,
-          "2": 4,
-          "3": 7,
-          "4": 15,
-          "5": 50
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 78,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -367,20 +376,21 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "2.716 mAh",
       "rating": {
-        "value": 4.3,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 2,
-          "3": 5,
-          "4": 10,
-          "5": 40
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 58,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -404,13 +414,13 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "2.691 mAh",
       "rating": {
-        "value": 4.2,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 3,
-          "3": 5,
-          "4": 10,
-          "5": 30
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -418,7 +428,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 49,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -442,13 +453,13 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "1.821 mAh",
       "rating": {
-        "value": 4.1,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 5,
-          "5": 20
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -456,7 +467,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 28,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -480,19 +492,20 @@
       "frontCamera": "5 MP",
       "batteryCapacity": "1.715 mAh",
       "rating": {
-        "value": 4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 5,
-          "5": 15
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Touch ID"
       ],
-      "reviews": 24,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -516,19 +529,20 @@
       "frontCamera": "1.2 MP",
       "batteryCapacity": "1.810 mAh",
       "rating": {
-        "value": 3.9,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 2,
-          "3": 3,
-          "4": 5,
-          "5": 10
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Touch ID"
       ],
-      "reviews": 21,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
     },
     {
@@ -552,19 +566,20 @@
       "frontCamera": "1.2 MP",
       "batteryCapacity": "1.560 mAh",
       "rating": {
-        "value": 3.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 3,
-          "5": 5
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Touch ID"
       ],
-      "reviews": 11,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -588,19 +603,20 @@
       "frontCamera": "1.2 MP",
       "batteryCapacity": "1.510 mAh",
       "rating": {
-        "value": 3.7,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 1,
-          "4": 2,
-          "5": 5
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Touch ID"
       ],
-      "reviews": 9,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
@@ -624,13 +640,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "3.046 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 2,
-          "3": 3,
-          "4": 15,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -638,7 +654,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 140,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
@@ -662,13 +679,13 @@
       "frontCamera": "12 MP",
       "batteryCapacity": "3.969 mAh",
       "rating": {
-        "value": 4.9,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 5,
-          "4": 20,
-          "5": 150
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -676,7 +693,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 176,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
@@ -700,13 +718,13 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "2.658 mAh",
       "rating": {
-        "value": 4.7,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 2,
-          "3": 3,
-          "4": 15,
-          "5": 110
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -714,7 +732,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 130,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
@@ -738,13 +757,13 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "3.174 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 2,
-          "3": 3,
-          "4": 15,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -752,7 +771,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 140,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
     },
     {
@@ -776,13 +796,13 @@
       "frontCamera": "7 MP",
       "batteryCapacity": "1.821 mAh",
       "rating": {
-        "value": 4.2,
+        "value": 0,
         "count": {
-          "1": 1,
-          "2": 3,
-          "3": 5,
-          "4": 10,
-          "5": 30
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -790,7 +810,8 @@
         "True Tone",
         "Wide color (P3)"
       ],
-      "reviews": 49,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
     },
     {
@@ -814,13 +835,13 @@
       "frontCamera": "40 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.9,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 5,
-          "4": 20,
-          "5": 150
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -828,7 +849,8 @@
         "Ultrasonic under-display fingerprint scanner",
         "IP68 dust/water resistant"
       ],
-      "reviews": 176,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
@@ -852,20 +874,21 @@
       "frontCamera": "10 MP",
       "batteryCapacity": "3.300 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 4,
-          "4": 15,
-          "5": 130
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Flex mode UI",
         "Cover display"
       ],
-      "reviews": 150,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
@@ -889,13 +912,13 @@
       "frontCamera": "40 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.9,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 5,
-          "4": 20,
-          "5": 150
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
@@ -903,7 +926,8 @@
         "Ultrasonic under-display fingerprint scanner",
         "IP68 dust/water resistant"
       ],
-      "reviews": 176,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
@@ -927,20 +951,21 @@
       "frontCamera": "10 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 5,
-          "4": 20,
-          "5": 140
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "S Pen support",
         "HDR10+"
       ],
-      "reviews": 166,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
@@ -964,19 +989,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.7,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 4,
-          "4": 15,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "IP68 dust/water resistant"
       ],
-      "reviews": 140,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
@@ -1000,19 +1026,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 15,
-          "5": 110
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "IP67 dust/water resistant"
       ],
-      "reviews": 129,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
@@ -1036,19 +1063,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.5,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 100
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "IP67 dust/water resistant"
       ],
-      "reviews": 113,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
@@ -1072,19 +1100,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "7.000 mAh",
       "rating": {
-        "value": 4.4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 90
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 25W"
       ],
-      "reviews": 103,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
@@ -1108,19 +1137,20 @@
       "frontCamera": "20 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.3,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 80
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 15W"
       ],
-      "reviews": 93,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
     },
     {
@@ -1144,19 +1174,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "6.000 mAh",
       "rating": {
-        "value": 4.2,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 70
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 15W"
       ],
       "reviews": 83,
+      "comments": [],
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
@@ -1180,19 +1211,20 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 50
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 15W"
       ],
-      "reviews": 63,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
@@ -1216,19 +1248,20 @@
       "frontCamera": "5 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 3.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 40
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 7.75W"
       ],
-      "reviews": 53,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
     },
     {
@@ -1252,19 +1285,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.5,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 4,
-          "4": 15,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 30W"
       ],
-      "reviews": 140,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1288,19 +1322,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "4.250 mAh",
       "rating": {
-        "value": 4.4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 10,
-          "5": 110
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 33W"
       ],
-      "reviews": 124,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1324,19 +1359,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 4,
-          "4": 12,
-          "5": 130
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 67W"
       ],
-      "reviews": 147,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1360,19 +1396,20 @@
       "frontCamera": "20 MP",
       "batteryCapacity": "4.520 mAh",
       "rating": {
-        "value": 4.4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 10,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 33W"
       ],
-      "reviews": 134,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1396,19 +1433,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.3,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 100
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 33W"
       ],
-      "reviews": 113,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1432,19 +1470,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "4.820 mAh",
       "rating": {
-        "value": 4.2,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 90
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 33W"
       ],
-      "reviews": 103,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1468,19 +1507,20 @@
       "frontCamera": "13 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.1,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 80
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 33W"
       ],
-      "reviews": 93,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1504,19 +1544,20 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 70
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 18W"
       ],
-      "reviews": 83,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1540,19 +1581,20 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 3.9,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 60
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 18W"
       ],
-      "reviews": 73,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1576,19 +1618,20 @@
       "frontCamera": "5 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 3.8,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 50
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 10W"
       ],
-      "reviews": 63,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1612,19 +1655,20 @@
       "frontCamera": "5 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 3.7,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 2,
-          "4": 10,
-          "5": 40
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 10W"
       ],
-      "reviews": 53,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
     },
     {
@@ -1648,19 +1692,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.500 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 4,
-          "4": 20,
-          "5": 140
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 67W"
       ],
-      "reviews": 165,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1684,19 +1729,20 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.5,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 18,
-          "5": 130
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 67W"
       ],
-      "reviews": 152,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1720,19 +1766,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 15,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 33W"
       ],
-      "reviews": 139,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1756,19 +1803,20 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.3,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 15,
-          "5": 110
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 18W"
       ],
-      "reviews": 129,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1792,19 +1840,20 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.2,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 15,
-          "5": 100
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 18W"
       ],
-      "reviews": 119,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1828,19 +1877,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.4,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 15,
-          "5": 120
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 33W"
       ],
-      "reviews": 139,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1864,19 +1914,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "5.065 mAh",
       "rating": {
-        "value": 4.5,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 18,
-          "5": 130
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 67W"
       ],
-      "reviews": 152,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1900,19 +1951,20 @@
       "frontCamera": "8 MP",
       "batteryCapacity": "6.000 mAh",
       "rating": {
-        "value": 4.3,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 15,
-          "5": 110
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 18W"
       ],
-      "reviews": 129,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1936,19 +1988,20 @@
       "frontCamera": "5 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.2,
+        "value": 0,
         "count": {
           "1": 0,
-          "2": 1,
-          "3": 3,
-          "4": 15,
-          "5": 100
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 10W"
       ],
-      "reviews": 119,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
     },
     {
@@ -1972,20 +2025,21 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 20,
-          "5": 180
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 125W",
         "Wireless charging 50W"
       ],
-      "reviews": 202,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2009,19 +2063,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.7,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 25,
-          "5": 170
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 65W"
       ],
-      "reviews": 197,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2045,19 +2100,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 20,
-          "5": 160
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 50W"
       ],
-      "reviews": 182,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2081,20 +2137,21 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.500 mAh",
       "rating": {
-        "value": 4.9,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 1,
-          "4": 20,
-          "5": 190
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 120W",
         "Wireless charging 50W"
       ],
-      "reviews": 211,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2118,20 +2175,21 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 20,
-          "5": 180
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 125W",
         "Wireless charging 50W"
       ],
-      "reviews": 202,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2155,20 +2213,21 @@
       "frontCamera": "32 MP",
       "batteryCapacity": "5.500 mAh",
       "rating": {
-        "value": 4.8,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 20,
-          "5": 180
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 125W",
         "Wireless charging 50W"
       ],
-      "reviews": 202,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2192,19 +2251,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.7,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 25,
-          "5": 170
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 50W"
       ],
-      "reviews": 197,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2228,19 +2288,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 20,
-          "5": 160
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 30W"
       ],
-      "reviews": 182,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2264,19 +2325,20 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "4.500 mAh",
       "rating": {
-        "value": 4.7,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
           "3": 2,
-          "4": 25,
-          "5": 170
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 65W"
       ],
-      "reviews": 197,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
     },
     {
@@ -2300,38 +2362,21 @@
       "frontCamera": "16 MP",
       "batteryCapacity": "5.000 mAh",
       "rating": {
-        "value": 4.6,
+        "value": 0,
         "count": {
           "1": 0,
           "2": 0,
-          "3": 2,
-          "4": 20,
-          "5": 160
+          "3": 0,
+          "4": 0,
+          "5": 0
         }
       },
       "additionally": [
         "Fast charging 65W"
       ],
-      "reviews": 182,
+      "reviews": 0,
+      "comments": [],
       "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
-    }
-  ],
-  "address": [
-    {
-      "id": "994b",
-      "address": "2118 Thornridge",
-      "tag": "HOME",
-      "addressLine1": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-      "addressLine2": "",
-      "phoneNumber": "(209) 555-0104"
-    },
-    {
-      "id": "1a4f",
-      "address": "Headoffice",
-      "tag": "OFFICE",
-      "addressLine1": "2715 Ash Dr. San Jose, South Dakota 83475",
-      "addressLine2": "",
-      "phoneNumber": "(704) 555-0127"
     }
   ],
   "users": [
@@ -2343,7 +2388,64 @@
       "password": "123",
       "avatarUrl": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
       "registeredAddresses": [],
-      "cart": []
+      "cart": [
+        {
+          "title": "Samsung Galaxy M31",
+          "brand": "Samsung",
+          "storage": "64GB",
+          "color": "Siyah",
+          "screenSize": "6.4\"",
+          "price": "249$",
+          "productImg": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+          "productId": "31",
+          "quantity": 3,
+          "unchangeable": 1
+        }
+      ]
+    },
+    {
+      "id": "af71",
+      "email": "erturkomer258@gmail.com",
+      "fullName": "Ömer Ertürk",
+      "userName": "erturkomer",
+      "password": "123",
+      "avatarUrl": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+      "registeredAddresses": [
+        {
+          "id": "17b1d201-3ec2-4439-8408-d50d443ea921",
+          "address": "2118 Thornridge",
+          "tag": "HOME",
+          "addressLine1": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
+          "addressLine2": "",
+          "phoneNumber": "05346403437"
+        }
+      ],
+      "cart": [
+        {
+          "title": "iPhone 6s",
+          "brand": "Apple",
+          "storage": "32GB",
+          "color": "Altın",
+          "screenSize": "4.7\"",
+          "price": "299$",
+          "productImg": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+          "productId": "13",
+          "quantity": 5,
+          "unchangeable": 1
+        },
+        {
+          "title": "Samsung Galaxy M51",
+          "brand": "Samsung",
+          "storage": "128GB",
+          "color": "Beyaz",
+          "screenSize": "6.7\"",
+          "price": "349$",
+          "productImg": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+          "productId": "29",
+          "quantity": 5,
+          "unchangeable": 1
+        }
+      ]
     }
   ]
 }

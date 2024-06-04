@@ -21,17 +21,44 @@ import { FaStar } from "react-icons/fa";
 import Rating from "react-rating-stars-component";
 import UserComment from "./UserComment.jsx";
 import DiscountProducts from "./DiscountProducts.jsx";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
-const ProductDetailsPage = () => {
+
+const ProductDetailsPage = ({handleAddToCart,product, setProduct}) => {
+  
   const { id } = useParams();
-  const [product, setProduct] = useState(null);
   const [users, setUsers] = useState(null);
   const [brand, setBrand] = useState(null);
   const [showAll, setShowAll] = useState(false);
+  const [rating, setRating] = useState(0);
+  const [isAdded, setIsAdded] = useState(false);
   const userDetails = JSON.parse(localStorage.getItem('userDetails'));
 
+
+  const handleRatingChange = (newRating) => {
+    console.log('Selected rating:', newRating);
+    setRating(newRating);
+  };
+
+  // const handleKeyPress = async (event) => {
+  //   if (event.key === 'Enter' && comment.trim() !== '') {
+  //     try {
+  //       const response = await axios.post(`${import.meta.env.VITE_API_URL}products/${id}`)
+  //       const newComment = response.data;
+  //       newComment.push(() => {
+  //         userId,
+  //         description: comment,
+  //         avatarUrl: userAvatarUrl,
+  //         rating,
+  //       });
+
+  //       setAllComments((prevComments) => [newComment, ...prevComments]);
+  //       setComment('');
+  //       setRating(0);
+  //     } catch (error) {
+  //       console.error('Error posting comment:', error);
+  //     }
+  //   }
+  // };
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_API_URL}products/${id}`)
@@ -65,51 +92,7 @@ const ProductDetailsPage = () => {
   const yellowWidth2 = (product.rating.count["2"] / totalVotes) * 664;
   const yellowWidth1 = (product.rating.count["1"] / totalVotes) * 664;
 
-  const handleAddToCart = () => {
-    const userId = userDetails.id;
   
-    axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`)
-      .then((response) => {
-        const user = response.data;
-  
-        if (!user.cart) {
-          user.cart = [];
-        }
-  
-        const cartItem = user.cart.find((item) => item.productId === id);
-  
-        if (cartItem) {
-          cartItem.quantity += 1;
-        } else {
-          user.cart.push({
-            title: product.name,
-            brand: product.brand,
-            storage: product.storage,
-            color: product.color,
-            screenSize: product.screenSize,
-            price: product.price,
-            productImg: product.productImage,
-            productId: id,
-            quantity: 1,
-          });
-        }
-  
-        axios.patch(`${import.meta.env.VITE_API_URL}users/${userId}`, { cart: user.cart })
-          .then(() => {
-            toast.success(`${product.name} added to cart.`, {
-              position: "bottom-left",
-              autoClose: 1500,
-            });
-          })
-          .catch(() => {
-            toast.error("An error occurred while updating the cart.");
-          });
-      })
-      .catch(() => {
-        toast.error("An error occurred while fetching user data.");
-      });
-  };
-
 
 
   const breadcrumbsHierarchy = [
@@ -173,7 +156,7 @@ const ProductDetailsPage = () => {
           </div>
           <div className="add-to-card-container">
             <AddToCard color="#000000" background="#FFFFFF" title="Add to Wishlist" />
-            <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" onClick={handleAddToCart} />
+            <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" onClick={()=>handleAddToCart(id)} />
           </div>
           <div className="cargo-icon-container">
             <Cargo icon={CargoIcon1} title="Free Delivery" details="1-2 day" />
@@ -239,15 +222,16 @@ const ProductDetailsPage = () => {
             </div>
             <div className="reviews-overall-rating">
               <div className="overall-rating">
-                <h1>{product.rating.value}</h1>
+                <h1 style={{ textAlign: "center" }}>{product.rating.value}</h1>
                 <span>of {product.reviews} reviews</span>
                 <Rating
                   count={5}
                   size={24}
                   value={product.rating.value}
-                  edit={false}
+                  edit={true}
                   emptyIcon={<FaStar color="#ccc" />}
                   filledIcon={<FaStar color="#ffc107" />}
+                  onChange={handleRatingChange}
                   isHalf={false}
                 />
               </div>
@@ -301,10 +285,16 @@ const ProductDetailsPage = () => {
               </div>
             </div>
             <div className="leave-comment-input">
-              <input type="text" placeholder="Leave Comment" />
+              <input
+                type="text"
+                placeholder="Leave Comment"
+                // value={comment}
+                // onChange={(e) => setComment(e.target.value)}
+                // onKeyPress={handleKeyPress}
+              />
             </div>
           </div>
-          <div className="reviews-comment-container" style={{ height: "300px", overflowX: "hidden", overflowY: "auto" }}>
+          <div className="reviews-comment-container">
             {users.slice(0, showAll ? product.length : 3).map((user, index) => (
               <UserComment key={index} title={user.name} history={user.history} rating={user.rate} comment={user.comment} profileImgUrl={user.profileImgUrl} />
             ))}

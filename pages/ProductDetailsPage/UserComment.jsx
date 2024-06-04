@@ -18,7 +18,7 @@ const UserComment = (props) => {
                         <Rating
                             count={5}
                             size={24}
-                            value={numericRating} // rating prop'unu sayı olarak iletiyoruz
+                            value={numericRating}
                             edit={false}
                             emptyIcon={<FaStar color="#ccc" />}
                             filledIcon={<FaStar color="#ffc107" />}

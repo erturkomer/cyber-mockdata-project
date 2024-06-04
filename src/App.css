@@ -1206,13 +1206,13 @@ h3 {
 
 .reviews-container {
     width: 100%;
-    height: 1336px;
     border-radius: 24px;
     padding: 88px 160px;
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 64px;
 }
 
 .reviews-container .reviews-top {
@@ -1338,7 +1338,6 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 744px;
     gap: 24px;
 }
 
@@ -1809,7 +1808,7 @@ h3 {
     justify-content: space-between;
 }
 
-.steps{
+.steps {
     width: 160px;
     height: 40px;
     display: flex;
@@ -1817,7 +1816,7 @@ h3 {
     justify-content: space-between;
 }
 
-.step-text{
+.step-text {
     display: flex;
     flex-direction: column;
     width: 128px;
@@ -1836,7 +1835,7 @@ h3 {
     font-size: 19px;
 }
 
-.step-address-content{
+.step-address-content {
     width: 100%;
     padding: 48px 160px;
 }
@@ -1888,7 +1887,7 @@ h3 {
 
 
 
-.address-radio input[type="radio"]:checked + .custom-radio {
+.address-radio input[type="radio"]:checked+.custom-radio {
     background-color: #f6f6f6;
     border-color: #000;
 }
@@ -1906,7 +1905,7 @@ h3 {
     display: none;
 }
 
-.address-radio input[type="radio"]:checked + .custom-radio::after {
+.address-radio input[type="radio"]:checked+.custom-radio::after {
     display: block;
 }
 
@@ -1937,7 +1936,7 @@ h3 {
     cursor: pointer;
 }
 
-.modal-form input{
+.modal-form input {
     height: 30px;
     border-radius: 6px;
     padding: 20px;
@@ -1945,7 +1944,7 @@ h3 {
     border-color: #000;
 }
 
-.shipping-method{
+.shipping-method {
     width: 100%;
     padding: 48px 160px;
     display: flex;
@@ -1953,7 +1952,7 @@ h3 {
     justify-content: center;
 }
 
-.shipping-method-content{
+.shipping-method-content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1961,21 +1960,23 @@ h3 {
     justify-content: space-between;
 }
 
-.shipping-block{
+.shipping-block {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 304px;
     justify-content: space-between;
 }
-.shipping-radio-group{
+
+.shipping-radio-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     height: 248px;
 }
-.shipping-buttons{
+
+.shipping-buttons {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1988,11 +1989,11 @@ h3 {
 
 /* - USER LOGİN + REGİSTER START - */
 
-.register-input{
+.register-input {
     gap: 8px;
 }
 
-.register-input input{
+.register-input input {
     width: 300px;
     padding: 4px 12px;
     outline: none;
@@ -2002,7 +2003,7 @@ h3 {
     border: 0.5px solid #dbdbdb;
 }
 
-.register-text{
+.register-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2012,13 +2013,13 @@ h3 {
     margin-top: 16px;
 }
 
-.register-text span{
+.register-text span {
     font-size: 12px;
     font-weight: 200;
     color: #7b7b7b;
 }
 
-.register-container button{
+.register-container button {
     padding: 8px 100px;
     background: #000;
     border: none;
@@ -2028,7 +2029,7 @@ h3 {
     margin-top: 30px;
 }
 
-.login-sReg{
+.login-sReg {
     border: 0.5px solid #dbdbdb;
     width: 25%;
     margin: 10px;

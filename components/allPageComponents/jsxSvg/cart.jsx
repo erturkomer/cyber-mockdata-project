@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
 
-const cart = () => {
+const cart = ({ cartCount }) => {
   return (
     <>
       <Link to="/shoppingcart">
@@ -21,7 +21,7 @@ const cart = () => {
               />
             </svg>
           </div>
-          <div className="cart-circle">0</div>
+          <div className="cart-circle">{cartCount}</div>
         </div>
       </Link>
     </>

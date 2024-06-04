@@ -84,7 +84,7 @@ const UserDetail = () => {
                             boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)"
                         }}>
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                                <div className="avatar" style={{ borderRadius: "50%", overflow: "hidden", cursor: "pointer", marginBottom: "16px" }}>
+                                <div className="avatar" style={{ borderRadius: "50%", overflow: "auto", cursor: "pointer", marginBottom: "16px" }}>
                                     <img
                                         src={avatarUrl}
                                         style={{ width: "150px", height: "150px", objectFit: "cover", border: "4px solid #fff" }}
@@ -145,7 +145,7 @@ const UserDetail = () => {
 
                 </div>
             </>
-            :  window.location.href = '/login'
+            : window.location.href = '/login'
     );
 };
 
