@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CartItem from "./CartItem";
 import { useNavigate, Link } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ShoppingCartPage = ({ handleRemoveFromCart, cart, setCart, Increment, Decrement }) => {
@@ -78,13 +78,12 @@ const ShoppingCartPage = ({ handleRemoveFromCart, cart, setCart, Increment, Decr
             {!isLoggedIn && (
                 <div className="not-logged-in" style={{ height: "50vh" , display:"flex", alignItems:"center", justifyContent:"center"}}>
                     <span>
-                        You are not logged in. Please <Link to="/login" style={{textDecoration:"none"}}>log in</Link> and see your shopping cart.
+                        You are not logged in. Please <Link to="/login" style={{textDecoration:"none"}}> <button style={{border:"1px solid black", background:"none", margin:"5px", padding:"2px 12px", borderRadius:"3px"}}>log in</button></Link> and see your shopping cart.
                     </span>
                 </div>
             )}
             {isLoggedIn && (
                 <div className="shopping-cart-container">
-                    <ToastContainer />
                     <div className="shopping-cart-content">
                         <div className="shopping-cart-left">
                             <h2 className="cart-title" style={{ fontWeight: "600", fontSize: "24px", lineHeight: "24px", color: "#000" }}>Shopping Cart</h2>

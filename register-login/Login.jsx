@@ -38,7 +38,7 @@ const Login = () => {
           console.log('Giriş başarılı');
           localStorage.setItem('isLoggedIn', true);
           localStorage.setItem('userDetails', JSON.stringify(user));
-          window.location.href = "/";
+          window.location.href = '/';
         } else {
           setErrorMessage('Kullanıcı adı veya şifre hatalı');
         }

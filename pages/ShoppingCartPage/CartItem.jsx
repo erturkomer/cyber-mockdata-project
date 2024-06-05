@@ -77,7 +77,7 @@ const CartItem = ({ cartItem, onRemove, Increment, Decrement }) => {
                                 <img src={Edit} alt="icon undefined" style={{ width: "24px", height: "24px" }} />
                             </button>
                         </div>
-                        <span>{price}</span>
+                        <span>${price}</span>
                         <button onClick={handleRemoveClick} style={{ width: "24px", height: "24px", background: "none", display: "flex", alignItems: "center", justifyContent: "center", border: "none" }}>
                             <img src={Remove} alt="icon undefined" style={{ width: "24px", height: "24px" }} />
                         </button>

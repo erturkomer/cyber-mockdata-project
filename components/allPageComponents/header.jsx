@@ -5,10 +5,18 @@ import Cart from "./jsxSvg/cart";
 import UserIcon from "./jsxSvg/user";
 import SearchBox from "../searchBox.jsx";
 import { Link, useLocation } from "react-router-dom";
+import { RiUserSettingsLine } from "react-icons/ri";
+import { IoLogOutOutline } from "react-icons/io5";
 
 const Header = ({ cartCount }) => {
     const location = useLocation();
     const isLoggedIn = localStorage.getItem("isLoggedIn");
+    const userDetails = JSON.parse(localStorage.getItem('userDetails'));
+
+    const handleLogout = () => {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("userDetails");
+    };
 
     return (
         <header>
@@ -38,9 +46,38 @@ const Header = ({ cartCount }) => {
                 <div className="header-icons">
                     <img src={FavoriteIcon} alt="Favorite Icon" />
                     <Cart cartCount={cartCount} />
-                    <Link to={isLoggedIn ? "/userDetail" : "/login"}>
-                        <UserIcon />
-                    </Link>
+                    <div className="user-icon-container">
+                        {isLoggedIn ? (
+                            <>
+                                <UserIcon />
+                                <div className="user-menu">
+                                    <Link
+                                        to="/userDetail"
+                                        style={{ gap: "8px", display: "flex", alignItems: "center" }}
+                                    >
+                                        <RiUserSettingsLine />
+                                        My user information
+                                    </Link>
+                                    <Link
+                                        onClick={handleLogout}
+                                        to="/login"
+                                        style={{ gap: "8px", display: "flex", alignItems: "center" }}
+                                    >
+                                        <IoLogOutOutline />
+                                        Logout
+                                    </Link>
+                                </div>
+                            </>
+                        ) : (
+                            <Link
+                                to="/login"
+                                style={{ gap: "8px", display: "flex", alignItems: "center" }}
+                            >
+                                <UserIcon />
+                            </Link>
+                        )}
+                    </div>
+
                 </div>
             </div>
         </header>

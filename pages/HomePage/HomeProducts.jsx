@@ -1,22 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link, useLocation } from 'react-router-dom';
 import Product from "../../components/allPageComponents/products/product";
 
 const HomeProducts = () => {
     const [menu, setMenu] = useState("/");
     const [products, setProducts] = useState([]);
-    const { pathname } = useLocation();
 
     useEffect(() => {
         fetchData();
     }, [menu]);
-
-    useEffect(() => {
-        window.scrollTo({
-            top: 0, behavior: "instant"
-        });
-    },[pathname]);
 
     const fetchData = async () => {
         try {
@@ -38,27 +30,50 @@ const HomeProducts = () => {
         }
     };
 
+    const listItemStyle = {
+        color: "#8B8B8B",
+        cursor: "pointer",
+    };
+
+    const activeItemStyle = {
+        color: "black",
+        borderBottom: "2px solid black",
+    };
+
     return (
-        <div className="home-products-container">
-            <div className="home-products-tag">
-                <ul style={{ listStyleType: "none" }}>
-                    <li onClick={() => { setMenu("/") }}>
-                        <Link to="/" style={{ textDecoration: "none", color: menu === "/" ? "black" : "#8B8B8B", display: "block", height: "100%", borderBottom: menu === "/" ? "2px solid black" : "none" }}>New Arrival</Link>
-                    </li>
-                    <li onClick={() => { setMenu("/bestseller") }}>
-                        <Link to="/bestseller" style={{ textDecoration: "none", color: menu === "/bestseller" ? "black" : "#8B8B8B", display: "block", height: "100%", borderBottom: menu === "/bestseller" ? "2px solid black" : "none" }}>Bestseller</Link>
-                    </li>
-                    <li onClick={() => { setMenu("/featuredproducts") }}>
-                        <Link to="/featuredproducts" style={{ textDecoration: "none", color: menu === "/featuredproducts" ? "black" : "#8B8B8B", display: "block", height: "100%", borderBottom: menu === "/featuredproducts" ? "2px solid black" : "none" }}>Featured Products</Link>
-                    </li>
-                </ul>
+        <>
+            <div className="home-products-container">
+                <div className="home-products-tag">
+                    <ul style={{ listStyleType: "none" }}>
+                        <li onClick={() => { setMenu("/") }}>
+                            <span style={menu === "/" ? activeItemStyle : listItemStyle}>New Arrival</span>
+                        </li>
+                        <li onClick={() => { setMenu("/bestseller") }}>
+                            <span style={menu === "/bestseller" ? activeItemStyle : listItemStyle}>Bestseller</span>
+                        </li>
+                        <li onClick={() => { setMenu("/featuredproducts") }}>
+                            <span style={menu === "/featuredproducts" ? activeItemStyle : listItemStyle}>Featured Products</span>
+                        </li>
+                    </ul>
+                </div>
+                <div className="products-container">
+                    {products.map(product => (
+                        <Product
+                            id={product.id}
+                            key={product.id}
+                            brand={product.brand}
+                            name={product.name}
+                            image={product.productImage}
+                            color={product.color}
+                            price={product.price}
+                            storage={product.storage}
+                            mainCamera={product.mainCamera}
+                            cpu={product.cpu}
+                        />
+                    ))}
+                </div>
             </div>
-            <div className="products-container">
-                {products.map(product => (
-                    <Product id={product.id} key={product.id} brand={product.brand} name={product.name} image={product.productImage} color={product.color} price={product.price} storage={product.storage} mainCamera={product.mainCamera} cpu={product.cpu} />
-                ))}
-            </div>
-        </div>
+        </>
     );
 };
 

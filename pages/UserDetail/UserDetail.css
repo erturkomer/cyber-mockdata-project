@@ -1,0 +1,96 @@
+.main-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 50px 160px;
+}
+
+.left-side {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 18px;
+}
+
+.user-info-heading {
+    border-bottom: 0.5px solid #000;
+}
+
+.right-side {
+    width: 80%;
+}
+
+.avatar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -10px;
+}
+
+.avatar img {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.logout-button {
+    border: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 50px;
+}
+
+.user-information {
+    display: flex;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+.user-information li {
+    cursor: pointer;
+    padding: 0px 1px;
+}
+
+.user-information li.active {
+    border-bottom: 1px solid #000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 50px;
+}
+
+.profile-information{
+    width: 450px;
+}
+
+.menu1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.membership-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-change {
+    display: flex;
+}

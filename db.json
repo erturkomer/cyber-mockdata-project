@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "iPhone 13",
-      "price": "999$",
+      "price": "999",
       "categories": [
         "Smartphones"
       ],
@@ -39,12 +39,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "2",
       "name": "iPhone 13 Mini",
-      "price": "799$",
+      "price": "799",
       "categories": [
         "Smartphones"
       ],
@@ -80,12 +83,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "3",
       "name": "iPhone 13 Pro",
-      "price": "1099$",
+      "price": "1099",
       "categories": [
         "Smartphones"
       ],
@@ -120,12 +126,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "4",
       "name": "iPhone 12",
-      "price": "899$",
+      "price": "899",
       "categories": [
         "Smartphones"
       ],
@@ -159,12 +168,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "5",
       "name": "iPhone 12 Mini",
-      "price": "699$",
+      "price": "699",
       "categories": [
         "Smartphones"
       ],
@@ -198,12 +210,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "6",
       "name": "iPhone 12 Pro",
-      "price": "999$",
+      "price": "999",
       "categories": [
         "Smartphones"
       ],
@@ -238,12 +253,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "7",
       "name": "iPhone 11",
-      "price": "699$",
+      "price": "699",
       "categories": [
         "Smartphones"
       ],
@@ -276,12 +294,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "8",
       "name": "iPhone SE (2022)",
-      "price": "399$",
+      "price": "399",
       "categories": [
         "Smartphones"
       ],
@@ -315,12 +336,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "9",
       "name": "iPhone XR",
-      "price": "499$",
+      "price": "499",
       "categories": [
         "Smartphones"
       ],
@@ -353,12 +377,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "10",
       "name": "iPhone X",
-      "price": "599$",
+      "price": "599",
       "categories": [
         "Smartphones"
       ],
@@ -391,12 +418,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "11",
       "name": "iPhone 8 Plus",
-      "price": "499$",
+      "price": "499",
       "categories": [
         "Smartphones"
       ],
@@ -430,12 +460,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "12",
       "name": "iPhone SE (2020)",
-      "price": "399$",
+      "price": "399",
       "categories": [
         "Smartphones"
       ],
@@ -469,12 +502,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "13",
       "name": "iPhone 6s",
-      "price": "299$",
+      "price": "299",
       "categories": [
         "Smartphones"
       ],
@@ -506,12 +542,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "14",
       "name": "iPhone 6",
-      "price": "199$",
+      "price": "199",
       "categories": [
         "Smartphones"
       ],
@@ -543,12 +582,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png"
+      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "15",
       "name": "iPhone 5s",
-      "price": "99$",
+      "price": "99",
       "categories": [
         "Smartphones"
       ],
@@ -580,12 +622,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "16",
       "name": "iPhone 5c",
-      "price": "99$",
+      "price": "99",
       "categories": [
         "Smartphones"
       ],
@@ -617,12 +662,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "17",
       "name": "iPhone 11 Pro",
-      "price": "999$",
+      "price": "999",
       "categories": [
         "Smartphones"
       ],
@@ -656,12 +704,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "18",
       "name": "iPhone 11 Pro Max",
-      "price": "1099$",
+      "price": "1099",
       "categories": [
         "Smartphones"
       ],
@@ -695,12 +746,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "19",
       "name": "iPhone XS",
-      "price": "899$",
+      "price": "899",
       "categories": [
         "Smartphones"
       ],
@@ -734,12 +788,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "20",
       "name": "iPhone XS Max",
-      "price": "999$",
+      "price": "999",
       "categories": [
         "Smartphones"
       ],
@@ -773,12 +830,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75"
+      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "21",
       "name": "iPhone 8",
-      "price": "599$",
+      "price": "599",
       "categories": [
         "Smartphones"
       ],
@@ -812,12 +872,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png"
+      "productImage": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "22",
       "name": "Samsung Galaxy S23 Ultra",
-      "price": "1299$",
+      "price": "1299",
       "categories": [
         "Smartphones"
       ],
@@ -851,12 +914,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "23",
       "name": "Samsung Galaxy Z Flip 3",
-      "price": "1099$",
+      "price": "1099",
       "categories": [
         "Smartphones"
       ],
@@ -889,12 +955,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "24",
       "name": "Samsung Galaxy S21 Ultra",
-      "price": "1199$",
+      "price": "1199",
       "categories": [
         "Smartphones"
       ],
@@ -928,12 +997,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "25",
       "name": "Samsung Galaxy Note 20 Ultra",
-      "price": "1299$",
+      "price": "1299",
       "categories": [
         "Smartphones"
       ],
@@ -966,12 +1038,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "26",
       "name": "Samsung Galaxy S20 FE",
-      "price": "699$",
+      "price": "699",
       "categories": [
         "Smartphones"
       ],
@@ -1003,12 +1078,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "27",
       "name": "Samsung Galaxy A72",
-      "price": "499$",
+      "price": "499",
       "categories": [
         "Smartphones"
       ],
@@ -1040,12 +1118,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "28",
       "name": "Samsung Galaxy A52",
-      "price": "399$",
+      "price": "399",
       "categories": [
         "Smartphones"
       ],
@@ -1077,12 +1158,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "29",
       "name": "Samsung Galaxy M51",
-      "price": "349$",
+      "price": "349",
       "categories": [
         "Smartphones"
       ],
@@ -1114,12 +1198,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "30",
       "name": "Samsung Galaxy A32",
-      "price": "279$",
+      "price": "279",
       "categories": [
         "Smartphones"
       ],
@@ -1151,12 +1238,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/thumbnails/035/572/095/small/samsung-galaxy-s23-ultra-black-transparent-image-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "31",
       "name": "Samsung Galaxy M31",
-      "price": "249$",
+      "price": "249",
       "categories": [
         "Smartphones"
       ],
@@ -1188,12 +1278,15 @@
       ],
       "reviews": 83,
       "comments": [],
-      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "32",
       "name": "Samsung Galaxy A12",
-      "price": "199$",
+      "price": "199",
       "categories": [
         "Smartphones"
       ],
@@ -1225,12 +1318,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "33",
       "name": "Samsung Galaxy A02",
-      "price": "149$",
+      "price": "149",
       "categories": [
         "Smartphones"
       ],
@@ -1262,12 +1358,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U"
+      "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "34",
       "name": "Xiaomi Redmi Note 12 Pro Plus",
-      "price": "349$",
+      "price": "349",
       "categories": [
         "Smartphones"
       ],
@@ -1299,12 +1398,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "35",
       "name": "Xiaomi Mi 11 Lite",
-      "price": "299$",
+      "price": "299",
       "categories": [
         "Smartphones"
       ],
@@ -1336,12 +1438,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "36",
       "name": "Xiaomi Poco X4 Pro",
-      "price": "279$",
+      "price": "279",
       "categories": [
         "Smartphones"
       ],
@@ -1373,12 +1478,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "37",
       "name": "Xiaomi Redmi K40",
-      "price": "249$",
+      "price": "249",
       "categories": [
         "Smartphones"
       ],
@@ -1410,12 +1518,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "38",
       "name": "Xiaomi Redmi Note 11",
-      "price": "199$",
+      "price": "199",
       "categories": [
         "Smartphones"
       ],
@@ -1447,12 +1558,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "39",
       "name": "Xiaomi Mi 10T Lite",
-      "price": "179$",
+      "price": "179",
       "categories": [
         "Smartphones"
       ],
@@ -1484,12 +1598,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "40",
       "name": "Xiaomi Redmi Note 10S",
-      "price": "149$",
+      "price": "149",
       "categories": [
         "Smartphones"
       ],
@@ -1521,12 +1638,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "41",
       "name": "Xiaomi Poco M4 Pro",
-      "price": "129$",
+      "price": "129",
       "categories": [
         "Smartphones"
       ],
@@ -1558,12 +1678,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "42",
       "name": "Xiaomi Redmi 10",
-      "price": "99$",
+      "price": "99",
       "categories": [
         "Smartphones"
       ],
@@ -1595,12 +1718,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "43",
       "name": "Xiaomi Redmi 9C",
-      "price": "89$",
+      "price": "89",
       "categories": [
         "Smartphones"
       ],
@@ -1632,12 +1758,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "44",
       "name": "Xiaomi Redmi 9A",
-      "price": "79$",
+      "price": "79",
       "categories": [
         "Smartphones"
       ],
@@ -1669,12 +1798,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png"
+      "productImage": "https://static.vecteezy.com/system/resources/previews/025/273/747/original/xiaomi-redmi-note-12-pro-plus-5g-mockup-free-png.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "45",
       "name": "Poco X6 Pro 5G",
-      "price": "399$",
+      "price": "399",
       "categories": [
         "Smartphones"
       ],
@@ -1706,12 +1838,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "46",
       "name": "Poco F4",
-      "price": "349$",
+      "price": "349",
       "categories": [
         "Smartphones"
       ],
@@ -1743,12 +1878,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "47",
       "name": "Poco X5",
-      "price": "299$",
+      "price": "299",
       "categories": [
         "Smartphones"
       ],
@@ -1780,12 +1918,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "48",
       "name": "Poco M3 Pro",
-      "price": "229$",
+      "price": "229",
       "categories": [
         "Smartphones"
       ],
@@ -1817,12 +1958,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "49",
       "name": "Poco C4",
-      "price": "169$",
+      "price": "169",
       "categories": [
         "Smartphones"
       ],
@@ -1854,12 +1998,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "50",
       "name": "Poco X4",
-      "price": "299$",
+      "price": "299",
       "categories": [
         "Smartphones"
       ],
@@ -1891,12 +2038,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "51",
       "name": "Poco F3 GT",
-      "price": "329$",
+      "price": "329",
       "categories": [
         "Smartphones"
       ],
@@ -1928,12 +2078,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "52",
       "name": "Poco M3",
-      "price": "179$",
+      "price": "179",
       "categories": [
         "Smartphones"
       ],
@@ -1965,12 +2118,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "53",
       "name": "Poco C3",
-      "price": "149$",
+      "price": "149",
       "categories": [
         "Smartphones"
       ],
@@ -2002,12 +2158,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700"
+      "productImage": "https://myxprs.com/cdn/shop/products/xiaomi-poco-x6-pro-5g-12gb-512gb-1-year-warranty-143626.png?v=1714332757&width=700",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "54",
       "name": "Realme GT 2 Pro",
-      "price": "499$",
+      "price": "499",
       "categories": [
         "Smartphones"
       ],
@@ -2040,12 +2199,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "55",
       "name": "Realme 9 Pro",
-      "price": "349$",
+      "price": "349",
       "categories": [
         "Smartphones"
       ],
@@ -2077,12 +2239,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "56",
       "name": "Realme 8 Pro",
-      "price": "299$",
+      "price": "299",
       "categories": [
         "Smartphones"
       ],
@@ -2114,12 +2279,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "57",
       "name": "Realme GT Neo 3",
-      "price": "429$",
+      "price": "429",
       "categories": [
         "Smartphones"
       ],
@@ -2152,12 +2320,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "58",
       "name": "Realme GT 2",
-      "price": "379$",
+      "price": "379",
       "categories": [
         "Smartphones"
       ],
@@ -2190,12 +2361,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "59",
       "name": "Realme X9 Pro",
-      "price": "449$",
+      "price": "449",
       "categories": [
         "Smartphones"
       ],
@@ -2228,12 +2402,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "60",
       "name": "Realme 9i",
-      "price": "269$",
+      "price": "269",
       "categories": [
         "Smartphones"
       ],
@@ -2265,12 +2442,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "61",
       "name": "Realme 8 5G",
-      "price": "229$",
+      "price": "229",
       "categories": [
         "Smartphones"
       ],
@@ -2302,12 +2482,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "62",
       "name": "Realme Q3 Pro",
-      "price": "279$",
+      "price": "279",
       "categories": [
         "Smartphones"
       ],
@@ -2339,12 +2522,15 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
       "id": "63",
       "name": "Realme GT Neo 2",
-      "price": "389$",
+      "price": "389",
       "categories": [
         "Smartphones"
       ],
@@ -2376,61 +2562,80 @@
       ],
       "reviews": 0,
       "comments": [],
-      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png"
+      "productImage": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
+      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
+      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     }
   ],
   "users": [
     {
-      "id": "a860",
-      "email": "erturkomer256@gmail.com",
+      "id": "d84b",
+      "email": "example@example.com",
       "fullName": "Ömer Ertürk",
-      "userName": "erturkomerw",
+      "userName": "example",
       "password": "123",
-      "avatarUrl": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+      "avatarUrl": "https://ui-avatars.com/api/?name=ÖE&background=eeeeee&color=525252",
+      "favoriteProducts": [],
+      "registeredAddresses": [],
+      "cart": []
+    },
+    {
+      "id": "c59f",
+      "email": "erturkkerem256@gmail.com",
+      "fullName": "Kerem Ertürk",
+      "userName": "erturkkerem37",
+      "password": "123",
+      "avatarUrl": "https://ui-avatars.com/api/?name=KE&background=eeeeee&color=525252",
+      "favoriteProducts": [],
       "registeredAddresses": [],
       "cart": [
         {
-          "title": "Samsung Galaxy M31",
-          "brand": "Samsung",
-          "storage": "64GB",
-          "color": "Siyah",
-          "screenSize": "6.4\"",
-          "price": "249$",
-          "productImg": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
-          "productId": "31",
+          "title": "iPhone 13",
+          "brand": "Apple",
+          "storage": "128GB",
+          "color": "Mavi",
+          "screenSize": "6.1\"",
+          "price": "999",
+          "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+          "productId": "1",
+          "quantity": 1,
+          "unchangeable": 1
+        },
+        {
+          "title": "iPhone 13 Pro",
+          "brand": "Apple",
+          "storage": "256GB",
+          "color": "Altın",
+          "screenSize": "6.1\"",
+          "price": "1099",
+          "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+          "productId": "3",
           "quantity": 3,
           "unchangeable": 1
         }
       ]
     },
     {
-      "id": "af71",
-      "email": "erturkomer258@gmail.com",
+      "id": "0504",
+      "email": "erturkomer256@gmail.com",
       "fullName": "Ömer Ertürk",
-      "userName": "erturkomer",
+      "userName": "erturkomerw",
       "password": "123",
-      "avatarUrl": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
-      "registeredAddresses": [
-        {
-          "id": "17b1d201-3ec2-4439-8408-d50d443ea921",
-          "address": "2118 Thornridge",
-          "tag": "HOME",
-          "addressLine1": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-          "addressLine2": "",
-          "phoneNumber": "05346403437"
-        }
-      ],
+      "avatarUrl": "https://ui-avatars.com/api/?name=ÖE&background=eeeeee&color=525252",
+      "favoriteProducts": [],
+      "registeredAddresses": [],
       "cart": [
         {
-          "title": "iPhone 6s",
+          "title": "iPhone 12 Mini",
           "brand": "Apple",
-          "storage": "32GB",
-          "color": "Altın",
-          "screenSize": "4.7\"",
-          "price": "299$",
+          "storage": "64GB",
+          "color": "Beyaz",
+          "screenSize": "5.4\"",
+          "price": "699",
           "productImg": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
-          "productId": "13",
-          "quantity": 5,
+          "productId": "5",
+          "quantity": 2,
           "unchangeable": 1
         },
         {
@@ -2439,10 +2644,10 @@
           "storage": "128GB",
           "color": "Beyaz",
           "screenSize": "6.7\"",
-          "price": "349$",
+          "price": "349",
           "productImg": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
           "productId": "29",
-          "quantity": 5,
+          "quantity": 1,
           "unchangeable": 1
         }
       ]

@@ -17,7 +17,7 @@ import Login from '../register-login/Login.jsx';
 import UserDetail from '../pages/UserDetail/UserDetail.jsx';
 import axios from 'axios';
 import './App.css';
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CartItem from '../pages/ShoppingCartPage/CartItem.jsx';
 
@@ -42,7 +42,6 @@ function App() {
   const [cart, setCart] = useState([]);
   const [product, setProduct] = useState(null);
   const [newQuantity, setNewQuantity] = useState(5);
-  const isLoggedIn = localStorage.getItem("isLoggedIn")
   const userDetails = JSON.parse(localStorage.getItem('userDetails'));
   const userId = userDetails?.id;
 
@@ -67,7 +66,6 @@ function App() {
   const handleAddToCart = (id) => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (!isLoggedIn) {
-      localStorage.setItem("redirectUrl", window.location.href);
       window.location.href = "/login";
     } else {
       axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`)
@@ -101,10 +99,6 @@ function App() {
           }
           axios.patch(`${import.meta.env.VITE_API_URL}users/${userId}`, { cart: user.cart })
             .then(() => {
-              toast.success(`${product.name} added to cart.`, {
-                position: "bottom-left",
-                autoClose: 1500,
-              });
               fetchCartData();
             })
             .catch(() => {
@@ -160,7 +154,6 @@ function App() {
 
         setNewQuantity(prevQuantity => prevQuantity + 1);
 
-        console.log("Quantity incremented successfully!");
       } else {
         console.log("Product not found in cart!");
       }
@@ -191,7 +184,6 @@ function App() {
 
           setCart(res.data.cart)
 
-          console.log("Quantity decremented successfully!");
         } else {
           console.log("Quantity already at minimum!");
         }
@@ -207,6 +199,7 @@ function App() {
   return (
 
     <>
+      <ToastContainer />
       {
         (location.pathname != "/signup" &&
           location.pathname != "/login" ?
