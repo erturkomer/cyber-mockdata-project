@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 
 const Product = (props) => {
   const productId = props.id;
+  const userDetails = JSON.parse(localStorage.getItem('userDetails'));
+  const userId = userDetails?.id;
+
 
   const [isFavorite, setIsFavorite] = useState(() => {
     const storedFavorites = localStorage.getItem("favorites");

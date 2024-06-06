@@ -199,7 +199,6 @@ function App() {
   return (
 
     <>
-      <ToastContainer />
       {
         (location.pathname != "/signup" &&
           location.pathname != "/login" ?
@@ -227,7 +226,10 @@ function App() {
         <Route path="/payments/step-3" element={<PaymentStep3Page />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
-        <Route path="/userDetail" element={<UserDetail />} />
+        <Route path="/userinformation" element={<UserDetail />} />
+        <Route path="/userinformation/passwordchange" element={<UserDetail />} />
+        <Route path="/bestseller" element={<HomePage/>} />
+        <Route path="/featuredproducts" element={<HomePage/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {

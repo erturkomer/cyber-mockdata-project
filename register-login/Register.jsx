@@ -35,15 +35,40 @@ const Register = () => {
       return;
     }
 
+    if (!validatePassword(passwordInputValue)) {
+      setErrorMessage('Password must contain at least one letter, one number, and one special character. It must be at least 8 characters long.');
+      return;
+    }
+
+    const currentDate = new Date();
+    const options = { timeZone: "Europe/Istanbul" };
+
+    const registrationDate = {
+      year: currentDate.toLocaleString("tr-TR", { year: "numeric", timeZone: options.timeZone }),
+      month: currentDate.toLocaleString("tr-TR", { month: "2-digit", timeZone: options.timeZone }),
+      day: currentDate.toLocaleString("tr-TR", { day: "2-digit", timeZone: options.timeZone }),
+      hour: currentDate.toLocaleString("tr-TR", { hour: "2-digit", hour12: false, timeZone: options.timeZone }),
+      minute: currentDate.toLocaleString("tr-TR", { minute: "2-digit", timeZone: options.timeZone }),
+      second: currentDate.toLocaleString("tr-TR", { second: "2-digit", timeZone: options.timeZone }),
+    };
+
     const userData = {
       email: emailInputValue,
       fullName: fullNameInputValue,
       userName: userNameInputValue,
       password: passwordInputValue,
-      avatarUrl: generateDefaultAvatarUrl(fullNameInputValue), // Changed here
+      avatarUrl: generateDefaultAvatarUrl(fullNameInputValue),
+      registrationDate: {
+        year: registrationDate.year,
+        month: registrationDate.month,
+        day: registrationDate.day,
+        hour: registrationDate.hour,
+        minute: registrationDate.minute,
+        second: registrationDate.second
+      },
       favoriteProducts: [],
       registeredAddresses: [],
-      cart: []
+      cart: [],
     };
 
     try {
@@ -66,6 +91,11 @@ const Register = () => {
       setErrorMessage('An error occurred during the registration process.');
       setSuccessMessage('');
     }
+  };
+
+  const validatePassword = (password) => {
+    const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return passwordPattern.test(password);
   };
 
   const generateDefaultAvatarUrl = (fullName) => {

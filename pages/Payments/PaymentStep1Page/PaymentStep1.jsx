@@ -74,7 +74,7 @@ const PaymentStep1 = () => {
           tag: addressToEdit.tag,
           addressLine1: addressToEdit.addressLine1,
           addressLine2: addressToEdit.addressLine2,
-          phoneNumber: addressToEdit.phoneNumber
+          phoneNumber: addressToEdit.phoneNumber,
         });
         setIsEditMode(true);
         setCurrentEditId(id);
@@ -85,26 +85,24 @@ const PaymentStep1 = () => {
         toast.error("Error fetching address. Please try again later.", { autoClose: 2000 });
       });
   };
-  const editAddresse=(id)=> {
+  const editAddresse = (id) => {
     axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
       .then((res) => {
-    // Update user data with the modified formData
-    axios.put(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`, {
-      ...res.data,
-      registeredAddresses: res.data.registeredAddresses.map(address => 
-        address.id === id ? {...address,...formData} : address // Update only the address being edited
-      )
-    })
-    .then(() => {
-      console.log("Address updated successfully!");
-      // Reset form after successful update
-      resetForm();
+        axios.put(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`, {
+          ...res.data,
+          registeredAddresses: res.data.registeredAddresses.map(address =>
+            address.id === id ? { ...address, ...formData } : address
+          )
+        })
+          .then(() => {
+            console.log("Address updated successfully!");
+            -      resetForm();
 
-    })
-    .catch(error => {
-      console.error('Error updating user data:', error);
-      toast.error("Error updating address. Please try again later.", { autoClose: 2000 });
-    });
+          })
+          .catch(error => {
+            console.error('Error updating user data:', error);
+            toast.error("Error updating address. Please try again later.", { autoClose: 2000 });
+          });
 
       })
       .catch(error => {
@@ -114,11 +112,23 @@ const PaymentStep1 = () => {
 
 
   }
-  
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newAddress = { id: uuidv4(), ...formData };
+    const currentDate = new Date();
+    const options = { timeZone: "Europe/Istanbul" };
+    const addressCreationDate = {
+      year: currentDate.toLocaleString("tr-TR", { year: "numeric", timeZone: options.timeZone }),
+      month: currentDate.toLocaleString("tr-TR", { month: "2-digit", timeZone: options.timeZone }),
+      day: currentDate.toLocaleString("tr-TR", { day: "2-digit", timeZone: options.timeZone }),
+      hour: currentDate.toLocaleString("tr-TR", { hour: "2-digit", hour12: false, timeZone: options.timeZone }),
+      minute: currentDate.toLocaleString("tr-TR", { minute: "2-digit", timeZone: options.timeZone }),
+      second: currentDate.toLocaleString("tr-TR", { second: "2-digit", timeZone: options.timeZone }),
+    };
+
+    const newAddress = { id: uuidv4(), ...formData, addressCreationDate };
 
     if (isEditMode && currentEditId !== null) {
       editAddresse(currentEditId);

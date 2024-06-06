@@ -101,7 +101,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
     toast.success(`${product.name} added to cart.`, {
       position: "bottom-left",
       autoClose: 1350,
-      hideProgressBar:  true,
+      hideProgressBar: true,
     });
     setIsButtonDisabled(true);
     setTimeout(() => {
@@ -120,6 +120,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
 
   return (
     <>
+      <ToastContainer />
       <Breadcrumbs categories={breadcrumbsHierarchy} />
       <div className="main-info">
         <div className="product-image-container">
@@ -171,7 +172,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
           </div>
           <div className="add-to-card-container">
             <AddToCard color="#000000" background="#FFFFFF" title="Add to Wishlist" />
-            <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" onClick={handleAddToCartClick} cursor={isButtonDisabled === true ?  "not-allowed" : "pointer"} />
+            <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" onClick={handleAddToCartClick} cursor={isButtonDisabled === true ? "not-allowed" : "pointer"} />
           </div>
           <div className="cargo-icon-container">
             <Cargo icon={CargoIcon1} title="Free Delivery" details="1-2 day" />

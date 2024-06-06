@@ -1365,7 +1365,7 @@
     },
     {
       "id": "34",
-      "name": "Xiaomi Redmi Note 12 Pro Plus",
+      "name": "Redmi Note 12 Pro Plus",
       "price": "349",
       "categories": [
         "Smartphones"
@@ -1405,7 +1405,7 @@
     },
     {
       "id": "35",
-      "name": "Xiaomi Mi 11 Lite",
+      "name": "Mi 11 Lite",
       "price": "299",
       "categories": [
         "Smartphones"
@@ -1445,7 +1445,7 @@
     },
     {
       "id": "36",
-      "name": "Xiaomi Poco X4 Pro",
+      "name": "Poco X4 Pro",
       "price": "279",
       "categories": [
         "Smartphones"
@@ -1485,7 +1485,7 @@
     },
     {
       "id": "37",
-      "name": "Xiaomi Redmi K40",
+      "name": "Redmi K40",
       "price": "249",
       "categories": [
         "Smartphones"
@@ -1525,7 +1525,7 @@
     },
     {
       "id": "38",
-      "name": "Xiaomi Redmi Note 11",
+      "name": "Redmi Note 11",
       "price": "199",
       "categories": [
         "Smartphones"
@@ -1565,7 +1565,7 @@
     },
     {
       "id": "39",
-      "name": "Xiaomi Mi 10T Lite",
+      "name": "Mi 10T Lite",
       "price": "179",
       "categories": [
         "Smartphones"
@@ -1605,7 +1605,7 @@
     },
     {
       "id": "40",
-      "name": "Xiaomi Redmi Note 10S",
+      "name": "Redmi Note 10S",
       "price": "149",
       "categories": [
         "Smartphones"
@@ -1645,7 +1645,7 @@
     },
     {
       "id": "41",
-      "name": "Xiaomi Poco M4 Pro",
+      "name": "Poco M4 Pro",
       "price": "129",
       "categories": [
         "Smartphones"
@@ -1685,7 +1685,7 @@
     },
     {
       "id": "42",
-      "name": "Xiaomi Redmi 10",
+      "name": "Redmi 10",
       "price": "99",
       "categories": [
         "Smartphones"
@@ -1725,7 +1725,7 @@
     },
     {
       "id": "43",
-      "name": "Xiaomi Redmi 9C",
+      "name": "Redmi 9C",
       "price": "89",
       "categories": [
         "Smartphones"
@@ -1765,7 +1765,7 @@
     },
     {
       "id": "44",
-      "name": "Xiaomi Redmi 9A",
+      "name": "Redmi 9A",
       "price": "79",
       "categories": [
         "Smartphones"
@@ -2568,89 +2568,5 @@
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     }
   ],
-  "users": [
-    {
-      "id": "d84b",
-      "email": "example@example.com",
-      "fullName": "Ömer Ertürk",
-      "userName": "example",
-      "password": "123",
-      "avatarUrl": "https://ui-avatars.com/api/?name=ÖE&background=eeeeee&color=525252",
-      "favoriteProducts": [],
-      "registeredAddresses": [],
-      "cart": []
-    },
-    {
-      "id": "c59f",
-      "email": "erturkkerem256@gmail.com",
-      "fullName": "Kerem Ertürk",
-      "userName": "erturkkerem37",
-      "password": "123",
-      "avatarUrl": "https://ui-avatars.com/api/?name=KE&background=eeeeee&color=525252",
-      "favoriteProducts": [],
-      "registeredAddresses": [],
-      "cart": [
-        {
-          "title": "iPhone 13",
-          "brand": "Apple",
-          "storage": "128GB",
-          "color": "Mavi",
-          "screenSize": "6.1\"",
-          "price": "999",
-          "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
-          "productId": "1",
-          "quantity": 1,
-          "unchangeable": 1
-        },
-        {
-          "title": "iPhone 13 Pro",
-          "brand": "Apple",
-          "storage": "256GB",
-          "color": "Altın",
-          "screenSize": "6.1\"",
-          "price": "1099",
-          "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
-          "productId": "3",
-          "quantity": 3,
-          "unchangeable": 1
-        }
-      ]
-    },
-    {
-      "id": "0504",
-      "email": "erturkomer256@gmail.com",
-      "fullName": "Ömer Ertürk",
-      "userName": "erturkomerw",
-      "password": "123",
-      "avatarUrl": "https://ui-avatars.com/api/?name=ÖE&background=eeeeee&color=525252",
-      "favoriteProducts": [],
-      "registeredAddresses": [],
-      "cart": [
-        {
-          "title": "iPhone 12 Mini",
-          "brand": "Apple",
-          "storage": "64GB",
-          "color": "Beyaz",
-          "screenSize": "5.4\"",
-          "price": "699",
-          "productImg": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
-          "productId": "5",
-          "quantity": 2,
-          "unchangeable": 1
-        },
-        {
-          "title": "Samsung Galaxy M51",
-          "brand": "Samsung",
-          "storage": "128GB",
-          "color": "Beyaz",
-          "screenSize": "6.7\"",
-          "price": "349",
-          "productImg": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
-          "productId": "29",
-          "quantity": 1,
-          "unchangeable": 1
-        }
-      ]
-    }
-  ]
+  "users": []
 }

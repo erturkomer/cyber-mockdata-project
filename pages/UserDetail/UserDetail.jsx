@@ -3,31 +3,31 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "./UserDetail.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { IoLogOutOutline } from "react-icons/io5";
 
 const UserDetail = () => {
     const userDetails = JSON.parse(localStorage.getItem('userDetails'));
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     const [avatarUrl, setAvatarUrl] = useState('');
-    const [menu, setMenu] = useState("/");
     const [newName, setNewName] = useState(userDetails.fullName);
     const [newEmail, setNewEmail] = useState(userDetails.email);
     const [newUsername, setNewUsername] = useState(userDetails.userName);
     const [oldPassword, setOldPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-
     const location = useLocation();
+    const [menu, setMenu] = useState(location.pathname);
 
     useEffect(() => {
+        setMenu(location.pathname);
         if (userDetails && userDetails.avatarUrl) {
             setAvatarUrl(userDetails.avatarUrl);
         } else {
             const defaultAvatarUrl = generateDefaultAvatarUrl(userDetails.fullName);
             setAvatarUrl(defaultAvatarUrl);
         }
-    }, [userDetails]);
+    }, [location, userDetails]);
 
     const generateDefaultAvatarUrl = (fullName) => {
         if (!fullName) return '';
@@ -119,7 +119,6 @@ const UserDetail = () => {
             });
     };
 
-
     const handlePasswordChange = () => {
         if (userDetails.password !== oldPassword) {
             setErrorMessage('Please enter your current password correctly.');
@@ -147,6 +146,10 @@ const UserDetail = () => {
         return pattern.test(email);
     };
 
+    const isInfoChanged = () => {
+        return newName !== userDetails.fullName || newEmail !== userDetails.email || newUsername !== userDetails.userName;
+    };
+
     return (
         isLoggedIn ?
             <>
@@ -167,47 +170,66 @@ const UserDetail = () => {
                         </button>
                     </div>
                     <div className="right-side">
-                        <h2>My user information</h2>
-                        <ul className="user-information" style={{ listStyleType: "none" }}>
-                            <li className={menu === "/" ? "active" : ""} onClick={() => setMenu("/")}>
-                                <span>Membership information</span>
-                            </li>
-                            <li className={menu === "/password-change" ? "active" : ""} onClick={() => setMenu("/password-change")}>
-                                <span>Password change</span>
-                            </li>
-                        </ul>
+                        <div style={{display:"flex",flexDirection:"column",width:"48%" }}>
+                            <h2 style={{ fontSize: "28px", lineHeight: "36px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>My user information</h2>
+                            <ul className="user-information" style={{ listStyleType: "none", marginTop: "32px" }}>
+                                <li className={menu === "/userinformation" ? "active" : ""} onClick={() => setMenu("/userinformation")}>
+                                    <Link to="/userinformation" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <span style={{ fontSize: "14px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Membership information</span>
+                                    </Link>
+                                </li>
+                                <li className={menu === "/userinformation/passwordchange" ? "active" : ""
+                                } onClick={() => setMenu("/userinformation/passwordchange")}>
+                                    <Link to="/userinformation/passwordchange" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <span style={{ fontSize: "14px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Password change</span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                         <div className="menu">
-                            {menu === "/" && (
+                            {menu === "/userinformation" && (
                                 <div className="profile-information">
-                                    <h4>Profile information</h4>
-                                    <p>Here you can edit the information we need to optimize your experience at Cyber.</p>
+                                    <h4 style={{ fontSize: "20px", lineHeight: "30px", color: "#484848", fontWeight: "600", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Profile information</h4>
+                                    <p className="profile-info-psa" style={{ cursor: "default", padding: "0", background: "#fff" }}>Here you can edit the information we need to optimize your experience at Cyber.</p>
                                     <div className="membership-info">
-                                        <input
-                                            type="text"
-                                            placeholder="Enter your new name"
-                                            value={newName}
-                                            onChange={(e) => setNewName(e.target.value)}
-                                        />
-                                        <input
-                                            type="text"
-                                            placeholder="Enter your new username"
-                                            value={newUsername}
-                                            onChange={(e) => setNewUsername(e.target.value)}
-                                        />
-                                        <input
-                                            type="email"
-                                            placeholder="Enter your new email"
-                                            value={newEmail}
-                                            onChange={(e) => setNewEmail(e.target.value)}
-                                        />
+                                        <div className="membership-input-t1" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
+                                            <div className="membership-input-label">
+                                                <span>Full Name</span>
+                                                <input
+                                                    type="text"
+                                                    placeholder="Enter your new name"
+                                                    value={newName}
+                                                    onChange={(e) => setNewName(e.target.value)}
+                                                />
+                                            </div>
+                                            <div className="membership-input-label">
+                                                <span>Username</span>
+                                                <input
+                                                    type="text"
+                                                    placeholder="Enter your new username"
+                                                    value={newUsername}
+                                                    onChange={(e) => setNewUsername(e.target.value)}
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="membership-input-label">
+                                            <span>E-mail</span>
+                                            <input
+                                                className="email-input-d"
+                                                type="email"
+                                                placeholder="Enter your new email"
+                                                value={newEmail}
+                                                onChange={(e) => setNewEmail(e.target.value)}
+                                            />
+                                        </div>
                                         {errorMessage && <p className="error-message">{errorMessage}</p>}
-                                        <button onClick={handleUpdateUserInfo}>Update Info</button>
+                                        <button className={`update-user-info-btn ${isInfoChanged() ? "" : "not-allowed"}`} style={{ cursor: isInfoChanged() ? "pointer" : "not-allowed", background: isInfoChanged() ? "#18371f" : "#cccccc", color: isInfoChanged() ? "#fff" : "#000" }} onClick={handleUpdateUserInfo} disabled={!isInfoChanged()}>Update Info</button>
                                     </div>
                                 </div>
                             )}
                         </div>
                         <div className="menu1">
-                            {menu === "/password-change" && (
+                            {menu === "/userinformation/passwordchange" && (
                                 <div className="password-change">
                                     <input
                                         type="password"

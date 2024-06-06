@@ -3,7 +3,7 @@ import Logo from "./jsxSvg/logo.jsx";
 import FavoriteIcon from "./jsxSvg/favorites.svg";
 import Cart from "./jsxSvg/cart";
 import UserIcon from "./jsxSvg/user";
-import SearchBox from "../searchBox.jsx";
+import SearchBox from "../SearchBox/searchBox.jsx";
 import { Link, useLocation } from "react-router-dom";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { IoLogOutOutline } from "react-icons/io5";
@@ -52,7 +52,7 @@ const Header = ({ cartCount }) => {
                                 <UserIcon />
                                 <div className="user-menu">
                                     <Link
-                                        to="/userDetail"
+                                        to="/userinformation"
                                         style={{ gap: "8px", display: "flex", alignItems: "center" }}
                                     >
                                         <RiUserSettingsLine />

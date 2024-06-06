@@ -1,13 +1,14 @@
+
+
 .main-container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    height: 80vh;
-    padding: 50px 160px;
+    justify-content: center;
+    padding: 74px;
+    gap: 0px;
 }
 
 .left-side {
-    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -20,6 +21,9 @@
 
 .right-side {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .avatar-container {
@@ -70,13 +74,14 @@
 .menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 18px;
-    margin: 50px;
+    margin: 12px 0px;
 }
 
-.profile-information{
-    width: 450px;
+.profile-information {
+    width: 100%;
+    padding: 10px 0;
 }
 
 .menu1 {
@@ -91,6 +96,55 @@
     flex-direction: column;
 }
 
+.email-input-d {
+    width: 100%;
+}
+
+.membership-input-t1 input,
+.membership-input-t1 div {
+    width: 100%;
+}
+
+.membership-info input {
+    height: 46px;
+    padding: 0px 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.profile-info-psa{
+    font-size: 14px;
+    line-height: 21px;
+    color: #676767;
+}
+
+.membership-info input:hover {
+    background: #f5f5f5;
+}
+
 .password-change {
     display: flex;
+}
+
+.membership-input-label {
+    padding: 30px 0;
+}
+
+.membership-input-label span {
+    padding-left: 6px;
+    color: #484848;
+    font-weight: 400;
+}
+
+.update-user-info-btn {
+    border: 0;
+    padding: 12px;
+    border-radius: 8px;
+    color: #484848;
+    font-weight: 500;
+    transition: all 62.5ms linear;
+}
+
+.update-user-info-btn:hover {
+    transform: scale(0.98);
 }

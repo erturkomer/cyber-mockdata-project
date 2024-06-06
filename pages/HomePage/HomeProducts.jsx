@@ -1,10 +1,24 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Product from "../../components/allPageComponents/products/product";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const HomeProducts = () => {
-    const [menu, setMenu] = useState("/");
+    const location = useLocation();
+    const navigate = useNavigate();
+    const [menu, setMenu] = useState(location.pathname);
     const [products, setProducts] = useState([]);
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        setMenu(location.pathname);
+        if (location.state && location.state.scrollY !== undefined) {
+            window.scrollTo({
+                top : location.state.scrollY,
+                behavior: "instant"
+            });
+        }
+    }, [location]);
 
     useEffect(() => {
         fetchData();
@@ -40,18 +54,23 @@ const HomeProducts = () => {
         borderBottom: "2px solid black",
     };
 
+    const handleMenuClick = (path) => {
+        setScrollY(window.scrollY);
+        navigate(path, { replace: true, state: { scrollY: window.scrollY } });
+    };
+
     return (
         <>
             <div className="home-products-container">
                 <div className="home-products-tag">
                     <ul style={{ listStyleType: "none" }}>
-                        <li onClick={() => { setMenu("/") }}>
+                        <li onClick={() => handleMenuClick("/")}>
                             <span style={menu === "/" ? activeItemStyle : listItemStyle}>New Arrival</span>
                         </li>
-                        <li onClick={() => { setMenu("/bestseller") }}>
+                        <li onClick={() => handleMenuClick("/bestseller")}>
                             <span style={menu === "/bestseller" ? activeItemStyle : listItemStyle}>Bestseller</span>
                         </li>
-                        <li onClick={() => { setMenu("/featuredproducts") }}>
+                        <li onClick={() => handleMenuClick("/featuredproducts")}>
                             <span style={menu === "/featuredproducts" ? activeItemStyle : listItemStyle}>Featured Products</span>
                         </li>
                     </ul>
