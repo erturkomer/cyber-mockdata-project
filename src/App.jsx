@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import HomePage from "../pages/HomePage/Home.jsx";
 import Header from "../components/allPageComponents/header.jsx";
 import Footer from "../components/allPageComponents/footer/footer.jsx";
@@ -20,8 +19,9 @@ import './App.css';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CartItem from '../pages/ShoppingCartPage/CartItem.jsx';
-
-
+import AdminPanel from '../pages/AdminPanel/AdminPanel.jsx';
+import AdminUserList from "../pages/AdminPanel/UserList.jsx";
+import PrivateRoute from './PrivateRoute.jsx';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -34,7 +34,6 @@ const ScrollToTop = () => {
 
   return null;
 };
-
 
 function App() {
   const location = useLocation();
@@ -75,12 +74,7 @@ function App() {
             user.cart = [];
           }
 
-
-          const cartItem = user.cart.find((item) => {
-            console.log("item: " + item.productId);
-            return item.productId === id
-          });
-          console.log("cart item", cartItem);
+          const cartItem = user.cart.find((item) => item.productId === id);
           if (cartItem) {
             cartItem.quantity += 1;
           } else {
@@ -195,17 +189,11 @@ function App() {
     }
   };
 
+  const showHeaderFooter = !["/signup", "/login", "/adminpanel", "/adminpanel/userlist"].includes(location.pathname);
 
   return (
-
     <>
-      {
-        (location.pathname != "/signup" &&
-          location.pathname != "/login" ?
-          <Header cartCount={totalUnchangeable} />
-          : ""
-        )
-      }
+      {showHeaderFooter && <Header cartCount={totalUnchangeable} />}
       {
         (location.pathname === "/payments/step-1" ||
           location.pathname === "/payments/step-2" ||
@@ -228,18 +216,13 @@ function App() {
         <Route path="/signup" element={<Register />} />
         <Route path="/userinformation" element={<UserDetail />} />
         <Route path="/userinformation/passwordchange" element={<UserDetail />} />
-        <Route path="/bestseller" element={<HomePage/>} />
-        <Route path="/featuredproducts" element={<HomePage/>} />
+        <Route path="/adminpanel" element={<PrivateRoute element={<AdminPanel />} />} />
+        <Route path="/adminpanel/userlist" element={<PrivateRoute element={<AdminUserList />} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {
-        (location.pathname != "/signup" &&
-          location.pathname != "/login" ?
-          <Footer />
-          : ""
-        )
-      }    </>
-  )
-}
+      {showHeaderFooter && <Footer />}
+    </>
+  );
+};
 
 export default App;

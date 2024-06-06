@@ -1,50 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "iPhone 13",
-      "price": "999",
-      "categories": [
-        "Smartphones"
-      ],
-      "brand": "Apple",
-      "storage": "128GB",
-      "color": "Mavi",
-      "screenSize": "6.1\"",
-      "screenResolution": "2532 x 1170",
-      "screenRefreshRate": "60Hz",
-      "pixelDensity": "460ppi",
-      "screenType": "Super Retina XDR OLED",
-      "cpu": "A15 Bionic",
-      "numberOfCores": "6",
-      "mainCamera": "12 MP",
-      "frontCamera": "12 MP",
-      "batteryCapacity": "3.240 mAh",
-      "rating": {
-        "value": 0,
-        "count": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0
-        }
-      },
-      "additionally": [
-        "Dynamic Island",
-        "Always-On display",
-        "HDR display",
-        "True Tone",
-        "Wide color (P3)"
-      ],
-      "reviews": 0,
-      "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
-      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
-      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
-      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
-    },
-    {
       "id": "2",
       "name": "iPhone 13 Mini",
       "price": "799",
@@ -2568,5 +2524,44 @@
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "id": "5234",
+      "email": "erturkomer256@gmail.com",
+      "fullName": "Ömer Ertürk",
+      "userName": "erturkomer",
+      "password": "Omer123omer!",
+      "avatarUrl": "https://ui-avatars.com/api/?name=ÖE&background=eeeeee&color=525252",
+      "registrationDate": {
+        "year": "2024",
+        "month": "06",
+        "day": "06",
+        "hour": "14",
+        "minute": "4",
+        "second": "5"
+      },
+      "favoriteProducts": [],
+      "registeredAddresses": [],
+      "cart": []
+    },
+    {
+      "id": "110b",
+      "email": "admin@gmail.com",
+      "fullName": "Admin admin",
+      "userName": "admin",
+      "password": "Admin121437qwert!",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Aa&background=eeeeee&color=525252",
+      "registrationDate": {
+        "year": "2024",
+        "month": "06",
+        "day": "06",
+        "hour": "14",
+        "minute": "40",
+        "second": "11"
+      },
+      "favoriteProducts": [],
+      "registeredAddresses": [],
+      "cart": []
+    }
+  ]
 }
