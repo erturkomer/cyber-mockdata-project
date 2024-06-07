@@ -45,15 +45,6 @@
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
-      "comments": [
-        {
-          "description": "dasdasdasda",
-          "rating": 0
-        }
-      ],
-      "id": "3"
-    },
-    {
       "id": "4",
       "name": "iPhone 12",
       "price": "899",
@@ -632,15 +623,6 @@
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
-      "comments": [
-        {
-          "description": "1212121",
-          "rating": 5
-        }
-      ],
-      "id": "18"
-    },
-    {
       "id": "19",
       "name": "iPhone XS",
       "price": "899",
@@ -681,15 +663,6 @@
       "productImageAngle1": "../assets/image/smartphones/angle1.svg",
       "productImageAngle2": "../assets/image/smartphones/angle2.svg",
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
-    },
-    {
-      "comments": [
-        {
-          "description": "asdasdasd",
-          "rating": 0
-        }
-      ],
-      "id": "20"
     },
     {
       "id": "21",
@@ -1132,7 +1105,7 @@
       "additionally": [
         "Fast charging 15W"
       ],
-      "reviews": 83,
+      "reviews": 0,
       "comments": [],
       "productImage": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
       "productImageAngle1": "../assets/image/smartphones/angle1.svg",
@@ -2459,7 +2432,68 @@
           }
         }
       ],
-      "cart": []
+      "cart": [
+        {
+          "title": "iPhone 13 Mini",
+          "brand": "Apple",
+          "storage": "64GB",
+          "color": "Yeşil",
+          "screenSize": "5.4\"",
+          "price": "799",
+          "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+          "productId": "2",
+          "quantity": 1,
+          "unchangeable": 1
+        },
+        {
+          "title": "iPhone 12 Mini",
+          "brand": "Apple",
+          "storage": "64GB",
+          "color": "Beyaz",
+          "screenSize": "5.4\"",
+          "price": "699",
+          "productImg": "https://freepngimg.com/thumb/apple_iphone/133288-11-photos-apple-iphone-png-download-free.png",
+          "productId": "5",
+          "quantity": 2,
+          "unchangeable": 1
+        },
+        {
+          "title": "Samsung Galaxy A12",
+          "brand": "Samsung",
+          "storage": "32GB",
+          "color": "Beyaz",
+          "screenSize": "6.5\"",
+          "price": "199",
+          "productImg": "https://lh3.googleusercontent.com/EqZxdzf_OWuPwPS6ERcjdbR7VaZVCvOwUi5KwP1fu8-_3NRyiT3cfFb4jImhE3do7qovhd5bHFp4N6gDi6LAUYqt53QQ4NyVU8U",
+          "productId": "32",
+          "quantity": 2,
+          "unchangeable": 1
+        },
+        {
+          "title": "iPhone 12",
+          "brand": "Apple",
+          "storage": "128GB",
+          "color": "Siyah",
+          "screenSize": "6.1\"",
+          "price": "899",
+          "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+          "productId": "4",
+          "quantity": 1,
+          "unchangeable": 1
+        },
+        {
+          "title": "Realme Q3 Pro",
+          "brand": "Realme",
+          "storage": "128GB",
+          "color": "Yeşil",
+          "screenSize": "6.4\"",
+          "price": "279",
+          "productImg": "https://www.pngall.com/wp-content/uploads/4/Realme-PNG.png",
+          "productId": "62",
+          "quantity": 1,
+          "unchangeable": 1
+        }
+      ]
     },
     {
       "id": "110b",
@@ -2521,7 +2555,19 @@
           "price": "1099",
           "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
           "productId": "3",
-          "quantity": 5,
+          "quantity": 8,
+          "unchangeable": 1
+        },
+        {
+          "title": "iPhone XS Max",
+          "brand": "Apple",
+          "storage": "512GB",
+          "color": "Altın",
+          "screenSize": "6.5\"",
+          "price": "999",
+          "productImg": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
+          "productId": "20",
+          "quantity": 4,
           "unchangeable": 1
         }
       ]

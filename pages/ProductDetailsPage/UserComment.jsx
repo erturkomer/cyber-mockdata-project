@@ -4,16 +4,17 @@ import Rating from "react-rating-stars-component";
 
 const UserComment = (props) => {
     const numericRating = parseFloat(props.rating);
+    const today = new Date().toLocaleDateString(); // Yorum atıldığı anın tarihini alır
 
     return (
         <>
             <div className="reviews-comment">
-                <img style={{ width: "56px", height: "56px" }} src={props.profileImgUrl} alt="avatar bulunamadi." />
+                <img style={{ width: "56px", height: "56px", borderRadius:"50%" }} src={props.profileImgUrl} alt="avatar bulunamadi." />
                 <div className="reviews-content">
                     <div className="reviews-title-stars">
                         <div className="reviews-title-data">
                             <h1>{props.title}</h1>
-                            <span>{props.history}</span>
+                            <span>{today}</span>
                         </div>
                         <Rating
                             count={5}
@@ -31,5 +32,6 @@ const UserComment = (props) => {
         </>
     )
 };
+
 
 export default UserComment;

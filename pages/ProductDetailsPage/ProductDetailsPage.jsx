@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Breadcrumbs from "../../components/allPageComponents/breadCrumbs";
 import Color from "./Color";
@@ -30,61 +30,56 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
   const { id } = useParams();
   const [users, setUsers] = useState(null);
   const [brand, setBrand] = useState(null);
+  const [comments, setComments] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [rating, setRating] = useState(0);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [comment, setComment] = useState(false);
   const [leaveComment, setLeaveComment] = useState("");
+  const [commentCount, setCommentCount] = useState(3);
+  const [yellowWidth, setYellowWidth] = useState(0);
+  const [averageRating, setAverageRating] = useState(0);
+  const [averageRatings, setAverageRatings] = useState(0);
+  const navigate = useNavigate();
+ 
   const userDetails = JSON.parse(localStorage.getItem('userDetails'));
-  const userId = userDetails?.id
-
+  const userId = userDetails?.id;
 
   const handleRatingChange = (newRating) => {
     console.log('Selected rating:', newRating);
     setRating(newRating);
   };
 
-
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_API_URL}products/${id}`)
       .then(response => {
         setProduct(response.data);
         setBrand(response.data.brand);
-
-        const updatedComments = [...response.data.comments, { user_id: userId, description: leaveComment }];
-        setComment(updatedComments);
-
-
+        setAverageRatings(response.data.rating.value);
+        setComments(response.data.comments);
+        setYellowWidth(response.data.rating.count);
       })
       .catch(error => {
         console.error('Error fetching product details:', error);
       });
-    axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`)
-      .then(response => {
-        setUsers(response.data);
-      })
-      .catch(error => {
-        console.error('Error users:', error);
-      });
-
-  }, [id]);
+  }, [id, setProduct]);
 
   if (!product) {
     return <div>Loading...</div>;
   }
 
-  if (!users) {
-    return <div>Loading...</div>;
-  }
-  const totalVotes = Object.values(product.rating.count).reduce((acc, curr) => acc + curr, 0);
-  const yellowWidth5 = (product.rating.count["5"] / totalVotes) * 664;
-  const yellowWidth4 = (product.rating.count["4"] / totalVotes) * 664;
-  const yellowWidth3 = (product.rating.count["3"] / totalVotes) * 664;
-  const yellowWidth2 = (product.rating.count["2"] / totalVotes) * 664;
-  const yellowWidth1 = (product.rating.count["1"] / totalVotes) * 664;
 
+  const totalVotes = Object.values(yellowWidth).reduce((acc, curr) => acc + curr, 0);
+
+  const yellowWidth5 = (yellowWidth["5"] / totalVotes) * 664;
+  const yellowWidth4 = (yellowWidth["4"] / totalVotes) * 664;
+  const yellowWidth3 = (yellowWidth["3"] / totalVotes) * 664;
+  const yellowWidth2 = (yellowWidth["2"] / totalVotes) * 664;
+  const yellowWidth1 = (yellowWidth["1"] / totalVotes) * 664;
+  
   const handleAddToCartClick = () => {
     if (isButtonDisabled) return;
+  
     handleAddToCart(id);
     toast.success(`${product.name} added to cart.`, {
       position: "bottom-left",
@@ -96,7 +91,53 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       setIsButtonDisabled(false);
     }, 1200);
   };
-
+  
+  const handleLeaveComment = async () => {
+    if (!rating) {
+      toast.error("Please select a rating before submitting your comment.", {
+        position: "bottom-left",
+        autoClose: 1350,
+        hideProgressBar: true,
+      });
+      return;
+    }
+  
+    const newComment = {
+      user_id: userId,
+      description: leaveComment,
+      rating: rating,
+      userName: userDetails.userName,
+      avatarUrl: userDetails.avatarUrl,
+    };
+  
+    const updatedComments = [...comments, newComment];
+    const totalRating = updatedComments.reduce((acc, comment) => acc + comment.rating, 0);
+    const average = (totalRating / updatedComments.length).toFixed(1);
+  
+    const updatedYellowWidth = {
+      ...yellowWidth,
+      [rating]: (yellowWidth[rating] || 0) + 1,
+    };
+  
+    try {
+      await axios.put(`${import.meta.env.VITE_API_URL}products/${id}`, {
+        ...product,
+        comments: updatedComments,
+        reviews: updatedComments.length,
+        rating: {
+          value: average,
+          count: updatedYellowWidth,
+        },
+      });
+  
+      setComments(updatedComments);
+      setAverageRating(average);
+      window.location.href = `/catalog/smartphones/productdetails/${id}`;
+    } catch (e) {
+      console.log(e);
+    }
+  };
+  
 
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },
@@ -105,6 +146,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
     { name: brand, link: `/catalog/smartphones/${brand}` },
     { name: product.name, link: `/catalog/smartphones/${brand}/${id}` }
   ];
+
 
   return (
     <>
@@ -226,12 +268,12 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
             </div>
             <div className="reviews-overall-rating">
               <div className="overall-rating">
-                <h1 style={{ textAlign: "center" }}>{product.rating.value}</h1>
-                <span>of {product.reviews} reviews</span>
+                <h1 style={{ textAlign: "center" }}>{averageRatings}</h1>
+                <span>of {comments.length} reviews</span>
                 <Rating
                   count={5}
                   size={24}
-                  value={product.rating.value}
+                  value={averageRatings}
                   edit={true}
                   emptyIcon={<FaStar color="#ccc" />}
                   filledIcon={<FaStar color="#ffc107" />}
@@ -247,7 +289,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
                     <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
                       <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth5 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
                     </div>
-                    <span>{product.rating.count["5"]}</span>
+                    <span>{yellowWidth["5"]}</span>
                   </div>
                 </div>
                 <div className="level-good level">
@@ -256,7 +298,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
                     <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
                       <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth4 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
                     </div>
-                    <span>{product.rating.count["4"]}</span>
+                    <span>{yellowWidth["4"]}</span>
                   </div>
                 </div>
                 <div className="level-average level">
@@ -265,7 +307,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
                     <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
                       <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth3 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
                     </div>
-                    <span>{product.rating.count["3"]}</span>
+                    <span>{yellowWidth["3"]}</span>
                   </div>
                 </div>
                 <div className="level-below-average level">
@@ -274,7 +316,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
                     <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
                       <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth2 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
                     </div>
-                    <span>{product.rating.count["2"]}</span>
+                    <span>{yellowWidth["2"]}</span>
                   </div>
                 </div>
                 <div className="level-poor level">
@@ -283,7 +325,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
                     <div className="rating-bar" style={{ borderRadius: "16px", width: '664px', height: '5px', backgroundColor: '#d9d9d9', position: 'relative' }}>
                       <div className="rating-fill" style={{ borderRadius: "16px", width: yellowWidth1 + 'px', backgroundColor: '#ffb547', position: 'absolute', top: 0, bottom: 0 }}></div>
                     </div>
-                    <span>{product.rating.count["1"]}</span>
+                    <span>{yellowWidth["1"]}</span>
                   </div>
                 </div>
               </div>
@@ -292,33 +334,29 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
               <input
                 type="text"
                 placeholder="Leave Comment"
-                // value={comment}
+                value={leaveComment}
                 onChange={(e) => setLeaveComment(e.target.value)}
-              // onKeyPress={handleKeyPress}
+                onKeyPress={(e) => {
+                  if (e.key === "Enter") {
+                    handleLeaveComment();
+                  }
+                }}
               />
             </div>
           </div>
           <div className="reviews-comment-container">
-            {updatedComments.slice(0, showAll ? product.length : 3).map((user, index) => (
-              <UserComment key={index} title={user.name} history={user.history} rating={user.rate} comment={user.comment} profileImgUrl={user.profileImgUrl} />
-            ))}
-            {!showAll ? (
-              <button className="scroll-down" style={{ gap: "8px", fontWeight: "500", fontSize: "14px", lineHeight: "24px", width: "208px", height: "48px", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", margin: "10px auto", cursor: "pointer", outline: "none", border: "1px solid black", background: "white" }} onClick={() => setShowAll(true)}>
-                View More
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 9L12 15L6 9" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </button>
-            ) : (
-              <button className="show-less" style={{ gap: "8px", fontWeight: "500", fontSize: "14px", lineHeight: "24px", width: "208px", height: "48px", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", margin: "10px auto", cursor: "pointer", outline: "none", border: "1px solid black", background: "white" }} onClick={() => setShowAll(false)}>
-                View More
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 15L12 9L6 15" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </button>
-            )}
+            <div className="reviews-comment-container">
+              {comments.filter((comment, index) => index < commentCount).map((comment, index) => (
+                <UserComment key={index} profileImgUrl={comment.avatarUrl} comment={comment.description} rating={comment.rating} title={comment.userName} />
+              ))}
+            </div>
+            <button className="scroll-down" style={{ gap: "8px", fontWeight: "500", fontSize: "14px", lineHeight: "24px", width: "208px", height: "48px", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", margin: "10px auto", cursor: "pointer", outline: "none", border: "1px solid black", background: "white" }} onClick={() => setCommentCount((prev) => prev + 3)}>
+              View More
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 9L12 15L6 9" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+            </button>
           </div>
-
 
         </div>
       }

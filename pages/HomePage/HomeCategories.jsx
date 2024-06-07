@@ -39,7 +39,7 @@ const HomeCategories = () => {
     HeadphonesIcon,
     HeadphonesIcon
   ];
-  const visibleCategories = 6; // Görünür kategori sayısı
+  const visibleCategories = 6;
 
   const handleScrollRight = () => {
     if (startIndex + visibleCategories < categories.length) {
