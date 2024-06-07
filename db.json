@@ -45,47 +45,13 @@
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
-      "id": "3",
-      "name": "iPhone 13 Pro",
-      "price": "1099",
-      "categories": [
-        "Smartphones"
-      ],
-      "brand": "Apple",
-      "storage": "256GB",
-      "color": "Altın",
-      "screenSize": "6.1\"",
-      "screenResolution": "2532 x 1170",
-      "screenRefreshRate": "120Hz",
-      "pixelDensity": "460ppi",
-      "screenType": "Super Retina XDR OLED",
-      "cpu": "A15 Bionic",
-      "numberOfCores": "6",
-      "mainCamera": "12 MP",
-      "frontCamera": "12 MP",
-      "batteryCapacity": "3.240 mAh",
-      "rating": {
-        "value": 0,
-        "count": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0
+      "comments": [
+        {
+          "description": "dasdasdasda",
+          "rating": 0
         }
-      },
-      "additionally": [
-        "ProMotion",
-        "HDR display",
-        "True Tone",
-        "Wide color (P3)"
       ],
-      "reviews": 0,
-      "comments": [],
-      "productImage": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
-      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
-      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
-      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
+      "id": "3"
     },
     {
       "id": "4",
@@ -666,46 +632,13 @@
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
-      "id": "18",
-      "name": "iPhone 11 Pro Max",
-      "price": "1099",
-      "categories": [
-        "Smartphones"
-      ],
-      "brand": "Apple",
-      "storage": "256GB",
-      "color": "Altın",
-      "screenSize": "6.5\"",
-      "screenResolution": "2688 x 1242",
-      "screenRefreshRate": "60Hz",
-      "pixelDensity": "458ppi",
-      "screenType": "Super Retina XDR OLED",
-      "cpu": "A13 Bionic",
-      "numberOfCores": "6",
-      "mainCamera": "12 MP",
-      "frontCamera": "12 MP",
-      "batteryCapacity": "3.969 mAh",
-      "rating": {
-        "value": 0,
-        "count": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0
+      "comments": [
+        {
+          "description": "1212121",
+          "rating": 5
         }
-      },
-      "additionally": [
-        "HDR display",
-        "True Tone",
-        "Wide color (P3)"
       ],
-      "reviews": 0,
-      "comments": [],
-      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
-      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
-      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
-      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
+      "id": "18"
     },
     {
       "id": "19",
@@ -750,46 +683,13 @@
       "productImageAngle3": "../assets/image/smartphones/angle3.svg"
     },
     {
-      "id": "20",
-      "name": "iPhone XS Max",
-      "price": "999",
-      "categories": [
-        "Smartphones"
-      ],
-      "brand": "Apple",
-      "storage": "512GB",
-      "color": "Altın",
-      "screenSize": "6.5\"",
-      "screenResolution": "2688 x 1242",
-      "screenRefreshRate": "60Hz",
-      "pixelDensity": "458ppi",
-      "screenType": "Super Retina OLED",
-      "cpu": "A12 Bionic",
-      "numberOfCores": "6",
-      "mainCamera": "12 MP",
-      "frontCamera": "7 MP",
-      "batteryCapacity": "3.174 mAh",
-      "rating": {
-        "value": 0,
-        "count": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0
+      "comments": [
+        {
+          "description": "asdasdasd",
+          "rating": 0
         }
-      },
-      "additionally": [
-        "HDR display",
-        "True Tone",
-        "Wide color (P3)"
       ],
-      "reviews": 0,
-      "comments": [],
-      "productImage": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
-      "productImageAngle1": "../assets/image/smartphones/angle1.svg",
-      "productImageAngle2": "../assets/image/smartphones/angle2.svg",
-      "productImageAngle3": "../assets/image/smartphones/angle3.svg"
+      "id": "20"
     },
     {
       "id": "21",
@@ -2541,7 +2441,24 @@
         "second": "5"
       },
       "favoriteProducts": [],
-      "registeredAddresses": [],
+      "registeredAddresses": [
+        {
+          "id": "7651c418-95b4-4ba0-8f8c-b09a7bd6479f",
+          "address": "2118 Thornridge",
+          "tag": "HOME",
+          "addressLine1": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
+          "addressLine2": "",
+          "phoneNumber": "05346403437",
+          "addressCreationDate": {
+            "year": "2024",
+            "month": "06",
+            "day": "07",
+            "hour": "14",
+            "minute": "54",
+            "second": "21"
+          }
+        }
+      ],
       "cart": []
     },
     {
@@ -2560,8 +2477,66 @@
         "second": "11"
       },
       "favoriteProducts": [],
-      "registeredAddresses": [],
-      "cart": []
+      "registeredAddresses": [
+        {
+          "id": "570ab12a-28f1-4819-b081-8780036cbcf0",
+          "address": "2118 Thornridge",
+          "tag": "HOME",
+          "addressLine1": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
+          "addressLine2": "",
+          "phoneNumber": "05346403437",
+          "addressCreationDate": {
+            "year": "2024",
+            "month": "06",
+            "day": "07",
+            "hour": "16",
+            "minute": "8",
+            "second": "5"
+          }
+        },
+        {
+          "id": "06f8647c-2c14-4251-909e-672794caac0e",
+          "address": "Ömer",
+          "tag": "HOME",
+          "addressLine1": "ömerdasdasdasdas",
+          "addressLine2": "",
+          "phoneNumber": "05346403437",
+          "addressCreationDate": {
+            "year": "2024",
+            "month": "06",
+            "day": "07",
+            "hour": "16",
+            "minute": "47",
+            "second": "43"
+          }
+        }
+      ],
+      "cart": [
+        {
+          "title": "iPhone 13 Pro",
+          "brand": "Apple",
+          "storage": "256GB",
+          "color": "Altın",
+          "screenSize": "6.1\"",
+          "price": "1099",
+          "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
+          "productId": "3",
+          "quantity": 8,
+          "unchangeable": 1
+        },
+        {
+          "title": "iPhone XS Max",
+          "brand": "Apple",
+          "storage": "512GB",
+          "color": "Altın",
+          "screenSize": "6.5\"",
+          "price": "999",
+          "productImg": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
+          "productId": "20",
+          "quantity": 1,
+          "unchangeable": 1
+        }
+      ]
     }
   ]
 }

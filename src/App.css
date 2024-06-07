@@ -2022,6 +2022,221 @@ h3 {
     gap: 23px;
 }
 
+.payments-step-3-container {
+    padding: 24px 160px 72px 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payments-step-3-left-side {
+    padding: 32px 24px 32px 24px;
+    border-radius: 10px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.payments-step-3-right-side {
+    width: 512px;
+    height: 704px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step-3-summary-title {
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 3%;
+}
+
+.step-3-selected-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.step-3-selected-added-product {
+    width: 464px;
+    border-radius: 13px;
+    background: #F6F6F6;
+    padding: 16px 0px 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-3-selected-added-product-image {
+    width: 40px;
+}
+
+.step-3-selected-added-product-text {
+    padding: 0 24px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 392px;
+}
+
+.step-3-selected-added-product-text p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.step-3-selected-added-product-text span {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.step-3-details {
+    width: 100%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-3-shipment-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.step-3-shipment-address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.step-3-shipment-address-info h6 {
+    font-size: 14px;
+    color: #545454;
+    font-weight: 500;
+}
+
+.step-3-shipment-address-info .step-3-shipment-address-field {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 12px 0 12px 0;
+    border-radius: 7px;
+    min-height: 48px;
+}
+
+.step-3-shipment-address-field p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.step-3-shipment-method-info {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-3-shipment-method-info h6 {
+    font-size: 14px;
+    color: #545454;
+    font-weight: 500;
+}
+
+.step-3-shipment-method-info .shep-3-shipment-method-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    min-height: 24px;
+}
+
+.shep-3-shipment-method-field p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.step-3-price-info {
+    gap: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-3-price-info .step-3-subtotal {
+    width: 100%;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-3-subtotal h6 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3%;
+    width: 100%;
+}
+
+.step-3-subtotal span{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3%;
+}
+
+.step-3-taxes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.step-3-taxes{
+    min-height: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-3-taxes h6{
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+    width: 100%;
+}
+
+.step-3-taxes span{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3%;
+}
+
+.step-3-total-price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 32px;
+}
+
+.step-3-total-price h6{
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3%;
+}
+
+.step-3-total-price span{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 3%;
+}
+
 /* - PAYMENT PAGES FINISH - */
 
 

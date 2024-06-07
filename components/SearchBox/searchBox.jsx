@@ -13,11 +13,6 @@ const SearchBox = () => {
     const { id } = useParams();
     const navigate = useNavigate();
 
-    const handleFocus = () => {
-        setIsMenuOpen(true);
-        searchItem();
-    };
-
     const handleClickOutside = (event) => {
         if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
             setIsMenuOpen(false);
@@ -31,36 +26,37 @@ const SearchBox = () => {
         };
     }, []);
 
-    const searchItem = async (value) => {
+    const searchItem = async (value = "") => {
         try {
             const response = await axios.get(import.meta.env.VITE_API_URL + "products");
             const allProducts = response.data;
             let filteredProducts;
+    
             if (value.trim() === "") {
                 setProducts([]);
                 return;
             } else {
                 const searchWords = value.toLowerCase().split(" ");
-
-                filteredProducts = allProducts.filter(product =>
+    
+                filteredProducts = allProducts.filter(product => 
                     searchWords.some(word =>
-                        product.name.toLowerCase().includes(word) ||
-                        product.brand.toLowerCase().includes(word)
+                        (product.name && product.name.toLowerCase().includes(word)) ||
+                        (product.brand && product.brand.toLowerCase().includes(word))
                     )
                 );
-
+    
                 filteredProducts.sort((a, b) => {
                     const aMatches = searchWords.reduce((totalMatches, word) =>
                         totalMatches +
-                        ((a.name.toLowerCase().match(new RegExp(word, "g")) || []).length +
-                            (a.brand.toLowerCase().match(new RegExp(word, "g")) || []).length), 0);
+                        ((a.name && a.name.toLowerCase().match(new RegExp(word, "g")) || []).length +
+                            (a.brand && a.brand.toLowerCase().match(new RegExp(word, "g")) || []).length), 0);
                     const bMatches = searchWords.reduce((totalMatches, word) =>
                         totalMatches +
-                        ((b.name.toLowerCase().match(new RegExp(word, "g")) || []).length +
-                            (b.brand.toLowerCase().match(new RegExp(word, "g")) || []).length), 0);
+                        ((b.name && b.name.toLowerCase().match(new RegExp(word, "g")) || []).length +
+                            (b.brand && b.brand.toLowerCase().match(new RegExp(word, "g")) || []).length), 0);
                     return bMatches - aMatches;
                 });
-
+    
                 filteredProducts = filteredProducts.slice(0, 6);
             }
             setProducts(filteredProducts);
@@ -68,6 +64,7 @@ const SearchBox = () => {
             console.error('Ürünleri çekerken bir hata oluştu:', error);
         }
     };
+        
 
     const handleProductClick = async (productId) => {
         try {
@@ -80,6 +77,11 @@ const SearchBox = () => {
         }
     };
 
+    const handleFocus = () => {
+        setIsMenuOpen(true);
+        searchItem(searchTerm);
+    };
+    
     const handleInputChange = (event) => {
         const { value } = event.target;
         setSearchTerm(value);
@@ -122,10 +124,10 @@ const SearchBox = () => {
                                 />
                             ))
                         ) : (
-                            <div style={{padding:"0 12px"}}>{searchTerm ? "No products found matching your search criteria." : "Enter at least 1 character to search."}</div>
+                            <div style={{ padding: "0 12px" }}>{searchTerm ? "No products found matching your search criteria." : "Enter at least 1 character to search."}</div>
                         )}
                     </div>
-                    <div style={{width:"55%"}}>
+                    <div style={{ width: "55%" }}>
                     </div>
                 </div>
             )}

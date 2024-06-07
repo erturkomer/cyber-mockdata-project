@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import SelectAddressCard from "./SelectAddressCard";
 import AddLineIcon from "./icons/AddLine.svg";
@@ -9,6 +9,7 @@ import StepNextButton from "../StepNextButton";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { v4 as uuidv4 } from 'uuid';
+import { useLocation } from "react-router-dom";
 
 
 const PaymentStep1 = () => {
@@ -16,6 +17,8 @@ const PaymentStep1 = () => {
   const [isEditMode, setIsEditMode] = useState(false);
   const [currentEditId, setCurrentEditId] = useState(null);
   const [selectedAddressId, setSelectedAddressId] = useState(null);
+  const location = useLocation();
+  const { cart, totalPrice } = location.state || [];
   const [formData, setFormData] = useState({
     address: "",
     tag: "HOME",
@@ -25,6 +28,7 @@ const PaymentStep1 = () => {
   });
   const [addressData, setAddressData] = useState([]);
   const userDetails = JSON.parse(localStorage.getItem('userDetails'));
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
@@ -172,12 +176,15 @@ const PaymentStep1 = () => {
     setSelectedAddressId(id);
   };
 
-  const handleNextClick = (e) => {
+  const handleNextClick = () => {
     if (!selectedAddressId) {
-      e.preventDefault();
-      toast.error("Please select an address before proceeding.", { autoClose: 500 });
+      console.error("Please select an address before proceeding.");
+    } else {
+      const selectedAddress = addressData.find(address => address.id === selectedAddressId);
+      navigate("/payments/step-2", { state: { cart : cart, selectedAddress: selectedAddress, totalPrice: totalPrice } });
     }
   };
+
 
   return (
     <>
@@ -201,9 +208,7 @@ const PaymentStep1 = () => {
           </div>
           <div className="address-buttons" style={{ width: "100%", height: "64px", gap: "24px", display: "flex", alignItems: "center", justifyContent: "right" }}>
             <Link to="/shoppingcart"><StepNextButton background="#fff" name="Back" /></Link>
-            <Link to="/payments/step-2" onClick={handleNextClick}>
-              <StepNextButton background="#000" name="Next" />
-            </Link>
+            <StepNextButton background="#000" name="Next" onClick={handleNextClick} />
           </div>
         </div>
       </div>

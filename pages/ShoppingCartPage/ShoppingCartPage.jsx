@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CartItem from "./CartItem";
 import { useNavigate, Link } from "react-router-dom";
-import {  toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ShoppingCartPage = ({ handleRemoveFromCart, cart, setCart, Increment, Decrement }) => {
     const [cardNumber, setCardNumber] = useState("");
     const [couponCode, setCouponCode] = useState("");
     const [appliedCouponCode, setAppliedCouponCode] = useState("");
+    const [totalPrice, setTotalPrice] = useState(0);
     const [isCouponApplied, setIsCouponApplied] = useState(false);
     const navigate = useNavigate();
     const userDetails = JSON.parse(localStorage.getItem("userDetails"));
@@ -28,6 +29,11 @@ const ShoppingCartPage = ({ handleRemoveFromCart, cart, setCart, Increment, Decr
                 });
         }
     }, [isLoggedIn, userDetails?.id]);
+
+    useEffect(() => {
+        const calculatedTotal = calculateTotal();
+        setTotalPrice(calculatedTotal);
+    }, [cart, appliedCouponCode]);
 
     const calculateTotal = () => {
         let total = cart.reduce((total, item) => total + parseFloat(item.price) * parseFloat(item.quantity), 0);
@@ -69,16 +75,16 @@ const ShoppingCartPage = ({ handleRemoveFromCart, cart, setCart, Increment, Decr
         if (cardNumber.length !== 16) {
             showToast("Please enter a valid 16-digit card number.", "error");
         } else {
-            navigate("/payments/step-1");
+            navigate("/payments/step-1", { state: { cart : cart, totalPrice: totalPrice } });
         }
     };
 
     return (
         <>
             {!isLoggedIn && (
-                <div className="not-logged-in" style={{ height: "50vh" , display:"flex", alignItems:"center", justifyContent:"center"}}>
+                <div className="not-logged-in" style={{ height: "50vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <span>
-                        You are not logged in. Please <Link to="/login" style={{textDecoration:"none"}}> <button style={{border:"1px solid black", background:"none", margin:"5px", padding:"2px 12px", borderRadius:"3px"}}>log in</button></Link> and see your shopping cart.
+                        You are not logged in. Please <Link to="/login" style={{ textDecoration: "none" }}> <button style={{ border: "1px solid black", background: "none", margin: "5px", padding: "2px 12px", borderRadius: "3px" }}>log in</button></Link> and see your shopping cart.
                     </span>
                 </div>
             )}

@@ -33,8 +33,10 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
   const [showAll, setShowAll] = useState(false);
   const [rating, setRating] = useState(0);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
-  const [isAdded, setIsAdded] = useState(false);
+  const [comment, setComment] = useState(false);
+  const [leaveComment, setLeaveComment] = useState("");
   const userDetails = JSON.parse(localStorage.getItem('userDetails'));
+  const userId = userDetails?.id
 
 
   const handleRatingChange = (newRating) => {
@@ -42,43 +44,29 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
     setRating(newRating);
   };
 
-  // const handleKeyPress = async (event) => {
-  //   if (event.key === 'Enter' && comment.trim() !== '') {
-  //     try {
-  //       const response = await axios.post(`${import.meta.env.VITE_API_URL}products/${id}`)
-  //       const newComment = response.data;
-  //       newComment.push(() => {
-  //         userId,
-  //         description: comment,
-  //         avatarUrl: userAvatarUrl,
-  //         rating,
-  //       });
-
-  //       setAllComments((prevComments) => [newComment, ...prevComments]);
-  //       setComment('');
-  //       setRating(0);
-  //     } catch (error) {
-  //       console.error('Error posting comment:', error);
-  //     }
-  //   }
-  // };
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_API_URL}products/${id}`)
       .then(response => {
         setProduct(response.data);
         setBrand(response.data.brand);
+
+        const updatedComments = [...response.data.comments, { user_id: userId, description: leaveComment }];
+        setComment(updatedComments);
+
+
       })
       .catch(error => {
         console.error('Error fetching product details:', error);
       });
-    axios.get(`${import.meta.env.VITE_API_URL}users`)
+    axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`)
       .then(response => {
         setUsers(response.data);
       })
       .catch(error => {
         console.error('Error users:', error);
       });
+
   }, [id]);
 
   if (!product) {
@@ -304,14 +292,14 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
               <input
                 type="text"
                 placeholder="Leave Comment"
-              // value={comment}
-              // onChange={(e) => setComment(e.target.value)}
+                // value={comment}
+                onChange={(e) => setLeaveComment(e.target.value)}
               // onKeyPress={handleKeyPress}
               />
             </div>
           </div>
           <div className="reviews-comment-container">
-            {users.slice(0, showAll ? product.length : 3).map((user, index) => (
+            {updatedComments.slice(0, showAll ? product.length : 3).map((user, index) => (
               <UserComment key={index} title={user.name} history={user.history} rating={user.rate} comment={user.comment} profileImgUrl={user.profileImgUrl} />
             ))}
             {!showAll ? (

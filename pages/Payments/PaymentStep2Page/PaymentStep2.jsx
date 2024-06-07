@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import ShippingMethodCard from "./ShippingMethodCard";
 import StepNextButton from "../StepNextButton";
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { useLocation } from "react-router-dom";
 
 
 const PaymentStep2 = () => {
+    const location = useLocation();
+    const { cart, selectedAddress, totalPrice } = location.state || [];
     const [selectedShippingMethodId, setSelectedShippingMethodId] = useState(null);
+    const navigate = useNavigate();
     const [shippingDates, setShippingDates] = useState({
         1: '',
         2: '',
@@ -55,9 +59,7 @@ const PaymentStep2 = () => {
                     <Link to="/payments/step-1">
                         <StepNextButton background="#fff" name="Back" />
                     </Link>
-                    <Link to="/payments/step-3">
-                        <StepNextButton background="#000" name="Next" />
-                    </Link>
+                    <StepNextButton background="#000" name="Next" onClick={() => navigate("/payments/step-3", { state: { cart: cart, selectedAddress: selectedAddress, selectedShippingMethodId: selectedShippingMethodId, totalPrice: totalPrice  } })} />
                 </div>
             </div>
         </div>
