@@ -1,12 +1,12 @@
 import React from "react";
 
-const StepNextButton = ({ background, name, onClick }) => {
+const StepNextButton = ({ background, name, onClick, width }) => {
     const textColor = background === "#fff" ? "#000" : "#fff";
 
     return (
         <>
             <button style={{
-                width: "207px",
+                width: width ? width : "217px",
                 height: "64px",
                 background: background,
                 color: textColor,

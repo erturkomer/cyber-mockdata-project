@@ -31,6 +31,13 @@ const PaymentStep1 = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!cart || !totalPrice) {
+      navigate("/shoppingcart", { replace: true });
+    }
+  }, [cart, totalPrice, navigate]);
+
+
+  useEffect(() => {
     axios.get(`${import.meta.env.VITE_API_URL}users/${userDetails.id}`)
       .then((response) => {
         const registeredAddresses = response.data.registeredAddresses || []
@@ -181,9 +188,19 @@ const PaymentStep1 = () => {
       console.error("Please select an address before proceeding.");
     } else {
       const selectedAddress = addressData.find(address => address.id === selectedAddressId);
-      navigate("/payments/step-2", { state: { cart : cart, selectedAddress: selectedAddress, totalPrice: totalPrice } });
+      navigate("/payments/step-2", { state: { cart: cart, selectedAddress: selectedAddress, totalPrice: totalPrice } });
     }
   };
+
+  const handleStepBack = () => {
+    navigate("/shoppingcart", {
+      state: {
+        cart: cart,
+        totalPrice: totalPrice,
+      },
+    });
+    console.log("state aktarıldı");
+  }
 
 
   return (
@@ -207,7 +224,7 @@ const PaymentStep1 = () => {
             </div>
           </div>
           <div className="address-buttons" style={{ width: "100%", height: "64px", gap: "24px", display: "flex", alignItems: "center", justifyContent: "right" }}>
-            <Link to="/shoppingcart"><StepNextButton background="#fff" name="Back" /></Link>
+            <StepNextButton background="#fff" name="Back" onClick={handleStepBack} />
             <StepNextButton background="#000" name="Next" onClick={handleNextClick} />
           </div>
         </div>

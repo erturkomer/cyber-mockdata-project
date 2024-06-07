@@ -2237,6 +2237,60 @@ h3 {
     letter-spacing: 3%;
 }
 
+.payments-step-3-right-side{
+    width: 512px;
+    height: 704px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step-3-right-details{
+    width: 100%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-3-right-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.step-3-right-top h3{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3%;
+}
+
+.step-3-right-tabs{
+    min-height: 32px;
+    width: 100%;
+    gap: 56px;
+    display: flex;
+}
+
+.step-3-right-tabs span{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 3%;
+    color: #717171;
+    cursor: pointer;
+    height: 21px;
+}
+
+.step-3-credit-card{
+    display: flex;
+    align-items: start;
+}
+
+.form-control:focus{
+    border-color: #000;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
 /* - PAYMENT PAGES FINISH - */
 
 

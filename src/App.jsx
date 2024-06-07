@@ -27,12 +27,18 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0, behavior: "instant"
-    });
-  }, [pathname]);
+    (location.pathname === "/payments/step-1" ||
+      location.pathname === "/payments/step-2" ||
+      location.pathname === "/payments/step-3") ||
+      location.pathname === "/payments/step-3/paypal" ||
+      location.pathname === "/payments/step-3/paypal-credit" ? " " :
+      
+      window.scrollTo({
+        top: 0, behavior: "instant"
+      });
+}, [pathname]);
 
-  return null;
+return null;
 };
 
 function App() {
@@ -197,7 +203,9 @@ function App() {
       {
         (location.pathname === "/payments/step-1" ||
           location.pathname === "/payments/step-2" ||
-          location.pathname === "/payments/step-3") ?
+          location.pathname === "/payments/step-3") ||
+          location.pathname === "/payments/step-3/paypal" ||
+          location.pathname === "/payments/step-3/paypal-credit" ?
           <PaymentSteps /> :
           ""
       }
@@ -212,6 +220,8 @@ function App() {
         <Route path="/payments/step-1" element={<PaymentStep1Page />} />
         <Route path="/payments/step-2" element={<PaymentStep2Page />} />
         <Route path="/payments/step-3" element={<PaymentStep3Page />} />
+        <Route path="/payments/step-3/paypal" element={<PaymentStep3Page />} />
+        <Route path="/payments/step-3/paypal-credit" element={<PaymentStep3Page />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
         <Route path="/userinformation" element={<UserDetail />} />

@@ -2521,19 +2521,7 @@
           "price": "1099",
           "productImg": "https://www.kvk.com/images/Product/23092022151357_ip14promgold.png",
           "productId": "3",
-          "quantity": 8,
-          "unchangeable": 1
-        },
-        {
-          "title": "iPhone XS Max",
-          "brand": "Apple",
-          "storage": "512GB",
-          "color": "Altın",
-          "screenSize": "6.5\"",
-          "price": "999",
-          "productImg": "https://getmobil.com/_next/image/?url=https%3A%2F%2Fassets.getmobil.com%2Fuploads%2F8598%2Fgetmobil-apple-iphone12-blue-00png.png&w=1920&q=75",
-          "productId": "20",
-          "quantity": 1,
+          "quantity": 5,
           "unchangeable": 1
         }
       ]
