@@ -19,6 +19,7 @@ import './App.css';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CartItem from '../pages/ShoppingCartPage/CartItem.jsx';
+import Favoritelist from '../pages/ProductPage/FavoritesPage/FavoriteList.jsx';
 import AdminPanel from '../pages/AdminPanel/AdminPanel.jsx';
 import AdminUserList from "../pages/AdminPanel/UserList.jsx";
 import PrivateRoute from './PrivateRoute.jsx';
@@ -222,6 +223,7 @@ function App() {
         <Route path="/payments/step-3" element={<PaymentStep3Page />} />
         <Route path="/payments/step-3/paypal" element={<PaymentStep3Page />} />
         <Route path="/payments/step-3/paypal-credit" element={<PaymentStep3Page />} />
+        <Route path="/favorites" element={<Favoritelist />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
         <Route path="/userinformation" element={<UserDetail />} />

@@ -44,7 +44,9 @@ const Header = ({ cartCount }) => {
                     </ul>
                 </div>
                 <div className="header-icons">
-                    <img src={FavoriteIcon} alt="Favorite Icon" />
+                    <Link to="/favorites">
+                        <img src={FavoriteIcon} alt="Favorite Icon" />
+                    </Link>
                     <Cart cartCount={cartCount} />
                     <div className="user-icon-container">
                         {isLoggedIn ? (

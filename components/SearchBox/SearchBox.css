@@ -10,13 +10,12 @@
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 250%;
+    min-width: 220%;
     z-index: 1000;
     min-height: 80px;
     display: flex;
     overflow: hidden;
-    align-items: center;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .search-menu{

@@ -5,12 +5,12 @@ import { ToastContainer, toast } from "react-toastify";
 import FavoriteIconFilled from "../jsxSvg/filledHeart.svg";
 import BuyNowButton from "./buyNowButton";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const Product = (props) => {
   const productId = props.id;
   const userDetails = JSON.parse(localStorage.getItem('userDetails'));
   const userId = userDetails?.id;
-
 
   const [isFavorite, setIsFavorite] = useState(() => {
     const storedFavorites = localStorage.getItem("favorites");
@@ -31,23 +31,43 @@ const Product = (props) => {
     });
   };
 
-  const handleFavoriteClick = () => {
-    setIsFavorite(!isFavorite);
+  const handleFavoriteClick = async () => {
+    try {
+      const userResponse = await axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`);
+      const user = userResponse.data;
 
-    if (!isFavorite) {
-      toast.success("Added to favorites", {
+      if (!isFavorite) {
+        user.favoriteProducts.push({ id: productId, ...props });
+        await axios.put(`${import.meta.env.VITE_API_URL}users/${userId}`, user);
+        toast.success("Added to favorites", {
+          position: "top-right",
+          autoClose: 400,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+        });
+      } else {
+        const updatedFavoriteProducts = user.favoriteProducts.filter(product => product.id !== productId);
+        user.favoriteProducts = updatedFavoriteProducts;
+        await axios.put(`${import.meta.env.VITE_API_URL}users/${userId}`, user);
+        toast.error("Removed from favorites!", {
+          position: "top-right",
+          autoClose: 400,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+        });
+      }
+      setIsFavorite(!isFavorite);
+    } catch (error) {
+      console.error("Error updating favorites:", error);
+      toast.error("An error occurred while updating favorites.", {
         position: "top-right",
-        autoClose: 400,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: false,
-        progress: undefined,
-      });
-    } else {
-      toast.error("Removed from favorites!", {
-        position: "top-right",
-        autoClose: 400,
+        autoClose: 4000,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: false,
@@ -82,7 +102,6 @@ const Product = (props) => {
           </Link>
         </div>
       </div >
-
     </>
   );
 };

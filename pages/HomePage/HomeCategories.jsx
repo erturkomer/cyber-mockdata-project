@@ -24,6 +24,20 @@ const HomeCategories = () => {
     "Home Appliances",
     "Fitness Trackers",
     "Drones"
+  ]; 
+  const categoriess = [
+    "smartphones",
+    "smartwatches",
+    "cameras",
+    "headphones",
+    "computers",
+    "gaming",
+    "tv-video",
+    "tablets",
+    "printers",
+    "home-appliances",
+    "fitness-trackers",
+    "drones"
   ];
   const icons = [
     PhonesIcon,
@@ -58,24 +72,24 @@ const HomeCategories = () => {
       <div className="top-categories">
         <h3>Browse By Category</h3>
         <div className="arrow-button-container">
-          <button className="left-Arrow" onClick={handleScrollLeft} style={{cursor:"pointer"}}>
+          <button className="left-Arrow" onClick={handleScrollLeft} style={{ cursor: "pointer" }}>
             <img src={LeftArrowIcon} alt="Left Arrow" />
           </button>
-          <button className="right-Arrow" style={{cursor:"pointer"}} onClick={handleScrollRight}>
+          <button className="right-Arrow" style={{ cursor: "pointer" }} onClick={handleScrollRight}>
             <img src={RightArrowIcon} alt="Right Arrow" />
           </button>
         </div>
       </div>
       <div className="home-categories">
-        {categories.slice(startIndex, startIndex + visibleCategories).map((category, index) => (
+        {categoriess.slice(startIndex, startIndex + visibleCategories).map((category, index) => (
           <Link
             key={index}
-            to={`/catalog/smartphones`}
+            to={`/catalog/${category}`}
             style={{ textDecoration: "none", color: "black" }}
           >
             <div className="home-category-card">
-              <img src={icons[startIndex + index]} alt={category} />
-              <p>{category}</p>
+              <img src={icons[startIndex + index]} alt={categories[startIndex + index]} />
+              <p>{categories[startIndex + index]}</p>
             </div>
           </Link>
         ))}

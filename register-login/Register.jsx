@@ -57,6 +57,7 @@ const Register = () => {
       fullName: fullNameInputValue,
       userName: userNameInputValue,
       password: passwordInputValue,
+      lastTraveledProducts: [],
       avatarUrl: generateDefaultAvatarUrl(fullNameInputValue),
       registrationDate: {
         year: registrationDate.year,

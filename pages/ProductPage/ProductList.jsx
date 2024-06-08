@@ -31,7 +31,7 @@ const ProductList = () => {
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },
     { name: "Catalog", link: "/catalog" },
-    { name: "Smartphones", link: "/catalog/smartphones" }
+    { name: "Smartphones", link: "/catalog/" }
   ];
 
   const indexOfLastProduct = currentPage * 9;

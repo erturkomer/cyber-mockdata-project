@@ -41,9 +41,40 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
   const [averageRating, setAverageRating] = useState(0);
   const [averageRatings, setAverageRatings] = useState(0);
   const navigate = useNavigate();
- 
+  const [isFavorite, setIsFavorite] = useState(() => {
+    const storedFavorites = localStorage.getItem("favorites");
+    return storedFavorites ? JSON.parse(storedFavorites)[id] || false : false;
+  });
+
   const userDetails = JSON.parse(localStorage.getItem('userDetails'));
   const userId = userDetails?.id;
+
+
+  const addProductToLastTraveled = async (userId, product) => {
+    try {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`);
+      const userData = response.data;
+
+      userData.lastTraveledProducts.push({
+        id: product.id,
+        name: product.name,
+        brand: product.brand,
+        image: product.productImage,
+        price: product.price,
+        color: product.color,
+        storage: product.storage,
+        mainCamera: product.mainCamera,
+        cpu: product.cpu,
+      });
+
+      await axios.put(`${import.meta.env.VITE_API_URL}users/${userId}`, userData);
+    } catch (error) {
+      console.error('Error adding product to last traveled:', error);
+    }
+  }
+  addProductToLastTraveled(userId, product);
+
+
 
   const handleRatingChange = (newRating) => {
     console.log('Selected rating:', newRating);
@@ -76,10 +107,10 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
   const yellowWidth3 = (yellowWidth["3"] / totalVotes) * 664;
   const yellowWidth2 = (yellowWidth["2"] / totalVotes) * 664;
   const yellowWidth1 = (yellowWidth["1"] / totalVotes) * 664;
-  
+
   const handleAddToCartClick = () => {
     if (isButtonDisabled) return;
-  
+
     handleAddToCart(id);
     toast.success(`${product.name} added to cart.`, {
       position: "bottom-left",
@@ -91,7 +122,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       setIsButtonDisabled(false);
     }, 1200);
   };
-  
+
   const handleLeaveComment = async () => {
     if (!rating) {
       toast.error("Please select a rating before submitting your comment.", {
@@ -101,7 +132,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       });
       return;
     }
-  
+
     const newComment = {
       user_id: userId,
       description: leaveComment,
@@ -109,16 +140,16 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       userName: userDetails.userName,
       avatarUrl: userDetails.avatarUrl,
     };
-  
+
     const updatedComments = [...comments, newComment];
     const totalRating = updatedComments.reduce((acc, comment) => acc + comment.rating, 0);
     const average = (totalRating / updatedComments.length).toFixed(1);
-  
+
     const updatedYellowWidth = {
       ...yellowWidth,
       [rating]: (yellowWidth[rating] || 0) + 1,
     };
-  
+
     try {
       await axios.put(`${import.meta.env.VITE_API_URL}products/${id}`, {
         ...product,
@@ -129,7 +160,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
           count: updatedYellowWidth,
         },
       });
-  
+
       setComments(updatedComments);
       setAverageRating(average);
       window.location.href = `/catalog/smartphones/productdetails/${id}`;
@@ -137,7 +168,27 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       console.log(e);
     }
   };
-  
+
+  const handleAddToWishlist = async () => {
+    const userResponse = await axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`);
+    const user = userResponse.data;
+
+    if (!isFavorite) {
+      user.favoriteProducts.push({ id: id, brand: product.brand, name: product.name, image: product.productImage, color: product.color, price: product.price, storage: product.storage, mainCamera: product.mainCamera, cpu: product.cpu, ...users });
+      await axios.put(`${import.meta.env.VITE_API_URL}users/${userId}`, user);
+      toast.success("Added to favorites", {
+        position: "top-right",
+        autoClose: 400,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+      });
+    }
+  }
+
+
 
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },
@@ -201,7 +252,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
             <p>Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras <span>more...</span></p>
           </div>
           <div className="add-to-card-container">
-            <AddToCard color="#000000" background="#FFFFFF" title="Add to Wishlist" />
+            <AddToCard color="#000000" background="#FFFFFF" title="Add to Wishlist" onClick={handleAddToWishlist} />
             <AddToCard color="#FFFFFF" background="#000000" title="Add to Card" onClick={handleAddToCartClick} cursor={isButtonDisabled === true ? "not-allowed" : "pointer"} />
           </div>
           <div className="cargo-icon-container">
