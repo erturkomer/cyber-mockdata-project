@@ -23,12 +23,14 @@ const SearchBox = () => {
     };
 
     const addProductToLastTraveled = async (userId) => {
-        try {
-            const response = await axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`);
-            const userData = response.data;
-            setLastTraveled(userData.lastTraveledProducts);
-        } catch (error) {
-        }
+        if (userId) {
+            try {
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`);
+                const userData = response.data;
+                setLastTraveled(userData.lastTraveledProducts);
+            } catch (error) {
+            }
+        }   
     }
     addProductToLastTraveled(userId);
 

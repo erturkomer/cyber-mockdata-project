@@ -55,6 +55,10 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       const response = await axios.get(`${import.meta.env.VITE_API_URL}users/${userId}`);
       const userData = response.data;
 
+      if (!product || !product.id) {
+        throw new Error("Invalid product or product id");
+      }
+
       userData.lastTraveledProducts.push({
         id: product.id,
         name: product.name,
@@ -72,9 +76,6 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       console.error('Error adding product to last traveled:', error);
     }
   }
-  addProductToLastTraveled(userId, product);
-
-
 
   const handleRatingChange = (newRating) => {
     console.log('Selected rating:', newRating);
@@ -93,6 +94,7 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
       .catch(error => {
         console.error('Error fetching product details:', error);
       });
+    addProductToLastTraveled(userId, product);
   }, [id, setProduct]);
 
   if (!product) {
@@ -110,18 +112,19 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
 
   const handleAddToCartClick = () => {
     if (isButtonDisabled) return;
-
+  
     handleAddToCart(id);
+    setIsButtonDisabled(true); 
     toast.success(`${product.name} added to cart.`, {
       position: "bottom-left",
       autoClose: 1350,
       hideProgressBar: true,
+      onClose: () => {
+        setIsButtonDisabled(false);
+      }
     });
-    setIsButtonDisabled(true);
-    setTimeout(() => {
-      setIsButtonDisabled(false);
-    }, 1200);
   };
+  
 
   const handleLeaveComment = async () => {
     if (!rating) {
@@ -201,7 +204,6 @@ const ProductDetailsPage = ({ handleAddToCart, product, setProduct }) => {
 
   return (
     <>
-      <ToastContainer />
       <Breadcrumbs categories={breadcrumbsHierarchy} />
       <div className="main-info">
         <div className="product-image-container">

@@ -3,8 +3,10 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "./UserDetail.css";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 import { IoLogOutOutline } from "react-icons/io5";
+import EditIcon from "../Payments/PaymentStep1Page/icons/edit.svg";
+import DeleteIcon from "../Payments/PaymentStep1Page/icons/delete.svg";
 
 const UserDetail = () => {
     const userDetails = JSON.parse(localStorage.getItem('userDetails'));
@@ -17,7 +19,9 @@ const UserDetail = () => {
     const [newPassword, setNewPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const location = useLocation();
+    const navigate = useNavigate();
     const [menu, setMenu] = useState(location.pathname);
+    const [addressData, setAddressData] = useState([]);
 
     useEffect(() => {
         setMenu(location.pathname);
@@ -162,7 +166,8 @@ const UserDetail = () => {
                             </div>
                             <span className="user-name">{userDetails.fullName}</span>
                         </div>
-                        <div className="user-info-heading">My User Information</div>
+                        <div onClick={() => navigate("/userinformation")} className="user-info-heading" style={location.pathname === "/userinformation" | location.pathname == "/userinformation/passwordchange" ? { borderBottom: "1px solid #000", } : {}}>My User Information</div>
+                        <div onClick={() => navigate("/registeredaddress")} className="user-info-heading" style={location.pathname === "/registeredaddress" ? { borderBottom: "1px solid #000" } : {}}>Registered Addresses</div>
                         <button
                             className="logout-button"
                             onClick={handleLogout}
@@ -170,84 +175,108 @@ const UserDetail = () => {
                         </button>
                     </div>
                     <div className="right-side">
-                        <div style={{display:"flex",flexDirection:"column",width:"48%" }}>
-                            <h2 style={{ fontSize: "28px", lineHeight: "36px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>My user information</h2>
-                            <ul className="user-information" style={{ listStyleType: "none", marginTop: "32px" }}>
-                                <li className={menu === "/userinformation" ? "active" : ""} onClick={() => setMenu("/userinformation")}>
-                                    <Link to="/userinformation" style={{ textDecoration: 'none', color: 'inherit' }}>
-                                        <span style={{ fontSize: "14px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Membership information</span>
-                                    </Link>
-                                </li>
-                                <li className={menu === "/userinformation/passwordchange" ? "active" : ""
-                                } onClick={() => setMenu("/userinformation/passwordchange")}>
-                                    <Link to="/userinformation/passwordchange" style={{ textDecoration: 'none', color: 'inherit' }}>
-                                        <span style={{ fontSize: "14px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Password change</span>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="menu">
-                            {menu === "/userinformation" && (
-                                <div className="profile-information">
-                                    <h4 style={{ fontSize: "20px", lineHeight: "30px", color: "#484848", fontWeight: "600", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Profile information</h4>
-                                    <p className="profile-info-psa" style={{ cursor: "default", padding: "0", background: "#fff" }}>Here you can edit the information we need to optimize your experience at Cyber.</p>
-                                    <div className="membership-info">
-                                        <div className="membership-input-t1" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
-                                            <div className="membership-input-label">
-                                                <span>Full Name</span>
-                                                <input
-                                                    type="text"
-                                                    placeholder="Enter your new name"
-                                                    value={newName}
-                                                    onChange={(e) => setNewName(e.target.value)}
-                                                />
-                                            </div>
-                                            <div className="membership-input-label">
-                                                <span>Username</span>
-                                                <input
-                                                    type="text"
-                                                    placeholder="Enter your new username"
-                                                    value={newUsername}
-                                                    onChange={(e) => setNewUsername(e.target.value)}
-                                                />
+                        {location.pathname === "/userinformation" | location.pathname === "/userinformation/passwordchange" && (
+                            <><div style={{ display: "flex", flexDirection: "column", width: "48%" }}>
+                                <h2 style={{ fontSize: "28px", lineHeight: "36px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>My user information</h2>
+                                <ul className="user-information" style={{ listStyleType: "none", marginTop: "32px" }}>
+                                    <li className={menu === "/userinformation" ? "active" : ""} onClick={() => setMenu("/userinformation")}>
+                                        <Link to="/userinformation" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                            <span style={{ fontSize: "14px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Membership information</span>
+                                        </Link>
+                                    </li>
+                                    <li className={menu === "/userinformation/passwordchange" ? "active" : ""} onClick={() => setMenu("/userinformation/passwordchange")}>
+                                        <Link to="/userinformation/passwordchange" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                            <span style={{ fontSize: "14px", fontWeight: "600", color: "#484848", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Password change</span>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div><div className="menu">
+                                    {menu === "/userinformation" && (
+                                        <div className="profile-information">
+                                            <h4 style={{ fontSize: "20px", lineHeight: "30px", color: "#484848", fontWeight: "600", fontFamily: "Inter, -apple-system, Helvetica Neue, sans-serif" }}>Profile information</h4>
+                                            <p className="profile-info-psa" style={{ cursor: "default", padding: "0", background: "#fff" }}>Here you can edit the information we need to optimize your experience at Cyber.</p>
+                                            <div className="membership-info">
+                                                <div className="membership-input-t1" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
+                                                    <div className="membership-input-label">
+                                                        <span>Full Name</span>
+                                                        <input
+                                                            type="text"
+                                                            placeholder="Enter your new name"
+                                                            value={newName}
+                                                            onChange={(e) => setNewName(e.target.value)} />
+                                                    </div>
+                                                    <div className="membership-input-label">
+                                                        <span>Username</span>
+                                                        <input
+                                                            type="text"
+                                                            placeholder="Enter your new username"
+                                                            value={newUsername}
+                                                            onChange={(e) => setNewUsername(e.target.value)} />
+                                                    </div>
+                                                </div>
+                                                <div className="membership-input-label">
+                                                    <span>E-mail</span>
+                                                    <input
+                                                        className="email-input-d"
+                                                        type="email"
+                                                        placeholder="Enter your new email"
+                                                        value={newEmail}
+                                                        onChange={(e) => setNewEmail(e.target.value)} />
+                                                </div>
+                                                {errorMessage && <p className="error-message">{errorMessage}</p>}
+                                                <button className={`update-user-info-btn ${isInfoChanged() ? "" : "not-allowed"}`} style={{ cursor: isInfoChanged() ? "pointer" : "not-allowed", background: isInfoChanged() ? "#18371f" : "#cccccc", color: isInfoChanged() ? "#fff" : "#000" }} onClick={handleUpdateUserInfo} disabled={!isInfoChanged()}>Update Info</button>
                                             </div>
                                         </div>
-                                        <div className="membership-input-label">
-                                            <span>E-mail</span>
+                                    )}
+                                </div><div className="menu1">
+                                    {menu === "/userinformation/passwordchange" && (
+                                        <div className="password-change">
                                             <input
-                                                className="email-input-d"
-                                                type="email"
-                                                placeholder="Enter your new email"
-                                                value={newEmail}
-                                                onChange={(e) => setNewEmail(e.target.value)}
-                                            />
+                                                type="password"
+                                                placeholder="Enter your current password"
+                                                onChange={(e) => setOldPassword(e.target.value)} />
+                                            <input
+                                                type="password"
+                                                placeholder="Enter your new password"
+                                                onChange={(e) => setNewPassword(e.target.value)} />
+                                            {errorMessage && <p className="error-message">{errorMessage}</p>}
+                                            <button onClick={handlePasswordChange}>Change Password</button>
                                         </div>
-                                        {errorMessage && <p className="error-message">{errorMessage}</p>}
-                                        <button className={`update-user-info-btn ${isInfoChanged() ? "" : "not-allowed"}`} style={{ cursor: isInfoChanged() ? "pointer" : "not-allowed", background: isInfoChanged() ? "#18371f" : "#cccccc", color: isInfoChanged() ? "#fff" : "#000" }} onClick={handleUpdateUserInfo} disabled={!isInfoChanged()}>Update Info</button>
+                                    )}
+                                </div>
+                            </>
+                        )}
+                        {location.pathname === "/registeredaddress" && (
+                            <>
+                                {/* <div className="address-card">
+                                    <div className="address-card-content">
+                                        <div className="address-card-content-top">
+                                            <div className="address-radio">
+                                                <input
+                                                    type="radio"
+                                                    name="address"
+                                                />
+                                                <label className="custom-radio"></label>
+                                                <span>{addressData.address}</span>
+                                            </div>
+                                            <div className="address-tag">{addressData.tag}</div>
+                                        </div>
+                                        <div className="address-card-info">
+                                            <span>{addressData.addressLine1}</span>
+                                            <span>{addressData.addressLine2}</span>
+                                            <span>{addressData.phoneNumber}</span>
+                                        </div>
                                     </div>
-                                </div>
-                            )}
-                        </div>
-                        <div className="menu1">
-                            {menu === "/userinformation/passwordchange" && (
-                                <div className="password-change">
-                                    <input
-                                        type="password"
-                                        placeholder="Enter your current password"
-                                        onChange={(e) => setOldPassword(e.target.value)}
-                                    />
-                                    <input
-                                        type="password"
-                                        placeholder="Enter your new password"
-                                        onChange={(e) => setNewPassword(e.target.value)}
-                                    />
-                                    {errorMessage && <p className="error-message">{errorMessage}</p>}
-                                    <button onClick={handlePasswordChange}>Change Password</button>
-                                </div>
-                            )}
-                        </div>
+                                    <div className="address-card-actions">
+                                        <img src={EditIcon} alt="Edit" style={{ cursor: "pointer" }} /> 
+                                        <img src={DeleteIcon} alt="Delete" style={{ cursor: "pointer" }} />
+                                    </div>
+                                </div> */}
+                            </>
+                        )}
                     </div>
                 </div>
+
             </>
             : window.location.href = '/login'
     );

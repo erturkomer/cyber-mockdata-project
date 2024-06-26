@@ -12,7 +12,8 @@ const ProductList = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedBrands, setSelectedBrands] = useState([]);
-
+  const [sortMethod, setSortMethod] = useState('name');
+  const [sortOrder, setSortOrder] = useState('asc')
   useEffect(() => {
     fetchData();
   }, []);
@@ -24,9 +25,9 @@ const ProductList = () => {
       setOriginalProducts(allProducts);
       setFilteredProducts(allProducts);
     } catch (error) {
-      console.error('Ürünleri çekerken bir hata oluştu:', error);
+      console.error('Error fetching products:', error);
     }
-  }
+  };
 
   const breadcrumbsHierarchy = [
     { name: "Home", link: "/" },
@@ -54,7 +55,7 @@ const ProductList = () => {
     }
     setSelectedBrands(updatedBrands);
 
-    const filteredProducts = originalProducts.filter(product => 
+    const filteredProducts = originalProducts.filter(product =>
       updatedBrands.length === 0 || updatedBrands.includes(product.brand)
     );
     setFilteredProducts(filteredProducts);
@@ -62,12 +63,28 @@ const ProductList = () => {
   };
 
   const handleSearch = (searchTerm) => {
-    const filteredProducts = originalProducts.filter(product => 
+    const filteredProducts = originalProducts.filter(product =>
       product.brand.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredProducts(filteredProducts);
     setCurrentPage(1);
   };
+
+  const sortProducts = () => {
+    let sortedProducts = [...filteredProducts];
+    sortedProducts.sort((a, b) => {
+      if (sortMethod === 'name') {
+        return sortOrder === 'asc' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+      } else if (sortMethod === 'price') {
+        return sortOrder === 'asc' ? a.price - b.price : b.price - a.price;
+      }
+    });
+    setFilteredProducts(sortedProducts);
+  };
+
+  useEffect(() => {
+    sortProducts();
+  }, [sortMethod, sortOrder]);
 
   return (
     <>
@@ -94,15 +111,15 @@ const ProductList = () => {
             <div className="product-list-top-part">
               <div className="left-side-products">
                 <h3>Selected Products: <span>{filteredProducts.length}</span></h3>
-                <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", border: "0.5px solid #D4D4D4", borderRadius: "8px", width: "256px", height: "40px", background: "white", color: "black" }}>
+                <Dropdown style={{background:"transparent"}}>
+                  <Dropdown.Toggle style={{background:"transparent", color:"#000", width:"256px", display:"flex", alignItems:"center", justifyContent:"space-between", padding:"8px 16px", border:"0.5px solid #D4D4D4"}} variant="success" id="dropdown-basic">
                     By rating
                   </Dropdown.Toggle>
-
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1" style={{ width: "256px", height: "40px" }}>Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2" style={{ width: "256px", height: "40px" }}>Another action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3" style={{ width: "256px", height: "40px" }}>Something else</Dropdown.Item>
+                    <Dropdown.Item onClick={() => { setSortMethod('name'); setSortOrder('asc'); }}>Name (A-Z)</Dropdown.Item>
+                    <Dropdown.Item onClick={() => { setSortMethod('name'); setSortOrder('desc'); }}>Name (Z-A)</Dropdown.Item>
+                    <Dropdown.Item onClick={() => { setSortMethod('price'); setSortOrder('asc'); }}>Price (Low to High)</Dropdown.Item>
+                    <Dropdown.Item onClick={() => { setSortMethod('price'); setSortOrder('desc'); }}>Price (High to Low)</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </div>

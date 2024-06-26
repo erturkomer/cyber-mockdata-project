@@ -227,6 +227,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
         <Route path="/userinformation" element={<UserDetail />} />
+        <Route path="/registeredaddress" element={<UserDetail />} />
         <Route path="/userinformation/passwordchange" element={<UserDetail />} />
         <Route path="/adminpanel" element={<PrivateRoute element={<AdminPanel />} />} />
         <Route path="/adminpanel/userlist" element={<PrivateRoute element={<AdminUserList />} />} />

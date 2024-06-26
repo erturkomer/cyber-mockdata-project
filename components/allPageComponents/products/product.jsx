@@ -39,28 +39,10 @@ const Product = (props) => {
       if (!isFavorite) {
         user.favoriteProducts.push({ id: productId, ...props });
         await axios.put(`${import.meta.env.VITE_API_URL}users/${userId}`, user);
-        toast.success("Added to favorites", {
-          position: "top-right",
-          autoClose: 400,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: false,
-          progress: undefined,
-        });
       } else {
         const updatedFavoriteProducts = user.favoriteProducts.filter(product => product.id !== productId);
         user.favoriteProducts = updatedFavoriteProducts;
         await axios.put(`${import.meta.env.VITE_API_URL}users/${userId}`, user);
-        toast.error("Removed from favorites!", {
-          position: "top-right",
-          autoClose: 400,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: false,
-          progress: undefined,
-        });
       }
       setIsFavorite(!isFavorite);
     } catch (error) {

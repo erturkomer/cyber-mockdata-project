@@ -72,7 +72,7 @@ const ShoppingCartPage = ({ handleRemoveFromCart, cart, setCart, Increment, Decr
     };
 
     const handleCheckout = () => {
-        if (cardNumber.length !== 16) {
+        if (cardNumber && cardNumber.length !== 16) {
             showToast("Please enter a valid 16-digit card number.", "error");
         } else {
             navigate("/payments/step-1", { state: { cart : cart, totalPrice: totalPrice } });

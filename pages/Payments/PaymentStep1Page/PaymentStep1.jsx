@@ -6,7 +6,7 @@ import AddLineIcon from "./icons/AddLine.svg";
 import AdressLine1Icon from "./icons/addadressline-1.svg";
 import AdressLine2Icon from "./icons/addadressline-2.svg";
 import StepNextButton from "../StepNextButton";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { v4 as uuidv4 } from 'uuid';
 import { useLocation } from "react-router-dom";
@@ -45,6 +45,7 @@ const PaymentStep1 = () => {
       })
       .catch(error => console.error('Error fetching user data:', error));
   }, [userDetails.id, userDetails.registeredAddresses])
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -185,7 +186,7 @@ const PaymentStep1 = () => {
 
   const handleNextClick = () => {
     if (!selectedAddressId) {
-      console.error("Please select an address before proceeding.");
+      toast.error("Please select an address before proceeding.", { autoClose: 2000 });
     } else {
       const selectedAddress = addressData.find(address => address.id === selectedAddressId);
       navigate("/payments/step-2", { state: { cart: cart, selectedAddress: selectedAddress, totalPrice: totalPrice } });
@@ -260,7 +261,6 @@ const PaymentStep1 = () => {
           </div>
         </div>
       ) : null}
-      <ToastContainer />
     </>
   )
 }

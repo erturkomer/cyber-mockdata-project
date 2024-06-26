@@ -32,12 +32,12 @@ const PaymentStep2 = () => {
 
     const handleNextClick = () => {
         if (!selectedShippingMethodId) {
-            toast.error("Lütfen bir nakliye yöntemi seçin.");
+            toast.error("Please select a shipping method.", { autoClose: 2000 });
             return;
         }
 
         if (selectedShippingMethodId === 3 && !shippingDates[selectedShippingMethodId]) {
-            toast.error("Lütfen bir teslimat tarihi seçin.");
+            toast.error("Please select a delivery date.", { autoClose: 2000 });
             return;
         }
 
