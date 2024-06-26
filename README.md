@@ -1,5 +1,3 @@
-Certainly! Here are the steps to initialize the "cyber-mockdata-project" GitHub e-commerce website project:
-
 1. Clone the Project and Navigate to the Directory
 Open your terminal or command prompt and clone the project using the following command:
 
