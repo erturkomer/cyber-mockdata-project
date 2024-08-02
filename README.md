@@ -1,7 +1,7 @@
 # Cyber
 
 Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve performans odaklı tasarımı ile öne çıkar. Bu proje, e-ticaret, sosyal medya platformları veya diğer dinamik web uygulamaları için uygun bir temel sağlar. Yüksek performanslı ve esnek yapısı sayesinde, farklı türdeki web projelerinin hızlı ve etkili bir şekilde geliştirilmesine olanak tanır.
----
+
 
 ## İçindekiler
 - [Proje Tanıtım Videosu](#proje-tanıtım-videosu)
@@ -10,7 +10,7 @@ Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve pe
 - [Projeyi Başlatma](#projeyi-baslatma)
 - [Gereksinimler](#gereksinimler)
 - [Kurulum](#kurulum)
----
+
 
 ## Proje Tanıtım Videosu
 
@@ -29,7 +29,7 @@ Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve pe
 - **react-credit-cards-2@1.0.2**: Kredi kartı bilgilerini görsel olarak göstermek için kullanılan bir React bileşenidir. Kullanıcıların kredi kartı bilgilerini kolayca görüntülemesine olanak tanır.
 - **react-router-dom@6.23.0**: React uygulamaları için yönlendirme ve rotalama işlevselliği sağlar. Kullanıcıların farklı sayfalara geçiş yapmasını sağlar.
 - **react-toastify@10.0.5**: Kullanıcıya bildirimler göstermek için kullanılan bir kütüphanedir. Uygulama içi bildirimlerin kullanıcı deneyimini iyileştirmesine yardımcı olur.
----
+
 
 ## Proje Özellikleri
 
@@ -38,7 +38,7 @@ Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve pe
 - **Kullanıcı Yönetimi**: Kullanıcıların hesap oluşturmasını, giriş yapmasını ve profil bilgilerini yönetmesini sağlar.
 - **E-ticaret Özellikleri**: Ürün listeleme, detay sayfaları, sepet ve ödeme işlemleri.
 - **Performans Optimizasyonu**: Hızlı yükleme süreleri ve düşük ağ gecikmeleri.
----
+
 
 ## Projeyi Başlatma
 
@@ -67,4 +67,4 @@ npm run dev
 
 6. **Uygulamayı Tarayıcıda Görüntüleyin**:
 Web tarayıcınızda http://localhost:3000 adresine gidin.
----
+
