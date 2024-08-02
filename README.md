@@ -14,6 +14,7 @@ Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve pe
 
 
 ## Proje Tanıtım Videosu
+https://github.com/user-attachments/assets/af63f29e-9539-4d6c-8851-479231a3774b
 
 
 
