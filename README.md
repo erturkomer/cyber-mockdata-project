@@ -1,38 +1,53 @@
-1. Clone the Project and Navigate to the Directory
-Open your terminal or command prompt and clone the project using the following command:
+Cyber
 
-git clone <repository_url>
-Replace <repository_url> with the URL of the project's GitHub repository.
+Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve performans odaklı tasarımı ile öne çıkar. Bu proje, e-ticaret, sosyal medya platformları veya diğer dinamik web uygulamaları için uygun bir temel sağlar. Yüksek performanslı ve esnek yapısı sayesinde, farklı türdeki web projelerinin hızlı ve etkili bir şekilde geliştirilmesine olanak tanır.
 
-cd cyber-mockdata-project
 
-2. Create .env File and Add Value
-Create or open the .env file in the project directory and add the following line:
+Kullanılan Teknolojiler
+
+React: Kullanıcı arayüzünü oluşturmak için kullanılan bir JavaScript kütüphanesi. Bileşen tabanlı yapısı sayesinde uygulamanın ölçeklenebilir ve sürdürülebilir olmasını sağlar.
+Vite: Hızlı ve modern bir geliştirme aracıdır. React uygulamalarının hızlı bir şekilde oluşturulmasını ve geliştirilmesini sağlar.
+axios@1.6.8: HTTP isteklerini yönetmek için kullanılan bir kütüphanedir. Sunucu ile veri alışverişi işlemlerini kolaylaştırır.
+bootstrap@5.3.3: Tasarım ve kullanıcı arayüzü bileşenleri için popüler bir CSS framework'tür. Hızlı ve duyarlı bir tasarım geliştirmeye olanak tanır.
+react-bootstrap@2.10.2: React ile Bootstrap bileşenlerini entegre eden bir kütüphanedir. Bootstrap'in React uyumlu bileşenlerini sağlar.
+react-icons@5.2.1: Popüler simgeleri (icon) React bileşenleri olarak kullanmanıza olanak tanır. Kullanıcı arayüzünde çeşitli simgelerle kolayca çalışabilirsiniz.
+dotenv@16.4.5: Çevresel değişkenleri yönetmek için kullanılan bir kütüphanedir. Uygulamanın konfigürasyon bilgilerini güvenli bir şekilde saklamaya yardımcı olur.
+json-server@1.0.0-beta.0: API geliştirme sürecinde kullanılan bir araçtır. Sahte bir JSON veritabanı sunarak, gerçek bir API'ye ihtiyaç duymadan uygulama geliştirmeyi kolaylaştırır.
+react-credit-cards-2@1.0.2: Kredi kartı bilgilerini görsel olarak göstermek için kullanılan bir React bileşenidir. Kullanıcıların kredi kartı bilgilerini kolayca görüntülemesine olanak tanır.
+react-router-dom@6.23.0: React uygulamaları için yönlendirme ve rotalama işlevselliği sağlar. Kullanıcıların farklı sayfalara geçiş yapmasını sağlar.
+react-toastify@10.0.5: Kullanıcıya bildirimler göstermek için kullanılan bir kütüphanedir. Uygulama içi bildirimlerin kullanıcı deneyimini iyileştirmesine yardımcı olur.
+
+
+Proje Özellikleri
+Ürün Kataloğu: Kullanıcıların ürünleri kategorilere göre keşfetmesini sağlar.
+Sepet Yönetimi: Kullanıcıların ürünleri sepetlerine ekleyip, çıkarabilmesini ve sepetin içeriğini görüntülemesini sağlar.
+Kullanıcı Yönetimi: Kullanıcıların hesap oluşturmasını, giriş yapmasını ve profil bilgilerini yönetmesini sağlar.
+E-ticaret Özellikleri: Ürün listeleme, detay sayfaları, sepet ve ödeme işlemleri.
+Performans Optimizasyonu: Hızlı yükleme süreleri ve düşük ağ gecikmeleri.
+
+Projeyi Başlatma
+
+Gereksinimler
+Node.js (ve npm) - Node.js İndir
+
+
+Kurulum
+
+Depoyu Kopyalayın:
+git clone https://github.com/kullaniciadi/cyber.git
+
+Bağımlılıkları Yükleyin:
+npm install
+
+.env Dosyasını Oluşturun:
+Proje kök dizininde .env adında bir dosya oluşturun ve aşağıdaki satırı ekleyin:
+
+Verilerin gelmesi için db.json dosyasını çalıştırın:
+npx json-server db.json
 
 VITE_API_URL=http://localhost:3000/
-This file defines environmental variables used by your project.
-
-
-3. Install Dependencies
-To install the dependencies used in the project, run the following command in your terminal:
-
-npm install
-This command installs dependencies specified in the package.json file.
-
-
-4. Start JSON Server
-To start the JSON Server used in the project, run the following command:
-
-npx json-server db.json --port 3000
-This command starts a JSON API server using db.json and makes it accessible at http://localhost:3000.
-
-5. Run the Project
-Finally, to start the project, run the following command:
-
+Geliştirme Sunucusunu Başlatın:
 npm run dev
-This command runs the project in development mode. By default, it starts the website using Vite (or another development server) at http://localhost:3000.
 
-Notes:
-The db.json file represents sample database data provided by JSON Server and will be used in your project. You may need to customize this file to suit your project's needs.
-The .env file and VITE_API_URL variable are used to define the API endpoint for your project. Adjust this value according to your project's requirements and environment.
-By following these steps, you can successfully initialize the "cyber-mockdata-project" GitHub e-commerce website project.
+Uygulamayı Tarayıcıda Görüntüleyin:
+Web tarayıcınızda http://localhost:3000 adresine gidin.
