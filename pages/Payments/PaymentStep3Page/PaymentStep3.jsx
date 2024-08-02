@@ -66,6 +66,10 @@ const PaymentStep3 = () => {
     console.log("state aktarıldı");
   }
 
+  const handleNextClick = () => {
+    navigate("/paymentcomplated")
+  }
+
   return (
     <>
       <div className="payments-step-3-container">
@@ -199,7 +203,7 @@ const PaymentStep3 = () => {
               </div>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <StepNextButton background="#fff" name="Back" width="244.5px" onClick={handleStepBack} />
-                <StepNextButton background="#000" name="Pay" width="244.5px" />
+                <StepNextButton background="#000" name="Pay" width="244.5px" onClick={handleNextClick} />
               </div>
             </div>
           </div>

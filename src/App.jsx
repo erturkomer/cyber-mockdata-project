@@ -23,6 +23,7 @@ import Favoritelist from '../pages/ProductPage/FavoritesPage/FavoriteList.jsx';
 import AdminPanel from '../pages/AdminPanel/AdminPanel.jsx';
 import AdminUserList from "../pages/AdminPanel/UserList.jsx";
 import PrivateRoute from './PrivateRoute.jsx';
+import PaymentComplated from '../pages/Payments/PaymentComplated.jsx';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -207,7 +208,7 @@ function App() {
           location.pathname === "/payments/step-3") ||
           location.pathname === "/payments/step-3/paypal" ||
           location.pathname === "/payments/step-3/paypal-credit" ?
-          <PaymentSteps /> :
+          <PaymentSteps /> : 
           ""
       }
       <ScrollToTop />
@@ -221,6 +222,7 @@ function App() {
         <Route path="/payments/step-1" element={<PaymentStep1Page />} />
         <Route path="/payments/step-2" element={<PaymentStep2Page />} />
         <Route path="/payments/step-3" element={<PaymentStep3Page />} />
+        <Route path="/paymentcomplated" element={<PaymentComplated />} />
         <Route path="/payments/step-3/paypal" element={<PaymentStep3Page />} />
         <Route path="/payments/step-3/paypal-credit" element={<PaymentStep3Page />} />
         <Route path="/favorites" element={<Favoritelist />} />

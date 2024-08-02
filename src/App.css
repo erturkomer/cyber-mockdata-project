@@ -2308,6 +2308,15 @@ h3 {
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
 }
 
+.payment-complated{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column  ;
+    
+}
+
 /* - PAYMENT PAGES FINISH - */
 
 
