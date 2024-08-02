@@ -10,6 +10,7 @@ Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve pe
 - [Projeyi Başlatma](#projeyi-baslatma)
 - [Gereksinimler](#gereksinimler)
 - [Kurulum](#kurulum)
+- [Admin Özellikleri](#admin-özellikleri)
 
 
 ## Proje Tanıtım Videosu
@@ -41,6 +42,7 @@ Cyber, modern bir web uygulaması şablonudur. Kullanıcı dostu arayüzü ve pe
 
 
 ## Projeyi Başlatma
+Videoyu izlemek için [buraya tıklayın](https://www.dropbox.com/scl/fi/iayutf1m0ae1bgz5ef3js/CyberProjectVideo.mp4?rlkey=1ckr9l649xvluml30l13h4jb0&st=tkhty58d&dl=0)
 
 ### Gereksinimler
 
@@ -67,4 +69,11 @@ npm run dev
 
 6. **Uygulamayı Tarayıcıda Görüntüleyin**:
 Web tarayıcınızda http://localhost:3000 adresine gidin.
+
+## Admin Özellikleri
+- Admin hesabı kullanıcı adı: admin
+- Admin hesabı e-posta: admin@gmail.com
+- Admin hesabı şifre: Admin121437qwert!
+- Admin panele giriş: /adminpanel 
+- Not: Admin panele giriş yapmak için admin hesabı ile girmeniz gerekmektedir.
 
