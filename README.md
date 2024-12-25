@@ -53,7 +53,7 @@ Videoyu izlemek için [buraya tıklayın](https://www.dropbox.com/scl/fi/iayutf1
 
 1. **Depoyu Kopyalayın**:
    ```bash
-   git clone https://github.com/kullaniciadi/cyber.git
+   git clone https://github.com/erturkomer/cyber.git
    
 2. **Bağımlılıkları Yükleyin**:
 npm install
